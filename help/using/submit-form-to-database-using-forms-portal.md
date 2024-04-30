@@ -1,20 +1,20 @@
 ---
 title: Envoyer des formulaires adaptatifs à la base de données à l’aide du portail Forms
-description: Étendez le métamodèle par défaut pour ajouter un modèle, des validations et des entités spécifiques à votre entreprise et appliquer des configurations aux champs de formulaire adaptatif lors de l’exécution du service de conversion automatisée de formulaires.
+description: Étendez le métamodèle par défaut pour ajouter un modèle, des validations et des entités spécifiques à votre organisation et appliquer des configurations aux champs de formulaires adaptatifs lors de l’exécution du service Automated forms conversion (AFCS).
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
-source-git-commit: 298d6c0641d7b416edb5b2bcd5fec0232f01f4c7
-workflow-type: ht
-source-wordcount: '1214'
-ht-degree: 100%
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+workflow-type: tm+mt
+source-wordcount: '1221'
+ht-degree: 95%
 
 ---
 
 
 # Intégrer des formulaires adaptatifs à une base de données à l’aide du portail Formulaires. {#submit-forms-to-database-using-forms-portal}
 
-Le service de conversion automatisée de formulaires vous permet de convertir un formulaire PDF non interactif, un formulaire Acro ou un formulaire PDF basé sur XFA en un formulaire adaptatif. Lors du lancement du processus de conversion, vous avez la possibilité de générer un formulaire adaptatif avec ou sans liaison de données.
+Le service Automated forms conversion (AFCS) vous permet de convertir un formulaire de PDF non interactif, un formulaire Acro ou un formulaire de PDF basé sur XFA en un formulaire adaptatif. Lors du lancement du processus de conversion, vous avez la possibilité de générer un formulaire adaptatif avec ou sans liaison de données.
 
 Si vous choisissez de générer un formulaire adaptatif sans liaison de données, vous pouvez incorporer le formulaire adaptatif converti à un modèle de données de formulaire, un schéma XML ou un schéma JSON après la conversion. Toutefois, si vous générez un formulaire adaptatif avec des liaisons de données, le service de conversion associe automatiquement les formulaires adaptatifs à un schéma JSON et crée une liaison de données entre les champs disponibles dans le formulaire adaptatif et le schéma JSON. Vous pouvez ensuite intégrer le formulaire adaptatif à une base de données de votre choix, remplir les données du formulaire et les envoyer à la base de données à l’aide du portail Forms.
 
@@ -31,7 +31,7 @@ L’exemple présenté dans cet article est une implémentation de référence d
 * Configuration d’une instance d’auteur AEM 6.4 ou 6.5
 * Installation du [dernier Service Pack](https://helpx.adobe.com/fr/experience-manager/aem-releases-updates.html) pour votre instance AEM
 * Dernière version du package de module complémentaire AEM Forms
-* Configuration du [service de conversion automatisée de formulaires](configure-service.md)
+* Configurer [Service Automated forms conversion (AFCS)](configure-service.md)
 * Configuration d’une base de données. La base de données utilisée dans l’exemple d’implémentation est MySQL 5.6.24. Cependant, vous pouvez intégrer le formulaire adaptatif converti à n’importe quelle base de données de votre choix.
 
 ## Configurer la connexion entre l’instance AEM et la base de données {#set-up-connection-aem-instance-database}

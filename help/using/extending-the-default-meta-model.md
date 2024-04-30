@@ -1,6 +1,6 @@
 ---
 title: Étendre le métamodèle par défaut
-description: Étendez le métamodèle par défaut pour ajouter un modèle, des validations et des entités spécifiques à votre entreprise et appliquer des configurations aux champs de formulaire adaptatif lors de l’exécution du service de conversion automatisée de formulaires.
+description: Étendez le métamodèle par défaut pour ajouter un modèle, des validations et des entités spécifiques à votre organisation et appliquer des configurations aux champs de formulaires adaptatifs lors de l’exécution du service Automated forms conversion (AFCS).
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
@@ -8,16 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '2594'
-ht-degree: 100%
+source-wordcount: '2598'
+ht-degree: 91%
 
 ---
 
 # Étendre le métamodèle par défaut {#extend-the-default-meta-model}
 
-Le service de conversion automatisée de formulaires identifie et extrait les objets de formulaire des formulaires sources. Le mappeur sémantique aide le service à décider comment les objets extraits sont représentés dans un formulaire adaptatif. Par exemple, un formulaire source peut représenter une date de plusieurs façons différentes. Le mappeur sémantique permet de mapper toutes les représentations des dates du formulaire source avec les composants de date des formulaires adaptatifs. Le mappeur sémantique permet également au service de préconfigurer et d’appliquer des validations, des règles, des modèles de données, du texte d’aide et des propriétés d’accessibilité aux composants de formulaires adaptatifs pendant la conversion.
+Automated forms conversion Service (AFCS) identifie et extrait les objets de formulaire des formulaires sources. Le mappeur sémantique aide le service à décider comment les objets extraits sont représentés dans un formulaire adaptatif. Par exemple, un formulaire source peut représenter une date de plusieurs façons différentes. Le mappeur sémantique permet de mapper toutes les représentations des dates du formulaire source avec les composants de date des formulaires adaptatifs. Le mappeur sémantique permet également au service de préconfigurer et d’appliquer des validations, des règles, des modèles de données, du texte d’aide et des propriétés d’accessibilité aux composants de formulaires adaptatifs pendant la conversion.
 
 ![](assets/meta-model.gif)
 
@@ -25,7 +25,7 @@ Le métamodèle est un schéma JSON. Avant de commencer, assurez-vous de bien m
 
 ## Métamodèle par défaut {#default-meta-model}
 
-Le service de conversion automatisée de formulaires comprend un métamodèle par défaut. Il s’agit d’un schéma JSON qui se trouve sur Adobe Cloud avec d’autres composants du service de conversion automatisée de formulaires. Une copie du métamodèle est disponible sur votre serveur AEM local à l’adresse suivante :  http://&lt;serveur>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. Vous pouvez également [cliquer ici](assets/en.globalschema.json) pour accéder au schéma de langue anglaise et le télécharger. Les métamodèles pour le [français](assets/fr.globalschema.json), l’[allemand](assets/de.globalschema.json), l’[espagnol](assets/es.globalschema.json), l’[italien](assets/it.globalschema.json) et le [portugais](assets/pt_br.globalschema.json) peuvent également être téléchargés.
+Le service Automated forms conversion (AFCS) possède un métamodèle par défaut. Il s’agit d’un schéma JSON qui réside sur Adobe Cloud avec d’autres composants du service Automated forms conversion (AFCS). Vous trouverez une copie du métamodèle sur votre serveur d’AEM local à l’adresse : http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. Vous pouvez également [cliquer ici](assets/en.globalschema.json) pour accéder au schéma de langue anglaise et le télécharger. Les métamodèles pour le [français](assets/fr.globalschema.json), l’[allemand](assets/de.globalschema.json), l’[espagnol](assets/es.globalschema.json), l’[italien](assets/it.globalschema.json) et le [portugais](assets/pt_br.globalschema.json) peuvent également être téléchargés.
 
 Le schéma du métamodèle dérive des entités de schéma figurant sur https://schema.org/docs/schemas.html. Il inclut notamment les entités Person, PostalAddress et LocalBusiness définies sur https://schema.org. Chaque entité du métamodèle correspond au type d’objet de schéma JSON. Le code suivant représente un exemple de structure de métamodèle :
 
@@ -120,7 +120,7 @@ Dans cet exemple, le service de conversion recherche les mots-clés suivants dan
 
 ### Propriétés du schéma JSON pour les champs de formulaires adaptatifs générés {#jsonschemaproperties}
 
-Le métamodèle prend en charge les propriétés communes du schéma JSON suivantes pour les champs de formulaires adaptatifs générés à l’aide du service de conversion automatisée de formulaires :
+Le métamodèle prend en charge les propriétés communes du schéma JSON suivantes pour les champs de formulaire adaptatif générés à l’aide du service Automated forms conversion (AFCS) :
 
 <table> 
  <tbody> 
@@ -164,7 +164,7 @@ Le métamodèle prend en charge les propriétés communes du schéma JSON suivan
 
 ### Recherche par mots-clés pour appliquer des propriétés aux champs de formulaires adaptatifs générés {#keywordsearch}
 
-Le service de conversion automatisée de formulaires effectue une recherche par mot-clé sur le formulaire source pendant la conversion. Après avoir filtré les champs qui répondent aux critères de recherche, le service de conversion applique les propriétés définies pour ces champs dans le métamodèle aux champs de formulaires adaptatifs générés.
+Le service Automated forms conversion (AFCS) effectue une recherche par mot-clé sur le formulaire source pendant la conversion. Après avoir filtré les champs qui répondent aux critères de recherche, le service de conversion applique les propriétés définies pour ces champs dans le métamodèle aux champs de formulaires adaptatifs générés.
 
 Les mots-clés sont référencés à l’aide de la propriété **aem:affKeyword**.
 
@@ -181,7 +181,7 @@ Dans cet exemple, le service de conversion utilise le texte dans **aem:affKeywor
 
 ### Propriétés supplémentaires pour les champs de formulaires adaptatifs générés {#additionalproperties}
 
-Vous pouvez utiliser la propriété **aem:afProperties** dans le métamodèle pour définir les propriétés supplémentaires suivantes pour les champs de formulaires adaptatifs générés à l’aide du service de conversion automatisée de formulaires :
+Vous pouvez utiliser la variable **aem:afProperties** dans le métamodèle pour définir les propriétés supplémentaires suivantes pour les champs de formulaires adaptatifs générés à l’aide du service Automated forms conversion (AFCS) :
 
 <table> 
  <tbody> 
@@ -217,7 +217,7 @@ Vous pouvez utiliser la propriété **aem:afProperties** dans le métamodèle po
 
 ## Créer un métamodèle personnalisé dans votre langue {#language-specific-meta-model}
 
-Vous pouvez créer un métamodèle spécifique à la langue. Ce métamodèle permet de créer des règles de mappage dans la langue de votre choix. Le service Conversion de formulaires automatisée vous permet de créer des métamodèles dans les langues suivantes :
+Vous pouvez créer un métamodèle spécifique à la langue. Ce métamodèle permet de créer des règles de mappage dans la langue de votre choix. Le service Automated forms conversion (AFCS) vous permet de créer des métamodèles dans les langues suivantes :
 
 * Anglais (en)
 * Français (fr)
@@ -258,9 +258,9 @@ L’image suivante présente des exemples de métamodèle de langue anglaise et 
 
 ## Modifier des champs de formulaires adaptatifs à l’aide d’un métamodèle personnalisé {#modify-adaptive-form-fields-using-custom-meta-model}
 
-Votre entreprise peut avoir des modèles et des validations en plus de ceux répertoriés dans le métamodèle par défaut. Vous pouvez étendre le métamodèle par défaut pour ajouter un modèle, des validations et des entités spécifiques à votre entreprise. Le service de conversion automatisée de formulaires applique le métamodèle personnalisé aux champs du formulaire pendant la conversion. Vous pouvez continuer à mettre à jour le métamodèle à mesure que de nouveaux modèles, validations et entités spécifiques à votre organisation sont découverts.
+Votre entreprise peut avoir des modèles et des validations en plus de ceux répertoriés dans le métamodèle par défaut. Vous pouvez étendre le métamodèle par défaut pour ajouter un modèle, des validations et des entités spécifiques à votre entreprise. Le service Automated forms conversion (AFCS) applique le métamodèle personnalisé aux champs de formulaire lors de la conversion. Vous pouvez continuer à mettre à jour le métamodèle à mesure que de nouveaux modèles, validations et entités spécifiques à votre organisation sont découverts.
 
-Le service de conversion automatisée de formulaires utilise un métamodèle par défaut enregistré à l’emplacement suivant pour mapper les champs de formulaire source aux champs de formulaire adaptatif pendant la conversion :
+Automated forms conversion Service (AFCS) utilise un métamodèle par défaut enregistré à l’emplacement suivant pour mapper les champs de formulaire source aux champs de formulaire adaptatif lors de la conversion :
 
 http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json
 

@@ -8,21 +8,21 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '1813'
-ht-degree: 100%
+source-wordcount: '1791'
+ht-degree: 92%
 
 ---
 
-# Questions fréquemment posées {#frequently-asked-questions}
+# Questions fréquentes{#frequently-asked-questions}
 
-1. **Quelle version d’AEM Forms le service de conversion automatisée de formulaires prend-il en charge ?**
-   <p>Le service de conversion automatisée de formulaires prend en charge AEM 6.4 Forms et AEM 6.5 Forms. Il fonctionne avec AEM Forms sur OSGi et AEM Forms sur JEE. En plus de l’instance d’auteur AEM, vous avez besoin du dernier package complémentaire AEM Forms pour utiliser le service. Pour obtenir des instructions détaillées, consultez la page <a href="configure-service.md">Configurer le service de conversion automatisée de formulaires</a>.</p> 
+1. **Quelle version d’AEM Forms le service Automated forms conversion (AFCS) prend-il en charge ?**
+   <p>Automated forms conversion Service (AFCS) prend en charge AEM 6.4 Forms et AEM 6.5 Forms. Il fonctionne avec AEM Forms sur OSGi et AEM Forms sur JEE. En plus de l’instance d’auteur AEM, vous avez besoin du dernier package complémentaire AEM Forms pour utiliser le service. Pour obtenir des instructions détaillées, consultez la page <a href="configure-service.md">Configurer le service de conversion automatisée de formulaires</a>.</p> 
     <br>
 
 1. **Le service peut-il être installé sur site ?**
-   <p>Adobe forme régulièrement les algorithmes d’intelligence artificielle et d’apprentissage automatique du service de conversion automatisée de formulaires avec de nouveaux ensembles de données pour améliorer la précision de la conversion. Les algorithmes mis à jour sont périodiquement déployés sur le service de conversion exécuté sur Adobe Cloud. Tous les clients du service bénéficient des algorithmes mis à jour. Ainsi, le déploiement central hébergé dans le cloud est le mieux adapté au service de conversion automatisée de formulaires afin d’améliorer l’apprentissage et, par extension, les services proposés aux clients.</p> 
+   <p>Adobe forme régulièrement des algorithmes d’intelligence artificielle et d’apprentissage automatique du service d’Automated forms conversion (AFCS) avec de nouveaux jeux de données afin d’améliorer la précision de conversion. Les algorithmes mis à jour sont périodiquement déployés sur le service de conversion exécuté sur Adobe Cloud. Tous les clients du service bénéficient des algorithmes mis à jour. Ainsi, le déploiement central hébergé dans le cloud est le mieux adapté aux services d’Automated forms conversion (AFCS) pour leur permettre d’apprendre en continu et d’offrir des améliorations à tous les clients.</p> 
     <p>Le service convertit les formulaires vierges en formulaires adaptatifs. Le service ne prend pas en charge les formulaires remplis et l’extraction de données à partir de formulaires remplis. Supprimez les données des formulaires remplis et supprimez ou mettez sur liste d’autorisation les informations confidentielles des formulaires avant de les envoyer au service de conversion.</p> <br>
 
 1. **Le service prend-il en charge tous les formats de formulaires PDF ? Quelles sont toutes les langues prises en charge ?**
@@ -83,7 +83,7 @@ Les raisons les plus courantes de l’échec de la conversion sont les suivantes
    <p>Le service ne convertit pas automatiquement les scripts des formulaires basés sur XFA ou des formulaires Acro en règles de formulaires adaptatifs correspondants. Vous (les auteurs de formulaires) pouvez utiliser l’<a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/rule-editor.html">éditeur de règles</a> pour ajouter de l’interactivité à un formulaire adaptatif.</p> <br>
 
 1. **Certains objets de formulaire ne sont pas convertis correctement en composants de formulaires adaptatifs. Comment résoudre le problème ?**
-   <p>Le service de conversion automatisée de formulaires se base sur un large éventail de formulaires. Les applications basées sur l’intelligence artificielle et l’apprentissage automatique sont toutefois limitées par leurs données et modèles d’apprentissage. Plusieurs types de champs, dispositions, modèles et contextes visibles par l’œil humain restent toutefois difficiles à identifier automatiquement. Le service peut ne pas identifier ces objets ou les reconnaître de manière incorrecte. Vous pouvez utiliser l’éditeur <a href="review-correct-ui-edited.md" target="_blank">de vérification et de correction</a> pour apporter les modifications nécessaires à la présentation familière basée sur le formulaire papier du formulaire d’entrée.</p> <br/>
+   <p>Le service Automated forms conversion (AFCS) est formé sur un grand ensemble de formulaires. Les applications basées sur l’intelligence artificielle et l’apprentissage automatique sont toutefois limitées par leurs données et modèles d’apprentissage. Plusieurs types de champs, dispositions, modèles et contextes visibles par l’œil humain restent toutefois difficiles à identifier automatiquement. Le service peut ne pas identifier ces objets ou les reconnaître de manière incorrecte. Vous pouvez utiliser l’éditeur <a href="review-correct-ui-edited.md" target="_blank">de vérification et de correction</a> pour apporter les modifications nécessaires à la mise en page familière basée sur le formulaire papier du formulaire d’entrée.</p> <br/>
 
 1. **Certaines corrections sont répétées sur plusieurs formulaires. Le service peut-il identifier et corriger toutes ces instances lors de futures conversions ?**
 
@@ -114,8 +114,8 @@ L’erreur ci-dessus se produit lorsque Boot Delegation n’est pas configurée 
 1. **Comment modifier automatiquement la casse du texte du formulaire adaptatif ?**
    <p>Vous pouvez utiliser l’éditeur de thèmes ou de styles de formulaires adaptatifs pour modifier la casse d’un champ. Par exemple, vous pouvez ouvrir l’éditeur de thèmes et définir la valeur de la propriété Casse de l’ensemble du texte du formulaire sur majuscules, minuscules ou casse mixte. Vous pouvez également utiliser l’option de remplacement de CSS dans l’éditeur de thèmes pour créer différents types de styles.</p>
 
-1. **Puis-je utiliser des balises de texte Adobe Sign avec le service de conversion automatisée de formulaires ?**
-   <p> Lorsque vous utilisez le service de conversion automatisée de formulaires pour convertir un formulaire PDF en formulaire adaptatif et que le formulaire PDF comporte des balises de texte Adobe Sign, ces balises sont converties en champs de formulaire adaptatif correspondants et les détails du signataire sont automatiquement renseignés.  Cette fonctionnalité est disponible uniquement pour les formulaires Acro. Les formulaires adaptatifs prennent en charge un nombre limité de champs Adobe Sign.</p>  </br>
+1. **Puis-je utiliser des balises de texte Adobe Sign avec le service Automated forms conversion (AFCS) ?**
+   <p> Lorsque vous utilisez Automated forms conversion Service (AFCS) pour convertir un formulaire de PDF en formulaire adaptatif et que le formulaire de PDF comporte des balises de texte Adobe Sign, ces balises sont converties en champs de formulaire adaptatif correspondants et les détails du signataire sont automatiquement renseignés.  Cette fonctionnalité est disponible uniquement pour les formulaires Acro. Les formulaires adaptatifs prennent en charge un nombre limité de champs Adobe Sign.</p>  </br>
 
 1. **Comment créer un formulaire PDF compatible avec Adobe Sign ?**
    </p>Pour créer un formulaire PDF compatible avec Adobe Sign :</p>

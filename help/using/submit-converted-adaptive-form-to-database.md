@@ -8,16 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 5447b66f-9fac-476f-ab8a-9290bb1f9c0d
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '1670'
-ht-degree: 100%
+source-wordcount: '1672'
+ht-degree: 96%
 
 ---
 
 # Intégrer un formulaire adaptatif à une base de données à l’aide d’un workflow AEM {#submit-forms-to-database-using-forms-portal}
 
-Le service de conversion automatisée de formulaires vous permet de convertir un formulaire PDF non interactif, un formulaire Acro ou un formulaire PDF basé sur XFA en un formulaire adaptatif. Lors du lancement du processus de conversion, vous avez la possibilité de générer un formulaire adaptatif avec ou sans liaison de données.
+Le service Automated forms conversion (AFCS) vous permet de convertir un formulaire de PDF non interactif, un formulaire Acro ou un formulaire de PDF basé sur XFA en un formulaire adaptatif. Lors du lancement du processus de conversion, vous avez la possibilité de générer un formulaire adaptatif avec ou sans liaison de données.
 
 Si vous choisissez de générer un formulaire adaptatif sans liaison de données, vous pouvez incorporer le formulaire adaptatif converti à un modèle de données de formulaire, un schéma XML ou un schéma JSON après la conversion. Pour le modèle de données de formulaire, vous devez lier manuellement les champs de formulaires adaptatifs au modèle de données de formulaire. Toutefois, si vous générez un formulaire adaptatif avec des liaisons de données, le service de conversion associe automatiquement le ou les formulaires adaptatifs à un schéma JSON et crée une liaison de données entre les champs disponibles dans le formulaire adaptatif et le schéma JSON. Vous pouvez ensuite intégrer le formulaire adaptatif à une base de données de votre choix, remplir les données du formulaire et les envoyer à la base de données. De même, après une intégration réussie à la base de données, vous pouvez configurer les champs du formulaire adaptatif converti pour récupérer les valeurs de la base de données et préremplir les champs du formulaire adaptatif.
 
@@ -43,7 +43,7 @@ Pour télécharger l’exemple de formulaire de contact, cliquez sur le lien sui
 
 [Obtenir le fichier](assets/sample_contact_us_form.pdf)
 
-Le fichier PDF sert d’entrée au service de conversion automatisée de formulaires. Le service convertit ce fichier en un formulaire adaptatif. L’image suivante montre un exemple de formulaire de contact au format PDF.
+Le fichier PDF sert d’entrée au service Automated forms conversion (AFCS). Le service convertit ce fichier en un formulaire adaptatif. L’image suivante montre un exemple de formulaire de contact au format PDF.
 
 ![exemple de formulaire de demande de prêt](assets/sample_contact_us_form.png)
 
@@ -184,7 +184,7 @@ Pour télécharger l’exemple de modèle de données de formulaire, cliquez sur
 
 ## Générer des formulaires adaptatifs avec la liaison JSON {#generate-adaptive-forms-with-json-binding}
 
-Utilisez le [service de conversion automatisée de formulaires pour convertir](convert-existing-forms-to-adaptive-forms.md) le [formulaire de contact](#sample-adaptive-form) en formulaire adaptatif avec liaison de données. Assurez-vous de ne pas cocher la case **[!UICONTROL Generate adaptive form(s) without data bindings]** (Générer un ou plusieurs formulaires adaptatifs sans liaison de données) lors de la génération du formulaire adaptatif.
+Utilisez la variable [Service Automated forms conversion (AFCS) à convertir](convert-existing-forms-to-adaptive-forms.md) la valeur [Formulaire de contact](#sample-adaptive-form) à un formulaire adaptatif avec liaison de données. Assurez-vous de ne pas cocher la case **[!UICONTROL Generate adaptive form(s) without data bindings]** (Générer un ou plusieurs formulaires adaptatifs sans liaison de données) lors de la génération du formulaire adaptatif.
 
 ![Formulaire adaptatif avec liaison JSON](assets/generate_af_with_data_bindings.png)
 

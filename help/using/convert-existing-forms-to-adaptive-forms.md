@@ -1,27 +1,28 @@
 ---
 title: Convertir des formulaires PDF en formulaires adaptatifs
 seo-title: Convert PDF forms to adaptive forms
-description: Exécuter le service de conversion automatisée de formulaires pour convertir des formulaires PDF en formulaires adaptatifs
-seo-description: Run the Automated Forms Conversion service to convert PDF forms to adaptive forms
+description: Exécution du service Automated forms conversion (AFCS) pour convertir des PDF forms en formulaires adaptatifs
+seo-description: Run the Automated Forms Conversion service (AFCS) to convert PDF forms to adaptive forms
 contentOwner: khsingh
 topic-tags: forms
 feature: Adaptive Forms, Foundation Components
-source-git-commit: 444cc37ec6fa2af2d8d2952efd18368a5725e881
+exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '1721'
-ht-degree: 100%
+source-wordcount: '1725'
+ht-degree: 95%
 
 ---
 
 # Convertir des formulaires PDF en formulaires adaptatifs  {#convert-print-forms-to-adaptive-forms}
 
-Le service de conversion automatisée de formulaires AEM Forms, optimisé par Adobe Sensei, convertit automatiquement vos formulaires PDF en formulaires adaptatifs compatibles avec divers appareils et réactifs. Que vous utilisiez des formulaires PDF non interactifs, des formulaires Acro ou des formulaires PDF basés sur XFA, le service de conversion automatisée de formulaires peut facilement convertir ces formulaires en formulaires adaptatifs. Pour plus d’informations sur les fonctionnalités, le processus de conversion et les informations d’intégration, consultez la page [Service de conversion automatisée de formulaires](introduction.md).
+Le service AEM Forms Automated forms conversion (AFCS), optimisé par Adobe Sensei, convertit automatiquement vos PDF forms en formulaires adaptatifs réactifs et compatibles avec les appareils. Que vous utilisiez des PDF forms non interactifs, Acro Forms ou basés sur XFA, le service d’Automated forms conversion (AFCS) peut facilement convertir ces formulaires en formulaires adaptatifs. Pour plus d’informations sur les fonctionnalités, le processus de conversion et les informations d’intégration, consultez la page [Service de conversion automatisée de formulaires](introduction.md).
 
 ## Prérequis {#pre-requisites}
 
 * [**Configuration du service de conversion**](configure-service.md)
 
-* **Préparation des [modèles](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/template-editor.html) à appliquer aux formulaires convertis :** l’utilisation d’un modèle vous permet d’harmoniser l’identité graphique de tous les formulaires adaptatifs. De plus, le service de conversion automatisée de formulaires n’extrait et n’utilise pas l’en-tête et le pied de page des documents PDF sources. Vous pouvez utiliser des modèles de formulaires adaptatifs pour spécifier l’en-tête et le pied de page. L’en-tête et le pied de page spécifiés dans le modèle sont appliqués au formulaire adaptatif lors de la conversion. Lorsque vous créez un dossier pour les modèles, sélectionnez l’option **[!UICONTROL Parcourir les configurations]** pour tous les utilisateurs.
+* **Préparation des [modèles](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/template-editor.html) à appliquer aux formulaires convertis :** l’utilisation d’un modèle vous permet d’harmoniser l’identité graphique de tous les formulaires adaptatifs. De plus, le service Automated forms conversion (AFCS) n’extrait pas et n’utilise pas l’en-tête et le pied de page des documents du PDF source. Vous pouvez utiliser des modèles de formulaires adaptatifs pour spécifier l’en-tête et le pied de page. L’en-tête et le pied de page spécifiés dans le modèle sont appliqués au formulaire adaptatif lors de la conversion. Lorsque vous créez un dossier pour les modèles, sélectionnez l’option **[!UICONTROL Parcourir les configurations]** pour tous les utilisateurs.
 
 * **Préparation des [thèmes](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/themes.html) à appliquer aux formulaires convertis :** l’utilisation d’un thème vous permet d’harmoniser le style de tous les formulaires adaptatifs de votre entreprise.
 

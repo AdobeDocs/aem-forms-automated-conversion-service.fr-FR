@@ -1,6 +1,6 @@
 ---
 title: Vérifier et corriger les formulaires convertis
-description: Vérifier et corriger les formulaires adaptatifs convertis par le service de conversion automatisée de formulaires.
+description: Examinez et corrigez les formulaires adaptatifs convertis par le service Automated forms conversion (AFCS).
 solution: Experience Manager Forms
 feature: Adaptive Forms, Foundation Components
 topic: Administration
@@ -8,16 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 64330fa2-aa9d-4ba4-96df-b75deed3e693
-source-git-commit: 919886cda2ec50ddb9b403cbb0e92fec2821c10e
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '2561'
-ht-degree: 100%
+source-wordcount: '2563'
+ht-degree: 98%
 
 ---
 
 # Vérifier et corriger les formulaires convertis{#review-and-correct-converted-forms}
 
-Le service de conversion automatisée de formulaires AEM Forms identifie les champs, le contenu et la mise en page du document PDF d’entrée et convertit le document PDF en un formulaire adaptatif. Le formulaire adaptatif de sortie peut avoir quelques champs manquants ou mal convertis. Vous pouvez utiliser l’éditeur de vérification et de correction pour améliorer les champs identifiés et générer à nouveau le formulaire adaptatif pour vous rapprocher du résultat escompté. Après la première conversion, vous pouvez ouvrir le document PDF d’entrée dans l’éditeur pour :
+Le service AEM Forms Automated forms conversion (AFCS) identifie les champs, le contenu et la mise en page du document de PDF d’entrée et convertit le document de PDF en formulaire adaptatif. Le formulaire adaptatif de sortie peut avoir quelques champs manquants ou mal convertis. Vous pouvez utiliser l’éditeur de vérification et de correction pour améliorer les champs identifiés et générer à nouveau le formulaire adaptatif pour vous rapprocher du résultat escompté. Après la première conversion, vous pouvez ouvrir le document PDF d’entrée dans l’éditeur pour :
 
 * Afficher tous les champs et contenus identifiés lors de la conversion
 * Identifier les champs et le contenu non pris en compte lors de la conversion
