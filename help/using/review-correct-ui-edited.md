@@ -1,6 +1,6 @@
 ---
 title: Vérifier et corriger les formulaires convertis
-description: Examinez et corrigez les formulaires adaptatifs convertis par le service Automated forms conversion (AFCS).
+description: Vérifiez et corrigez les formulaires adaptatifs convertis par Automated Forms Conversion service (AFCS).
 solution: Experience Manager Forms
 feature: Adaptive Forms, Foundation Components
 topic: Administration
@@ -9,15 +9,15 @@ role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 64330fa2-aa9d-4ba4-96df-b75deed3e693
 source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2563'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Vérifier et corriger les formulaires convertis{#review-and-correct-converted-forms}
 
-Le service AEM Forms Automated forms conversion (AFCS) identifie les champs, le contenu et la mise en page du document de PDF d’entrée et convertit le document de PDF en formulaire adaptatif. Le formulaire adaptatif de sortie peut avoir quelques champs manquants ou mal convertis. Vous pouvez utiliser l’éditeur de vérification et de correction pour améliorer les champs identifiés et générer à nouveau le formulaire adaptatif pour vous rapprocher du résultat escompté. Après la première conversion, vous pouvez ouvrir le document PDF d’entrée dans l’éditeur pour :
+Automated Forms Conversion service (AFCS) AEM Forms identifie les champs, le contenu et la disposition du document PDF d’entrée, puis le convertit en un formulaire adaptatif. Le formulaire adaptatif de sortie peut avoir quelques champs manquants ou mal convertis. Vous pouvez utiliser l’éditeur de vérification et de correction pour améliorer les champs identifiés et générer à nouveau le formulaire adaptatif pour vous rapprocher du résultat escompté. Après la première conversion, vous pouvez ouvrir le document PDF d’entrée dans l’éditeur pour :
 
 * Afficher tous les champs et contenus identifiés lors de la conversion
 * Identifier les champs et le contenu non pris en compte lors de la conversion

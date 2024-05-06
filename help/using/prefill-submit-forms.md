@@ -1,6 +1,6 @@
 ---
-title: Processus recommandés de préremplissage et d’envoi de formulaires adaptatifs sur la base de sources de données
-description: Processus de préremplissage et d’envoi de formulaires adaptatifs basés sur des sources de données générés à l’aide d’Automated forms conversion Service (AFCS).
+title: Workflows recommandés de préremplissage et d’envoi de formulaires adaptatifs sur la base de sources de données
+description: Workflows de préremplissage et d’envoi de formulaires adaptatifs sur la base de sources de données générés à l’aide de Automated Forms Conversion service (AFCS).
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
@@ -10,15 +10,15 @@ level: Beginner, Intermediate
 contentOwner: khsingh
 exl-id: 5deef8f5-5098-47c1-b696-b2db59e92931
 source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2534'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 # Workflows recommandés de préremplissage et d’envoi de formulaires adaptatifs sur la base de sources de données {#recommended-data-source-btased-prefill-and-submit-workflows-for-adaptive-forms}
 
-Vous pouvez utiliser l’une des sources de données suivantes avec des formulaires adaptatifs convertis à l’aide du service Automated forms conversion (AFCS) :
+Vous pouvez utiliser l’une des sources de données suivantes avec des formulaires adaptatifs convertis à l’aide de Automated Forms Conversion service (AFCS) :
 
 * modèle de données de formulaire, OData, ou tout autre service tiers ;
 * schéma JSON ;
@@ -37,12 +37,12 @@ Cet article décrit les processus recommandés pour préremplir les valeurs de c
   <tr> 
    <td><p>modèle de données de formulaire, OData, ou tout autre service tiers ;</p></td> 
    <td> 
-    <p><strong>Option 1</strong> : vous sélectionnez le modèle de données de formulaire, OData, ou tout autre service tiers comme source de données. You <a href="#generate-adaptive-forms-with-no-data-binding">générer un formulaire adaptatif sans liaison de données ;</a> en utilisant le service Automated forms conversion (AFCS). Vous liez manuellement les champs de formulaire adaptatif aux entités de modèle de données de formulaire et utilisez l’option Form Data Model Prefill Service (Service de préremplissage de modèle de données de formulaire) pour préremplir les valeurs de champ. Vous utilisez l’option Submit using Form Data Model (Envoyer à l’aide du modèle de données de formulaire) pour envoyer le formulaire adaptatif.</p></td> 
+    <p><strong>Option 1</strong> : vous sélectionnez le modèle de données de formulaire, OData, ou tout autre service tiers comme source de données. Vous <a href="#generate-adaptive-forms-with-no-data-binding">générez un formulaire adaptatif sans liaison de données</a> à l’aide de Automated Forms Conversion service (AFCS). Vous liez manuellement les champs de formulaire adaptatif aux entités de modèle de données de formulaire et utilisez l’option Form Data Model Prefill Service (Service de préremplissage de modèle de données de formulaire) pour préremplir les valeurs de champ. Vous utilisez l’option Submit using Form Data Model (Envoyer à l’aide du modèle de données de formulaire) pour envoyer le formulaire adaptatif.</p></td> 
   </tr>
   <tr> 
    <td></td> 
    <td> 
-   <p><strong>Option 2</strong> : vous sélectionnez le modèle de données de formulaire, OData, ou tout autre service tiers comme source de données. You <a href="#generate-adaptive-forms-with-no-data-binding">générer un formulaire adaptatif sans liaison de données ;</a> en utilisant le service Automated forms conversion (AFCS). Vous liez les champs de formulaire adaptatif à l’aide de l’éditeur de règles pour préremplir les valeurs de champs. Si nécessaire, modifiez les valeurs de champ et envoyez les données au référentiel crx-repository.</p>
+   <p><strong>Option 2</strong> : vous sélectionnez le modèle de données de formulaire, OData, ou tout autre service tiers comme source de données. Vous <a href="#generate-adaptive-forms-with-no-data-binding">générez un formulaire adaptatif sans liaison de données</a> à l’aide de Automated Forms Conversion service (AFCS). Vous liez les champs de formulaire adaptatif à l’aide de l’éditeur de règles pour préremplir les valeurs de champs. Si nécessaire, modifiez les valeurs de champ et envoyez les données au référentiel crx-repository.</p>
     </td> 
   </tr>
   <tr> 
@@ -58,7 +58,7 @@ Cet article décrit les processus recommandés pour préremplir les valeurs de c
   <tr>
   <td></td> 
    <td> 
-    <p><strong>Option 1</strong>: vous <a href="#generate-adaptive-forms-with-no-data-binding">générer un formulaire adaptatif sans liaison de données ;</a> à l’aide du service Automated forms conversion (AFCS) et configurez le schéma JSON comme source de données. Vous liez manuellement les champs de formulaire adaptatif au schéma JSON et <a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">utilisez l’un des protocoles pris en charge</a> pour préremplir les valeurs de champ. Si nécessaire, modifiez les valeurs de champ et envoyez les données au référentiel crx-repository.</p></td> 
+    <p><strong>Option 1</strong> : vous <a href="#generate-adaptive-forms-with-no-data-binding">générez un formulaire adaptatif sans liaison de données</a> à l’aide de Automated Forms Conversion service (AFCS) et configurez le schéma JSON comme source de données. Vous liez manuellement les champs de formulaire adaptatif au schéma JSON et <a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">utilisez l’un des protocoles pris en charge</a> pour préremplir les valeurs de champ. Si nécessaire, modifiez les valeurs de champ et envoyez les données au référentiel crx-repository.</p></td> 
   </tr>
   <tr>
   <td></td> 
@@ -68,7 +68,7 @@ Cet article décrit les processus recommandés pour préremplir les valeurs de c
   <tr>
   <td></td> 
    <td> 
-    <p><strong>Option 2</strong>: vous <a href="#generate-adaptive-forms-with-json-binding">générer un formulaire adaptatif avec liaison de données JSON ;</a> en utilisant le service Automated forms conversion (AFCS). Le service de préremplissage et la fonction d’envoi de formulaire fonctionnent sans problème. Aucune étape de configuration n’est nécessaire.</p> </td> 
+    <p><strong>Option 2</strong> : vous <a href="#generate-adaptive-forms-with-json-binding">générez un formulaire adaptatif avec liaison de données JSON</a> à l’aide de Automated Forms Conversion service (AFCS). Le service de préremplissage et la fonction d’envoi de formulaire fonctionnent sans problème. Aucune étape de configuration n’est nécessaire.</p> </td> 
   </tr>
    <tr>
   <td></td> 
@@ -78,7 +78,7 @@ Cet article décrit les processus recommandés pour préremplir les valeurs de c
   <tr>
   <td><p>schéma XSD.</p></td> 
    <td> 
-    <p>Vous sélectionnez le schéma XSD comme source de données. Selon la source de données sélectionnée, vous <a href="#generate-adaptive-forms-with-no-data-binding">générer un formulaire adaptatif sans liaison de données ;</a> à l’aide du service Automated forms conversion (AFCS) et configurez le schéma XSD comme source de données. Vous liez manuellement les champs de formulaire adaptatif au schéma XSD et <a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">utilisez l’un des protocoles pris en charge</a> pour préremplir les valeurs de champ. Si nécessaire, modifiez les valeurs de champ et envoyez les données au référentiel crx-repository.</p>
+    <p>Vous sélectionnez le schéma XSD comme source de données. Selon la source de données sélectionnée, vous <a href="#generate-adaptive-forms-with-no-data-binding">générez un formulaire adaptatif sans liaison de données</a> à l’aide de Automated Forms Conversion service (AFCS) et configurez le schéma XSD comme source de données. Vous liez manuellement les champs de formulaire adaptatif au schéma XSD et <a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">utilisez l’un des protocoles pris en charge</a> pour préremplir les valeurs de champ. Si nécessaire, modifiez les valeurs de champ et envoyez les données au référentiel crx-repository.</p>
     </td> 
   </tr>
   <tr>
@@ -91,7 +91,7 @@ Cet article décrit les processus recommandés pour préremplir les valeurs de c
 </table>
 
 
-Pour plus d’informations sur le service Automated forms conversion (AFCS), consultez les articles suivants :
+Pour plus d’informations sur Automated Forms Conversion service (AFCS), consultez les articles suivants :
 
 * [Présentation du service de conversion automatisée de formulaires](introduction.md)
 * [Configuration du service de conversion automatisée de formulaires](configure-service.md)
@@ -102,8 +102,8 @@ Ces articles s’adressent à un public qui possède une connaissance de base de
 
 ## Prérequis {#pre-requisites}
 
-* Configuration d’une [instance d’auteur AEM](https://helpx.adobe.com/fr/experience-manager/6-5/sites/deploying/using/deploy.html)
-* Configurer [Service Automated forms conversion (AFCS) sur l’instance d’auteur AEM](configure-service.md)
+* Configurer une [instance de création AEM](https://helpx.adobe.com/fr/experience-manager/6-5/sites/deploying/using/deploy.html)
+* Configurer [Automated Forms Conversion service (AFCS) sur l’instance de création AEM](configure-service.md)
 
 ## Exemple de formulaire adaptatif {#sample-adaptive-form}
 
@@ -113,7 +113,7 @@ Exemple de formulaire de demande de prêt
 
 [Obtenir le fichier](assets/sample_loan_application_form.pdf)
 
-Le fichier PDF sert d’entrée au service Automated forms conversion (AFCS). Le service convertit ce fichier en un formulaire adaptatif. L’image suivante montre un exemple de formulaire de demande de prêt au format PDF.
+Le fichier PDF sert d’entrée à Automated Forms Conversion service (AFCS). Le service convertit ce fichier en un formulaire adaptatif. L’image suivante montre un exemple de formulaire de demande de prêt au format PDF.
 
 ![exemple de formulaire de demande de prêt](assets/sample_form_new.png)
 
@@ -236,12 +236,12 @@ Après avoir généré un formulaire adaptatif sans liaison de données, sélect
 * [schéma XSD.](#xsddatasource)
 
 >[!NOTE]
-> Si le formulaire adaptatif que vous convertissez à l’aide du service Automated forms conversion (AFCS) contient plusieurs champs portant le même nom, assurez-vous que ces champs sont liés aux entités de source de données afin d’éviter une perte de données possible lors de l’envoi.
+> Si le formulaire adaptatif que vous convertissez à l’aide de Automated Forms Conversion service (AFCS) contient plusieurs champs portant le même nom, assurez-vous que ces champs sont liés aux entités de source de données pour éviter une éventuelle perte de données lors de l’envoi.
 >
 
 ### Utiliser la base de données, OData, ou tout autre service tiers comme source de données {#sqldatasource}
 
-Cas d’utilisation : vous générez un formulaire adaptatif sans liaison de données à l’aide du service Automated forms conversion (AFCS) et configurez la base de données MYSQL comme source de données. Vous liez manuellement les champs de formulaire adaptatif aux entités de modèle de données de formulaire et utilisez l’option **[!UICONTROL Form Data Model Prefill Service]** (Service de préremplissage de modèle de données de formulaire) pour préremplir les valeurs de champ. Vous utilisez l’option **[!UICONTROL Submit using Form Data Model]** (Envoyer à l’aide du modèle de données de formulaire) pour envoyer le formulaire adaptatif.
+Cas d’utilisation : vous générez un formulaire adaptatif sans liaison de données à l’aide de Automated Forms Conversion service (AFCS) et configurez la base de données MYSQL comme source de données. Vous liez manuellement les champs de formulaire adaptatif aux entités de modèle de données de formulaire et utilisez l’option **[!UICONTROL Form Data Model Prefill Service]** (Service de préremplissage de modèle de données de formulaire) pour préremplir les valeurs de champ. Vous utilisez l’option **[!UICONTROL Submit using Form Data Model]** (Envoyer à l’aide du modèle de données de formulaire) pour envoyer le formulaire adaptatif.
 
 Avant de mettre en pratique le cas d’utilisation, procédez aux étapes suivantes :
 
@@ -281,7 +281,7 @@ Procédez comme suit :
 1. Appuyez sur **[!UICONTROL Preview]** (Aperçu) pour afficher les valeurs de champs de formulaires adaptatifs préremplies.
 1. Si nécessaire, modifiez les valeurs de champ et envoyez le formulaire adaptatif. Les valeurs de champ sont envoyées à la base de données MySQL. Vous pouvez actualiser le tableau **applicant** dans la base de données pour afficher les valeurs mises à jour dans le tableau.
 
-**Cas pratique :** Vous générez un formulaire adaptatif sans liaison de données à l’aide du service Automated forms conversion (AFCS) et configurez la base de données MYSQL comme source de données. Vous liez les champs de formulaire adaptatif à l’aide de l’éditeur de règles pour préremplir les valeurs de champs. Si nécessaire, modifiez les valeurs de champ et envoyez les données au référentiel crx-repository.
+**Cas d’utilisation :** vous générez un formulaire adaptatif sans liaison de données à l’aide de Automated Forms Conversion service (AFCS) et configurez la base de données MYSQL comme source de données. Vous liez les champs de formulaire adaptatif à l’aide de l’éditeur de règles pour préremplir les valeurs de champs. Si nécessaire, modifiez les valeurs de champ et envoyez les données au référentiel crx-repository.
 
 Exécutez les étapes suivantes pour utiliser l’[éditeur de règles](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/rule-editor.html) afin d’amener le service de modèle de données de formulaire à lier les champs et à préremplir les valeurs dans un formulaire adaptatif :
 
@@ -323,7 +323,7 @@ Exécutez les étapes suivantes pour utiliser l’[éditeur de règles](https://
 
 ### Utiliser le schéma JSON comme source de données {#jsondatasource}
 
-**Cas pratique :** Vous générez un formulaire adaptatif sans liaison de données à l’aide du service Automated forms conversion (AFCS) et configurez le schéma JSON comme source de données. Vous liez manuellement les champs de formulaire adaptatif au schéma JSON et utilisez l’option **Preview with data** (Aperçu avec données) pour préremplir les valeurs de champ. Si nécessaire, modifiez les valeurs de champ et envoyez les données au référentiel crx-repository.
+**Cas d’utilisation** : vous générez un formulaire adaptatif sans liaison de données à l’aide de Automated Forms Conversion service (AFCS) et configurez le schéma JSON comme source de données. Vous liez manuellement les champs de formulaire adaptatif au schéma JSON et utilisez l’option **Preview with data** (Aperçu avec données) pour préremplir les valeurs de champ. Si nécessaire, modifiez les valeurs de champ et envoyez les données au référentiel crx-repository.
 
 Avant de mettre en pratique le cas d’utilisation, assurez-vous de disposer des éléments suivants :
 
@@ -351,7 +351,7 @@ Procédez comme suit :
 
 ### Utiliser le schéma XSD comme source de données {#xsddatasource}
 
-**Cas pratique :** Vous générez un formulaire adaptatif sans liaison de données à l’aide du service Automated forms conversion (AFCS) et configurez le schéma XSD comme source de données. Vous liez manuellement les champs de formulaire adaptatif au schéma XSD et utilisez l’option **Preview with data** (Aperçu avec données) pour préremplir les valeurs de champ. Si nécessaire, modifiez les valeurs de champ et envoyez les données au référentiel crx-repository.
+**Cas d’utilisation** : vous générez un formulaire adaptatif sans liaison de données à l’aide de Automated Forms Conversion service (AFCS) et configurez le schéma XSD comme source de données. Vous liez manuellement les champs de formulaire adaptatif au schéma XSD et utilisez l’option **Preview with data** (Aperçu avec données) pour préremplir les valeurs de champ. Si nécessaire, modifiez les valeurs de champ et envoyez les données au référentiel crx-repository.
 
 Avant de mettre en pratique le cas d’utilisation, assurez-vous de disposer des éléments suivants :
 
@@ -379,13 +379,13 @@ Dans le champ Bind Reference (Référence de liaison), sélectionnez **Applicant
 
 ## Générer des formulaires adaptatifs avec la liaison JSON {#generate-adaptive-forms-with-json-binding}
 
-Utilisez la variable [Service Automated forms conversion (AFCS) à convertir](convert-existing-forms-to-adaptive-forms.md) la valeur [exemple de formulaire de demande de prêt](#sample-adaptive-form) à un formulaire adaptatif avec liaison de données. Assurez-vous de ne pas cocher la case **[!UICONTROL Generate adaptive form(s) without data bindings]** (Générer un ou plusieurs formulaires adaptatifs sans liaison de données) lors de la génération du formulaire adaptatif.
+Utilisez [Automated Forms Conversion service pour convertir](convert-existing-forms-to-adaptive-forms.md) l’[exemple de formulaire de demande de prêt](#sample-adaptive-form) en formulaire adaptatif avec liaison de données. Assurez-vous de ne pas cocher la case **[!UICONTROL Generate adaptive form(s) without data bindings]** (Générer un ou plusieurs formulaires adaptatifs sans liaison de données) lors de la génération du formulaire adaptatif.
 
 ![Formulaire adaptatif avec liaison JSON](assets/generate_af_with_data_bindings.png)
 
 ### Utiliser le schéma JSON comme source de données {#jsonwithdatabinding}
 
-**Cas pratique :** Vous générez un formulaire adaptatif avec liaison de données JSON à l’aide du service Automated forms conversion (AFCS). Le service de préremplissage et la fonction d’envoi de formulaire fonctionnent sans problème. Aucune étape de configuration n’est nécessaire.
+**Cas d’utilisation** : vous générez un formulaire adaptatif avec liaison de données JSON à l’aide de Automated Forms Conversion service (AFCS). Le service de préremplissage et la fonction d’envoi de formulaire fonctionnent sans problème. Aucune étape de configuration n’est nécessaire.
 
 Avant de mettre en pratique le cas d’utilisation, assurez-vous de disposer d’[un formulaire adaptatif avec liaison de données](#generate-adaptive-forms-with-json-binding).
 

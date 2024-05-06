@@ -1,5 +1,5 @@
 ---
-title: Présentation du service automated forms conversion (AFCS)
+title: Présentation de Automated Forms Conversion Service (AFCS)
 description: Accélérer la conversion des formulaires imprimés en formulaires adaptatifs
 solution: Experience Manager Forms
 feature: Adaptive Forms, Foundation Components
@@ -9,15 +9,15 @@ role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
 source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '711'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Service Automated forms conversion (AFCS) {#introduction-to-automated-forms-conversion-service}
+# Automated Forms Conversion service (AFCS) {#introduction-to-automated-forms-conversion-service}
 
-Le service Automated forms conversion (AFCS) permet d’accélérer la numérisation et la modernisation de l’expérience de capture de données grâce à la conversion automatisée de PDF forms en formulaires adaptatifs. Ce service, optimisé par Adobe Sensei, convertit automatiquement vos formulaires PDF en formulaires adaptatifs réactifs, basés sur HTML5 et compatibles avec divers appareils. Tout en tirant parti des investissements existants dans les formulaires PDF et XFA, le service applique également les validations, le style et la mise en page appropriés aux champs de formulaires adaptatifs lors de la conversion. Le service aide à :
+Automated Forms Conversion service (AFCS) permet d’accélérer la numérisation et la modernisation de l’expérience de capture de données grâce à la conversion automatisée de formulaires PDF en formulaires adaptatifs. Ce service, optimisé par Adobe Sensei, convertit automatiquement vos formulaires PDF en formulaires adaptatifs réactifs, basés sur HTML5 et compatibles avec divers appareils. Tout en tirant parti des investissements existants dans les formulaires PDF et XFA, le service applique également les validations, le style et la mise en page appropriés aux champs de formulaires adaptatifs lors de la conversion. Le service aide à :
 
 * réduire les efforts manuels requis pour la conversion de formulaires imprimés en formulaires adaptatifs ;
 * appliquer des modèles et des validations adaptés lors de la conversion ;
@@ -43,13 +43,13 @@ Le service peut convertir des formulaires en anglais, français, allemand, espag
 
 ## Processus de conversion  {#conversion-workflow}
 
-Le service Automated forms conversion (AFCS) s’exécute sur Adobe Cloud. Connectez votre instance AEM au service, téléchargez des formulaires sur votre instance AEM et lancez la conversion. Le processus de conversion est détaillé ci-dessous :
+Automated Forms Conversion service (AFCS) s’exécute sur Adobe Cloud. Connectez votre instance AEM au service, téléchargez des formulaires sur votre instance AEM et lancez la conversion. Le processus de conversion est détaillé ci-dessous :
 
 ![Processus](assets/conversion-workflow.png)
 
 ### 1. Configurer l’environnement {#set-up-the-environment}
 
-Le service Automated forms conversion (AFCS) s’exécute sur Adobe Cloud. [Configurez le compte Adobe I/O de votre entreprise et connectez votre instance AEM locale](configure-service.md) au service de conversion exécuté sur Adobe Cloud.
+Automated Forms Conversion service (AFCS) s’exécute sur Adobe Cloud. [Configurez le compte Adobe I/O de votre entreprise et connectez votre instance AEM locale](configure-service.md) au service de conversion exécuté sur Adobe Cloud.
 
 ### 2. Convertir les formulaires PDF en formulaires adaptatifs {#use-the-conversion-service}
 

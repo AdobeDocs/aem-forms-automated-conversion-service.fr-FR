@@ -1,6 +1,6 @@
 ---
 title: Bonnes pratiques et remarques
-description: Bonnes pratiques et remarques concernant le service Automated forms conversion (AFCS)
+description: Bonnes pratiques et remarques relatives à Automated Forms Conversion service (AFCS)
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
@@ -9,15 +9,15 @@ role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
 source-git-commit: 4b227a2cd0253b8ab471007b41787de60c2a1851
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1229'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Bonnes pratiques et modèles complexes connus {#Best-practices-and-considerations2}
 
-Ce document fournit des instructions et des recommandations dont peuvent bénéficier l’administrateur, les auteurs et les développeurs de formulaires lors de leur utilisation [!DNL Automated Forms Conversion service] (AFCS). Il décrit les bonnes pratiques, de la préparation des formulaires sources à la correction des modèles complexes qui nécessitent un effort supplémentaire pour la conversion automatisée. Ces bonnes pratiques contribuent globalement aux performances globales et au rendement du [!DNL Automated Forms Conversion service] (AFCS).
+Ce document fournit des instructions et des recommandations dont peuvent bénéficier les personnes affectées à l’administration, à la création et au développement de formulaires dans le cadre de l’utilisation de [!DNL Automated Forms Conversion service] (AFCS). Il décrit les bonnes pratiques, de la préparation des formulaires sources à la correction des modèles complexes qui nécessitent un effort supplémentaire pour la conversion automatisée. Ces bonnes pratiques contribuent globalement aux performances globales et au rendement de [!DNL Automated Forms Conversion service] (AFCS).
 
 ## Bonnes pratiques
 

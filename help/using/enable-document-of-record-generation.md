@@ -11,9 +11,9 @@ page-status-flag: never-activated
 contentOwner: khsingh
 exl-id: c24313cd-2b9b-4209-9505-a8e14d8dc530
 source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '939'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ La mise en page du document d’enregistrement suit un modèle de base. Pour gé
 
 Pour de plus amples informations sur la génération d’un document d’enregistrement, consultez la page [Générer un document d’enregistrement pour les formulaires adaptatifs](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.html).
 
-La variable [Service Automated forms conversion (AFCS)](/help/using/introduction.md) convertit les formulaires sources suivants en formulaires adaptatifs :
+[Automated Forms Conversion service (AFCS)](/help/using/introduction.md) convertit les formulaires sources suivants en formulaires adaptatifs :
 
 * formulaires PDF non interactifs ;
 * formulaires Acro ;
@@ -87,7 +87,7 @@ Cet article décrit les méthodes recommandées pour générer un document d’e
 
 ## Générer un document d’enregistrement pour les formulaires PDF non interactifs {#generate-document-of-record-non-interactive-pdf}
 
-Si vous utilisez un formulaire de PDF non interactif comme formulaire source pour Automated forms conversion Service (AFCS), vous pouvez :
+Si vous utilisez un formulaire PDF non interactif comme formulaire source pour Automated Forms Conversion service (AFCS), vous pouvez :
 
 * activer la génération d’un document d’enregistrement avant la conversion de formulaire adaptatif pour générer un document d’enregistrement à l’aide d’un modèle par défaut ; ou
 * modifier les propriétés du formulaire adaptatif après la conversion pour activer la génération d’un document d’enregistrement à l’aide du modèle par défaut ou de tout autre modèle de formulaire.
@@ -121,7 +121,7 @@ Lors de l’envoi du formulaire adaptatif converti, le document d’enregistreme
 
 ## Générer un document d’enregistrement pour les formulaires Acro ou les formulaires PDF basés sur XFA {#generate-document-of-record-acroform-xfaform}
 
-Si vous utilisez un formulaire Acro ou un formulaire de PDF basé sur XFA comme formulaire source pour le service Automated forms conversion (AFCS), vous pouvez :
+Si vous utilisez un formulaire Acro ou un formulaire PDF basé sur XFA comme formulaire source pour Automated Forms Conversion service (AFCS), vous pouvez :
 
 * activer la génération d’un document d’enregistrement avant la conversion de formulaire adaptatif pour générer un document d’enregistrement en utilisant le formulaire source comme modèle ; ou
 

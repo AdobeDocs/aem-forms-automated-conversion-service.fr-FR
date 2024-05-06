@@ -1,5 +1,5 @@
 ---
-title: Résolution des problèmes du service de conversion automatisée de formulaires (AFCS)
+title: Résoudre les problèmes de Automated Forms Conversion service (AFCS)
 description: Problèmes courants de l’AFCS et leurs solutions
 solution: Experience Manager Forms
 feature: Adaptive Forms
@@ -10,13 +10,13 @@ level: Beginner, Intermediate
 contentOwner: khsingh
 exl-id: e8406ed9-37f5-4f26-be97-ad042f9ca57c
 source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '657'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Résolution des problèmes du service de conversion automatisée de formulaires (AFCS)
+# Résoudre les problèmes de Automated Forms Conversion service (AFCS)
 
 Le document fournit des étapes de résolution de base pour les erreurs courantes.
 
@@ -27,7 +27,7 @@ Le document fournit des étapes de résolution de base pour les erreurs courante
 | Erreur | Exemple |
 |--- |--- |
 | **Message d’erreur** <br> L’en-tête du jeton d’accès n’est pas disponible. <br><br> **Raison** <br> Un administrateur a créé plusieurs configurations IMS ou la configuration IMS n’est pas en mesure d’accéder au service AFCS sur Adobe Cloud. <br><br>**Résolution** <br> S’il existe plusieurs configurations, supprimez toutes les configurations et [créez une nouvelle configuration](configure-service.md#obtainpubliccertificates). <br> S’il existe une configuration unique, utilisez **Health Check** pour [vérifier la connectivité](configure-service.md#createintegrationoption). | ![L’en-tête du jeton d’accès n’est pas disponible](assets/invalid-ims-configurations.png) |
-| **Message d’erreur** <br> Impossible de se connecter au service.  <br><br>**Motif** <br> Une URL de service incorrecte ou aucune URL de service n’est mentionnée dans les services cloud Automated forms conversion Service (AFCS). <br><br>**Résolution** <br> Correct [URL du service](configure-service.md#configure-the-cloud-service) dans les services cloud Automated forms conversion Service (AFCS). | ![Impossible de se connecter au service.](assets/wrong-service-url-configured.png) |
+| **Message d’erreur** <br> Impossible de se connecter au service.  <br><br>**Motif** <br> URL du service incorrecte ou aucune URL du service mentionnée dans les services cloud de Automated Forms Conversion service (AFCS). <br><br>**Résolution** <br> Corrigez l’[URL du service](configure-service.md#configure-the-cloud-service) dans les services cloud de Automated Forms Conversion service (AFCS). | ![Impossible de se connecter au service.](assets/wrong-service-url-configured.png) |
 | **Message d’erreur** <br> Le service n’est pas parvenu à convertir le formulaire.  <br><br>**Raison** <br> Problèmes de connectivité réseau de votre côté, le service est arrêté en raison d’une maintenance planifiée, ou interruption sur Adobe Cloud. <br><br>**Résolution** <br> Résolvez les problèmes de connectivité réseau de votre côté et vérifiez l’état du service sur https://status.adobe.com/ pour voir s’il existe une interruption planifiée ou non planifiée. | ![Impossible de se connecter au service.](assets/conversion-failure.png) |
 | **Message d’erreur** <br> Le nombre de pages est supérieur à 15.  <br><br>**Raison** <br> Le formulaire source comporte plus de 15 pages.  <br><br>**Résolution** <br> Utilisez Adobe Acrobat pour scinder les formulaires de plus de 15 pages. Réduisez le nombre de pages pour obtenir un formulaire ne dépassant pas 15 pages. | ![Impossible de se connecter au service.](assets/number-of-pages.png) |
 | **Message d’erreur** <br> Le nombre de fichiers est supérieur à 15.  <br><br>**Raison** <br>  Le dossier contient plus de 15 formulaires. <br><br>**Résolution** <br> Réduisez le nombre de formulaires dans un dossier pour en obtenir 15 ou moins. Réduisez le nombre total de pages pour obtenir un dossier comportant moins de 50 pages. Réduisez la taille du dossier pour qu’elle ne dépasse pas 10 Mo. Ne conservez pas les formulaires dans un sous-dossier. Organisez les formulaires sources en un lot de 8 à 15 formulaires. | ![Impossible de se connecter au service.](assets/number-of-pages.png) |
