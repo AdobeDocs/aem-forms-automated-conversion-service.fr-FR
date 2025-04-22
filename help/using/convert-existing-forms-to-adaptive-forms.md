@@ -5,15 +5,15 @@ feature: Adaptive Forms, Foundation Components
 role: Admin, Developer
 level: Beginner, Intermediate
 source-git-commit: 02e808d6d777078d148f073835e24fd20712eade
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1894'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Convertir des formulaires PDF en formulaires adaptatifs {#convert-print-forms-to-adaptive-forms}
 
-Le service AEM Forms Automated Forms Conversion (AFCS), optimisé par Adobe Sensei, convertit automatiquement votre PDF forms en formulaires adaptatifs réactifs et compatibles avec les appareils<!--foundation and [core components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)-->. Que vous utilisiez des formulaires PDF non interactifs, des formulaires Acro ou des formulaires PDF basés sur XFA, Automated Forms Conversion service (AFCS) peut facilement convertir ces formulaires en formulaires adaptatifs. Pour plus d’informations sur les fonctionnalités, le processus de conversion et les informations d’intégration, consultez la page [Automated Forms Conversion service](introduction.md).
+Le service de conversion automatisée de formulaires (AFCS) AEM Forms, optimisé par Adobe Sensei, convertit automatiquement vos formulaires PDF en formulaires adaptatifs réactifs et compatibles avec divers appareils<!--foundation and [core components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)-->. Que vous utilisiez des formulaires PDF non interactifs, des formulaires Acro ou des formulaires PDF basés sur XFA, Automated Forms Conversion service (AFCS) peut facilement convertir ces formulaires en formulaires adaptatifs. Pour plus d’informations sur les fonctionnalités, le processus de conversion et les informations d’intégration, consultez la page [Automated Forms Conversion service](introduction.md).
 
 ## Prérequis {#pre-requisites}
 
@@ -62,19 +62,19 @@ Après avoir téléchargé les formulaires et configuré le service, procédez c
 
    ![Spécifier les configurations](assets/conversion-settings-dialog.png)
 
-   **Convertir des PDF en composants principaux de formulaire adaptatif**
+   **Convertir des fichiers PDF en composants principaux de formulaire adaptatif**
 
    <span class="preview"> Cette fonctionnalité s’inscrit dans le cadre du programme d’adoption précoce. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre adresse e-mail officielle pour rejoindre le programme d’adoption précoce et demander l’accès à la fonctionnalité. </span>
 
-   Le paramètre de conversion ci-dessus est requis pour convertir PDF forms en formulaires de base. Pour convertir un formulaire PDF en formulaire adaptatif basé sur les composants principaux :
+   Le paramètre de conversion ci-dessus est requis pour convertir des formulaires PDF en formulaires qui s’appuient sur des composants principaux. Pour convertir un formulaire PDF en un formulaire adaptatif basé sur des composants principaux, procédez comme suit :
 
-   1. Vérifiez que vous avez activé [composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/introduction) sur votre instance AEM Forms. S’il n’est pas activé, vous pouvez [activer les composants principaux dans votre environnement AEM 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) ou [Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components).
-   1. Sélectionnez un modèle et un thème de formulaire adaptatif [basé sur les composants principaux](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components) comme illustré dans l’image ci-dessous :
-      ![Sélectionnez le modèle de formulaire adaptatif](assets/select-af-template-1.png).
-   1. Appuyez sur **[!UICONTROL Démarrer la conversion]** pour convertir le PDF en formulaire basé sur les composants principaux.
+   1. Assurez-vous d’avoir activé les [Composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/introduction) sur votre instance AEM Forms. S’ils ne sont pas activés, vous pouvez [activer les composants principaux sur AEM 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) ou sur votre [environnement Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components).
+   1. Sélectionnez un [modèle de formulaire adaptatif et un thème basés sur les composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components) comme le montre l’image ci-dessous :
+      ![Sélectionner un modèle de formulaire adaptatif](assets/select-af-template-1.png).
+   1. Appuyez sur **[!UICONTROL Démarrer la conversion]** pour convertir le PDF en un formulaire basé sur des composants de base.
    >[!NOTE]
-   > * Les propriétés telles que la liaison de données ou le schéma de modèle de données ne sont pas disponibles pour le formulaire adaptatif basé sur les composants principaux, mais les mêmes sont disponibles pour les composants de base.
-   > * [Vérifier et corriger les formulaires convertis](#review-and-correct-the-converted-forms) n’est pas disponible pour le formulaire basé sur les composants principaux.
+   > * Les propriétés telles que la liaison de données ou le schéma de modèle de données ne sont pas disponibles pour le formulaire adaptatif basé sur des composants principaux, mais elles sont également disponibles pour les composants de base.
+   > * La fonction [Réviser et corriger les formulaires convertis](#review-and-correct-the-converted-forms) n’est pas disponible pour le formulaire basé sur des composants principaux.
 
 
 1. Dans l’onglet **[!UICONTROL Basic]** (De base) de la boîte de dialogue Conversion Settings (Paramètres de conversion) :

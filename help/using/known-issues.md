@@ -9,9 +9,9 @@ role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 35f59e02-e38e-473a-94c8-123e0a85ac8e
 source-git-commit: a2472d5a1a66ffada7be485415f50f32643e03fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '827'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -81,5 +81,5 @@ Avant de commencer à utiliser Automated Forms Conversion service (AFCS) pour AE
 * Les informations codées à l’aide de couleurs dans le formulaire PDF source ne sont pas transférées vers le formulaire adaptatif.
 * Les couleurs du formulaire PDF source ne sont pas transférées vers les thèmes de formulaire adaptatif.
 * Les formulaires PDF colorés sont traités comme des formulaires en niveaux de gris et les champs sont détectés en conséquence.
-* Les propriétés telles que la liaison de données ou le schéma de modèle de données ne sont pas disponibles pour le formulaire adaptatif basé sur les composants principaux.
-* Vérifier et corriger les formulaires convertis n’est pas disponible pour le formulaire basé sur les composants principaux.
+* Les propriétés telles que la liaison de données ou le schéma de modèle de données ne sont pas disponibles pour le formulaire adaptatif basé sur des composants principaux.
+* La révision et la correction des formulaires convertis ne sont pas disponibles pour les formulaires basés sur des composants principaux.
