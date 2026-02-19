@@ -250,7 +250,7 @@ Connectez-vous à votre instance de création pour créer les configurations Ado
 
    Une fois la connexion établie, le message *Token retrieved successfully* (Jeton récupéré) s’affiche.
 
-   ![Une fois la connexion établie, le message Token retrieved successfully (Jeton récupéré) s’affiche. ](/help/using/assets/healthy-dialog.png)
+   ![Une fois la connexion établie, le message Token retrieved successfully (Jeton récupéré) s’affiche. &#x200B;](/help/using/assets/healthy-dialog.png)
 
 1. Cliquez sur **Fermer**.
 
