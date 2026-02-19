@@ -4,10 +4,10 @@ description: Étendez le métamodèle par défaut pour ajouter un modèle, des v
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
 workflow-type: tm+mt
-source-wordcount: '1221'
-ht-degree: 100%
+source-wordcount: '1223'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ L’exemple présenté dans cet article est une implémentation de référence d
 
 ## Prérequis {#pre-requisites}
 
-* Configuration d’une instance d’auteur AEM 6.4 ou 6.5
+* Configuration d’une instance d’auteur LTS AEM 6.5 ou AEM 6.5
 * Installation du [dernier Service Pack](https://helpx.adobe.com/fr/experience-manager/aem-releases-updates.html) pour votre instance AEM
 * Dernière version du package de module complémentaire AEM Forms
 * Configurer [Automated Forms Conversion service (AFCS)](configure-service.md)
@@ -271,7 +271,7 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
 
 [Obtenir le fichier](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
-1. Accédez au gestionnaire de packages AEM à l’adresse *http://[host]:[port]/crx/packmgr/*.
+1. Accédez au gestionnaire de modules AEM à l’adresse *http://[host]:[port]/crx/packmgr/*.
 1. Cliquez sur **[!UICONTROL Upload Package]** (Télécharger le package).
 1. Parcourez l’arborescence pour sélectionner le package **aem-fp-db-integration-sample-pkg-6.1.2.zip** et cliquez sur **[!UICONTROL OK]**.
 1. Cliquez sur **[!UICONTROL Install]** (Installer) en regard du package pour l’installer.
@@ -289,7 +289,7 @@ Pour activer l’envoi de formulaires adaptatifs à l’aide de la page Portail 
 
 Pour créer une page Portail Forms et la configurer afin de pouvoir envoyer des formulaires adaptatifs via cette page, procédez comme suit :
 
-1. Connectez-vous à l’instance d’auteur AEM et appuyez sur **[!UICONTROL Adobe Experience Manager]** >  **[!UICONTROL Sites]**.
+1. Connectez-vous à l’instance de création AEM et appuyez sur **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Sites]**.
 1. Sélectionnez l’emplacement où vous souhaitez enregistrer la nouvelle page Portail Forms et appuyez sur **[!UICONTROL Create]** (Créer) > **[!UICONTROL Page]**.
 1. Sélectionnez le modèle de la page, appuyez sur **[!UICONTROL Next]** (Suivant), indiquez un titre pour la page et appuyez sur **[!UICONTROL Create]** (Créer).
 1. Appuyez sur **[!UICONTROL Edit]** (Modifier) pour configurer la page.

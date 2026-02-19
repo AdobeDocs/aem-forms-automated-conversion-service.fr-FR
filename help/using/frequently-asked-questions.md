@@ -8,17 +8,17 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
 workflow-type: tm+mt
-source-wordcount: '1791'
-ht-degree: 100%
+source-wordcount: '1820'
+ht-degree: 96%
 
 ---
 
 # Questions fréquentes{#frequently-asked-questions}
 
 1. **Quelle version d’AEM Forms Automated Forms Conversion service (AFCS) prend-il en charge ?**
-   <p>Automated Forms Conversion service (AFCS) prend en charge AEM 6.4 Forms et AEM 6.5 Forms. Il fonctionne avec AEM Forms sur OSGi et AEM Forms sur JEE. En plus de l’instance d’auteur AEM, vous avez besoin du dernier package complémentaire AEM Forms pour utiliser le service. Pour obtenir des instructions détaillées, consultez la page <a href="configure-service.md">Configurer le service de conversion automatisée de formulaires</a>.</p> 
+   <p>Le service AFCS (Automated Forms Conversion Service) prend en charge AEM 6.5 Forms, AEM 6.5 LTS Forms et AEM Forms as a Cloud Service. Il fonctionne avec AEM Forms sur OSGi et AEM Forms sur JEE. Pour AEM 6.5 et AEM 6.5 LTS, vous avez besoin du dernier package complémentaire AEM Forms en plus de l’instance d’auteur AEM et devez <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=fr">activer les composants principaux des formulaires adaptatifs</a> si vous souhaitez utiliser des modèles et des thèmes basés sur les composants principaux. Pour obtenir des instructions détaillées, consultez la page <a href="configure-service.md">Configurer le service de conversion automatisée de formulaires</a>.</p> 
     <br>
 
 1. **Le service peut-il être installé sur site ?**
@@ -58,7 +58,7 @@ ht-degree: 100%
 1. **Certains formulaires basés sur XDP utilisent des fragments de formulaire. Où ces fragments doivent-ils être téléchargés ?**
    <p class="MsoNormal">Téléchargez des fragments de formulaire dans le dossier de conversion et conservez la structure du dossier d’origine. Cela permet de conserver les chemins d’accès relatifs utilisés dans les formulaires et fragments de formulaire basés sur XDP.</p> <br>
 
-1. **Le service prend-il en charge les formulaires XDP liés à des schémas ? Si je dispose d’un formulaire XDP lié à un schéma, dois-je intégrer le schéma au formulaire XDP ?**
+1. **Le service prend-il en charge les formulaires XDP liés à des schémas ? Si je dispose d’un formulaire XDP lié à un schéma, dois-je incorporer le schéma dans le formulaire XDP ?**
    <p>Oui, le service prend en charge les formulaires XDP liés à des schémas et nécessite l’intégration du schéma au formulaire XDP source. Lorsque vous convertissez un formulaire XDP lié à un schéma, le service génère un schéma JSON. La structure du schéma JSON est similaire à celle du schéma XSD des formulaires XDP sources.</p> <br>
 
 1. **Le service n’est pas parvenu à convertir les formulaires. Quelle en est la raison et comment résoudre le problème?**
@@ -87,7 +87,7 @@ Les raisons les plus courantes de l’échec de la conversion sont les suivantes
 
 1. **Certaines corrections sont répétées sur plusieurs formulaires. Le service peut-il identifier et corriger toutes ces instances lors de futures conversions ?**
 
-   Le service est constamment formé d’après vos formulaires et modèles. Il apprend de nouveaux modèles chaque jour. Il reste encore à appliquer automatiquement les corrections répétées à l’ensemble des formulaires. Gardez un œil sur les nouvelles versions pour être au courant dès que cette fonctionnalité sera disponible. <br/><br/>
+   Le service est constamment formé d’après vos formulaires et modèles. Il apprend de nouveaux modèles chaque jour. Il reste encore à appliquer automatiquement les corrections répétées à l’ensemble des formulaires. Gardez un œil sur les formulaires en version préliminaire pour connaître la disponibilité de cette fonctionnalité. <br/><br/>
 
    Vous pouvez utiliser le métamodèle pour mapper les objets de formulaire au composant de formulaire adaptatif de votre choix et préconfigurer les validations, les règles, les modèles de données, le texte d’aide et les propriétés d’accessibilité des composants. Toutes les propriétés spécifiées sont appliquées lors de la conversion. Vous pouvez utiliser un métamodèle pour appliquer des propriétés communes aux champs. Cela peut vous aider à réduire le nombre de problèmes récurrents dans les formulaires.<br/><br/>
 

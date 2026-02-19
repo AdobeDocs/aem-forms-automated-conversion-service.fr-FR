@@ -8,10 +8,10 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 35f59e02-e38e-473a-94c8-123e0a85ac8e
-source-git-commit: a2472d5a1a66ffada7be485415f50f32643e03fc
-workflow-type: ht
-source-wordcount: '827'
-ht-degree: 100%
+source-git-commit: 4393ab4c56174f1dd9ad2979ce18b1d18ee09f6b
+workflow-type: tm+mt
+source-wordcount: '830'
+ht-degree: 97%
 
 ---
 
@@ -77,7 +77,7 @@ Avant de commencer à utiliser Automated Forms Conversion service (AFCS) pour AE
 * Les documents chiffrés, protégés par mot de passe et sécurisés ne sont pas convertis. Supprimez le chiffrement ou les mots de passe avant d’exécuter la conversion.
 * Les tableaux complexes (par exemple, les tableaux sans bordure, les tableaux imbriqués et les tableaux avec des valeurs d’espace réservé) ne sont pas pris en charge. Utilisez l’éditeur de formulaire adaptatif pour ajouter ou modifier des tableaux complexes après la conversion. Seuls les tableaux simples, avec des champs vides, des en-têtes appropriés et des bordures clairement définies sont pris en charge.
 * Le service convertit en formulaires adaptatifs uniquement des formulaires en anglais, français, allemand, espagnol, italien et portugais. Vous pouvez traduire des formulaires adaptatifs convertis dans une autre langue à l’aide du [Processus de traduction AEM](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
-* AEM 6.4 Forms ne prend pas en charge la détection automatique de la mise en page à plusieurs colonnes des formulaires d’entrée.
+* AEM 6.5 Forms ne prend pas en charge la détection automatique de la disposition sur plusieurs colonnes des formulaires de saisie dans certaines configurations.
 * Les informations codées à l’aide de couleurs dans le formulaire PDF source ne sont pas transférées vers le formulaire adaptatif.
 * Les couleurs du formulaire PDF source ne sont pas transférées vers les thèmes de formulaire adaptatif.
 * Les formulaires PDF colorés sont traités comme des formulaires en niveaux de gris et les champs sont détectés en conséquence.

@@ -1,27 +1,30 @@
 ---
 title: Convertir des formulaires PDF en formulaires adaptatifs
 description: Exécuter Automated Forms Conversion service (AFCS) pour convertir des formulaires PDF en formulaires adaptatifs
-feature: Adaptive Forms, Foundation Components
+seo-description: Run the Automated Forms Conversion service (AFCS) to convert PDF forms to adaptive forms
+contentOwner: khsingh
 role: Admin, Developer
-level: Beginner, Intermediate
-source-git-commit: 02e808d6d777078d148f073835e24fd20712eade
-workflow-type: ht
-source-wordcount: '1894'
-ht-degree: 100%
+topic-tags: forms
+feature: Adaptive Forms, Foundation Components, Core Components
+exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
+source-git-commit: 4393ab4c56174f1dd9ad2979ce18b1d18ee09f6b
+workflow-type: tm+mt
+source-wordcount: '2061'
+ht-degree: 86%
 
 ---
 
 # Convertir des formulaires PDF en formulaires adaptatifs {#convert-print-forms-to-adaptive-forms}
 
-Le service de conversion automatisée de formulaires (AFCS) AEM Forms, optimisé par Adobe Sensei, convertit automatiquement vos formulaires PDF en formulaires adaptatifs réactifs et compatibles avec divers appareils<!--foundation and [core components](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/introduction)-->. Que vous utilisiez des formulaires PDF non interactifs, des formulaires Acro ou des formulaires PDF basés sur XFA, Automated Forms Conversion service (AFCS) peut facilement convertir ces formulaires en formulaires adaptatifs. Pour plus d’informations sur les fonctionnalités, le processus de conversion et les informations d’intégration, consultez la page [Automated Forms Conversion service](introduction.md).
+Le service de conversion automatisée de formulaires (AFCS) AEM Forms, optimisé par Adobe Sensei, convertit automatiquement vos formulaires PDF en formulaires adaptatifs réactifs et compatibles avec divers appareils<!--foundation and [core components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)-->. Que vous utilisiez des formulaires PDF non interactifs, des formulaires Acro ou des formulaires PDF basés sur XFA, Automated Forms Conversion service (AFCS) peut facilement convertir ces formulaires en formulaires adaptatifs. Pour plus d’informations sur les fonctionnalités, le processus de conversion et les informations d’intégration, consultez la page [Automated Forms Conversion service](introduction.md).
 
 ## Prérequis {#pre-requisites}
 
 * [**Configuration du service de conversion**](configure-service.md)
 
-* **Préparation des [modèles](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/template-editor.html) à appliquer aux formulaires convertis :** l’utilisation d’un modèle vous permet d’harmoniser l’identité graphique de tous les formulaires adaptatifs. De plus, Automated Forms Conversion service (AFCS) n’extrait pas et n’utilise pas l’en-tête et le pied de page des documents PDF sources. Vous pouvez utiliser des modèles de formulaires adaptatifs pour spécifier l’en-tête et le pied de page. L’en-tête et le pied de page spécifiés dans le modèle sont appliqués au formulaire adaptatif lors de la conversion. Lorsque vous créez un dossier pour les modèles, sélectionnez l’option **[!UICONTROL Parcourir les configurations]** pour tous les utilisateurs.
-
-* **Préparation des [thèmes](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/themes.html) à appliquer aux formulaires convertis :** l’utilisation d’un thème vous permet d’harmoniser le style de tous les formulaires adaptatifs de votre entreprise.
+* **Modèles et thèmes pour les formulaires convertis :**
+   * **AEM Forms as a Cloud Service :** les modèles et thèmes par défaut sont disponibles ; vous pouvez les utiliser pour la conversion ou en préparer des personnalisés.
+   * **LTS AEM 6.5 et AEM 6.5 :** préparez les [modèles](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/template-editor.html) et [thèmes](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/themes.html) à appliquer aux formulaires convertis. Vous devez [activer les composants principaux de formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=fr) si vous souhaitez utiliser des modèles et des thèmes basés sur les composants principaux (voir [Configuration du service](configure-service.md#referencepackage)). L’utilisation d’un modèle permet d’appliquer une valorisation de marque cohérente. AFCS n’extrait pas les en-têtes et les pieds de page des PDF sources : spécifiez-les dans le modèle de formulaire adaptatif. L’utilisation d’un thème applique un style cohérent aux formulaires. Lorsque vous créez un dossier pour les modèles, sélectionnez l’option **[!UICONTROL Parcourir les configurations]** pour tout le monde.
 
 * **(facultatif)** [**Convertir vos formulaires PDF sources en formulaire Adobe Sign**](frequently-asked-questions.md)
 
@@ -71,10 +74,10 @@ Après avoir téléchargé les formulaires et configuré le service, procédez c
    1. Assurez-vous d’avoir activé les [Composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/introduction) sur votre instance AEM Forms. S’ils ne sont pas activés, vous pouvez [activer les composants principaux sur AEM 6.5](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) ou sur votre [environnement Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components).
    1. Sélectionnez un [modèle de formulaire adaptatif et un thème basés sur les composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components) comme le montre l’image ci-dessous :
       ![Sélectionner un modèle de formulaire adaptatif](assets/select-af-template-1.png).
-   1. Appuyez sur **[!UICONTROL Démarrer la conversion]** pour convertir le PDF en un formulaire basé sur des composants de base.
+   1. Appuyez sur **[!UICONTROL Démarrer la conversion]** pour convertir le PDF en un formulaire basé sur des composants principaux.
    >[!NOTE]
    > * Les propriétés telles que la liaison de données ou le schéma de modèle de données ne sont pas disponibles pour le formulaire adaptatif basé sur des composants principaux, mais elles sont également disponibles pour les composants de base.
-   > * La fonction [Réviser et corriger les formulaires convertis](#review-and-correct-the-converted-forms) n’est pas disponible pour le formulaire basé sur des composants principaux.
+
 
 
 1. Dans l’onglet **[!UICONTROL Basic]** (De base) de la boîte de dialogue Conversion Settings (Paramètres de conversion) :
@@ -94,6 +97,29 @@ Si vous sélectionnez cette option, le service de conversion génère un formula
    <p> </p>
    </note>
    -->
+
+   **Convertir des PDF en Forms adaptatif basé sur les composants principaux**
+
+   >[!NOTE]
+   >
+   > Cette fonctionnalité est incluse dans le programme des utilisateurs et utilisatrices précoces. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre ID d’e-mail officiel pour rejoindre le programme des utilisateurs et utilisatrices précoces et demander l’accès à la fonctionnalité.
+
+   Les paramètres de conversion ci-dessus s’appliquent à la conversion de PDF forms en formulaires adaptatifs basés sur des composants de base. Pour convertir un formulaire PDF en formulaire adaptatif basé sur les composants principaux :
+
+   1. Vérifiez que vous avez activé les composants principaux sur votre instance AEM Forms. Pour AEM 6.5 et AEM 6.5 LTS, voir [activer les composants principaux des formulaires adaptatifs](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=fr), s’ils ne sont pas déjà activés. Pour AEM Forms as a Cloud Service, aucune étape supplémentaire n’est nécessaire.
+   1. Sélectionnez un modèle et un thème de formulaire adaptatif basé sur les composants principaux dans l’onglet **[!UICONTROL De base]** de la boîte de dialogue Paramètres de conversion.
+
+      ![Spécifier les configurations](assets/adaptive-forms-core-components-afcs.png)
+
+   1. Appuyez sur **[!UICONTROL Démarrer la conversion]** pour convertir le PDF en formulaire adaptatif basé sur les composants principaux.
+
+
+
+
+   >[!NOTE]
+   >
+   > * Les propriétés telles que la liaison de données ou le schéma de modèle de données ne sont pas disponibles pour les formulaires adaptatifs basés sur les composants principaux, mais sont disponibles pour les formulaires basés sur les composants de base.
+   > * [Vérifier et corriger les formulaires convertis](review-correct-ui-edited.md) n’est pas disponible pour les formulaires adaptatifs basés sur les composants principaux.
 
 1. Dans l’onglet **[!UICONTROL Additional]** (Plus) de la boîte de dialogue Conversion Settings (Paramètres de conversion),
    * sélectionnez l’option **[!UICONTROL Extract fragment from adaptive forms]** (Extraire les fragments des formulaires adaptatifs) pour permettre au service de conversion d’identifier, d’extraire et de télécharger des fragments de formulaires pour les formulaires convertis. Lorsque vous sélectionnez l’option **[!UICONTROL Extract fragment from adaptive forms]** (Extraire les fragments des formulaires adaptatifs), les options permettant d’indiquer des chemins pour l’enregistrement des fragments de formulaires extraits et des schémas correspondants sont activées.
@@ -116,7 +142,7 @@ Si vous sélectionnez cette option, le service de conversion génère un formula
 * (AEM Forms as a Cloud Service uniquement) Lʼoption [Conversion automatique des sections en fragments] s’applique aux formulaires PDF qui contiennent plus de 15 pages. Cette option permet de convertir en fragments les sections de niveau supérieur détectées. Elle permet également le chargement différé de tous les fragments créés. Cette option accélère le rendu des formulaires convertis et facilite le chargement de formulaires volumineux dans l’éditeur de formulaires adaptatifs.
 
   >[!NOTE]
-  > N’utilisez pas de modèle de disposition réactive lorsque vous utilisez l’option Conversion automatique des sections en fragments.
+  > N’utilisez pas de modèle de disposition progressive lorsque vous utilisez l’option Conversion automatique des sections en fragments.
   > Utilisez l’éditeur de vérification et de correction pour fusionner de petits panneaux en un grand. Cela permet de réduire le nombre de fragments dans le formulaire adaptatif converti.
   > Si vous rencontrez l’exception « nombre d’appels trop élevé » :
   >
@@ -161,4 +187,4 @@ Si vous sélectionnez cette option, le service de conversion génère un formula
 
 ## Vérifier et corriger les formulaires convertis {#review-and-correct-the-converted-forms}
 
-Les formulaires réels ont des exigences de capture de données complexes. Une fois la conversion automatisée terminée, les clients peuvent vérifier la qualité de conversion du formulaire et apporter les modifications nécessaires. AEM Forms fournit un éditeur de [vérification et de correction](review-correct-ui-edited.md) pour procéder aux changements nécessaires. Il vous permet d’améliorer l’identification automatisée des champs de formulaire et de convertir les champs identifiés d’un type à un autre. Par exemple, il peut vous aider à identifier la mise en page à deux colonnes d’un formulaire et modifier un champ identifié automatiquement comme un bouton radio en un champ à choix multiples.
+Les formulaires réels ont des exigences de capture de données complexes. Une fois la conversion automatisée terminée, les clientes et clients peuvent vérifier la qualité de conversion du formulaire et apporter les modifications nécessaires. AEM Forms fournit un éditeur de [vérification et de correction](review-correct-ui-edited.md) pour procéder aux changements nécessaires. Il vous permet d’améliorer l’identification automatisée des champs de formulaire et de convertir les champs identifiés d’un type à un autre. Par exemple, il peut vous aider à identifier la mise en page à deux colonnes d’un formulaire et modifier un champ identifié automatiquement comme un bouton radio en un champ à choix multiples.

@@ -8,10 +8,10 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 5447b66f-9fac-476f-ab8a-9290bb1f9c0d
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
 workflow-type: tm+mt
-source-wordcount: '1672'
-ht-degree: 100%
+source-wordcount: '1674'
+ht-degree: 99%
 
 ---
 
@@ -29,7 +29,7 @@ Cet article décrit les instructions détaillées pour réussir à exécuter tou
 
 ## Prérequis {#pre-requisites}
 
-* Configuration d’une instance d’auteur AEM 6.4 ou 6.5
+* Configuration d’une instance d’auteur LTS AEM 6.5 ou AEM 6.5
 * Installation du [dernier Service Pack](https://helpx.adobe.com/fr/experience-manager/aem-releases-updates.html) pour votre instance AEM
 * Dernière version du package de module complémentaire AEM Forms
 * Configuration du [service de conversion automatisée de formulaires](configure-service.md)
@@ -64,7 +64,7 @@ L’intégration de données AEM Forms permet de configurer des sources de donn
 
 Ce tutoriel utilise la base de données MySQL comme source pour créer un modèle de données de formulaire. Créez un schéma dans la base de données et ajoutez-y un tableau **contactus** en fonction des champs disponibles dans le formulaire adaptatif.
 
-![Exemples de données mysql](assets/db_entries_sample_form.png)
+![Données d’exemple mysql](assets/db_entries_sample_form.png)
 
 Vous pouvez utiliser l’instruction DDL suivante pour créer le tableau **contactus** dans la base de données.
 
@@ -158,7 +158,7 @@ Procédez aux étapes de configuration suivantes pour créer une connexion entre
 
 Après avoir configuré MYSQL comme source de données, exécutez les étapes suivantes pour créer un modèle de données de formulaire :
 
-1. Dans l’instance d’auteur AEM, accédez à **[!UICONTROL Forms]** (Formulaires) > **[!UICONTROL Data Integrations]** (Intégrations de données).
+1. Dans l’instance de création AEM, accédez à **[!UICONTROL Formulaires]** > **[!UICONTROL Intégrations de données]**.
 
 1. Appuyez sur **[!UICONTROL Create]** (Créer) > **[!UICONTROL Form Data Model]** (Modèle de données de formulaire).
 
@@ -168,7 +168,7 @@ Après avoir configuré MYSQL comme source de données, exécutez les étapes su
 
 1. Appuyez sur **[!UICONTROL Edit]** (Modifier) et développez la source de données répertoriée dans le volet de gauche pour sélectionner le tableau **contactus** ainsi que les services **[!UICONTROL get]** et **[!UICONTROL insert]**, puis appuyez sur **[!UICONTROL Add Selected]** (Ajouter la sélection).
 
-   ![Exemples de données mysql](assets/fdm_details_workfdlow_submit.png)
+   ![Données d’exemple mysql](assets/fdm_details_workfdlow_submit.png)
 
 1. Sélectionnez l’objet de modèle de données dans le volet de droite et appuyez sur **[!UICONTROL Edit Properties]** (Modifier les propriétés). Sélectionnez **[!UICONTROL get]** et **[!UICONTROL insert]** dans les listes déroulantes **[!UICONTROL Read Service]** (Service de lecture) et **[!UICONTROL Write Service]** (Service d’écriture). Spécifiez les arguments du service de lecture et appuyez sur **[!UICONTROL Done]** (Terminé).
 
@@ -190,7 +190,7 @@ Utilisez [Automated Forms Conversion service (AFCS) pour convertir](convert-exis
 
 Sélectionnez le **formulaire de contact** converti disponible dans le dossier **[!UICONTROL output]** (sortie), sous **[!UICONTROL Forms &amp; Documents]** (Formulaires et documents), puis appuyez sur **[!UICONTROL Edit]** (Modifier). Appuyez sur **[!UICONTROL Preview]** (Aperçu), saisissez des valeurs dans les champs du formulaire adaptatif et appuyez sur **[!UICONTROL Submit]** (Envoyer).
 
-Connectez-vous au référentiel **crx-repository** et accédez à */content/forms/fp/admin/submit/data* pour afficher les valeurs envoyées au format JSON. Voici les exemples de données au format JSON lorsque vous envoyez le formulaire adaptatif **de contact** converti :
+Connectez-vous au référentiel **crx-repository** et accédez à */content/forms/fp/admin/submit/data* pour afficher les valeurs envoyées au format JSON. Voici les données d’exemple au format JSON lorsque vous envoyez le formulaire adaptatif **de contact** converti :
 
 ```json
 {
@@ -259,7 +259,7 @@ Pour envoyer le formulaire adaptatif au modèle de processus créé dans la sect
 
 ## Configurer le formulaire adaptatif pour préremplir les valeurs de la base de données
 
-Pour configurer le formulaire adaptatif afin de préremplir les valeurs de la base de données MYSQL en fonction de la clé principale définie dans le tableau (adresse électronique dans le cas présent), procédez comme suit :
+Pour configurer le formulaire adaptatif afin de préremplir les valeurs de la base de données MYSQL en fonction de la clé primaire définie dans le tableau (adresse e-mail dans le cas présent), procédez comme suit :
 
 1. Appuyez sur le champ **Email** (Adresse électronique) dans le formulaire adaptatif, puis sur ![Modifier la règle](assets/edit-rules.png).
 

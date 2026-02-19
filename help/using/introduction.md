@@ -8,10 +8,10 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 100%
+source-wordcount: '738'
+ht-degree: 90%
 
 ---
 
@@ -29,7 +29,7 @@ Automated Forms Conversion service (AFCS) permet d’accélérer la numérisatio
 
 ## Intégration  {#onboarding}
 
-Le service est disponible gratuitement pour les clients AEM 6.4 Forms et AEM 6.5 Forms On-Premise et les clients d’entreprise Adobe Managed Services. Vous pouvez contacter l’équipe de ventes d’Adobe ou votre représentant Adobe pour demander l’accès au service. Le service est également disponible gratuitement et préactivé pour les clients AEM Forms as a Cloud Service.
+Le service est disponible gratuitement pour les clients et clientes à terme AEM 6.5 Forms et AEM 6.5 LTS Forms On-Premise et les clients et clientes d’entreprise Adobe-Managed Service. Vous pouvez contacter l’équipe de ventes d’Adobe ou votre représentant Adobe pour demander l’accès au service. Le service est également disponible gratuitement et préactivé pour les clients AEM Forms as a Cloud Service.
 
 Adobe autorise l’accès de votre entreprise et fournit les privilèges requis à la personne désignée comme administrateur au sein de votre entreprise. L’administrateur peut autoriser les développeurs (utilisateurs) AEM Forms de votre entreprise à se connecter au service. Pour en savoir plus, consultez la page [Configurer le service de conversion automatisée de formulaires](configure-service.md).
 
@@ -47,11 +47,11 @@ Automated Forms Conversion service (AFCS) s’exécute sur Adobe Cloud. Connect
 
 ![Processus](assets/conversion-workflow.png)
 
-### 1. Configurer l’environnement {#set-up-the-environment}
+### &#x200B;1. Configurer l’environnement {#set-up-the-environment}
 
-Automated Forms Conversion service (AFCS) s’exécute sur Adobe Cloud. [Configurez le compte Adobe I/O de votre entreprise et connectez votre instance AEM locale](configure-service.md) au service de conversion exécuté sur Adobe Cloud.
+Automated Forms Conversion service (AFCS) s’exécute sur Adobe Cloud. [Configurez le compte Adobe I/O de votre organisation et connectez votre instance AEM locale](configure-service.md) au service de conversion s’exécutant sur Adobe Cloud. Pour AEM 6.5 et AEM 6.5 LTS, vous devez activer les composants principaux des formulaires adaptatifs si vous utilisez des modèles et des thèmes basés sur les composants principaux. Voir [Configurer le service](configure-service.md#referencepackage).
 
-### 2. Convertir les formulaires PDF en formulaires adaptatifs {#use-the-conversion-service}
+### &#x200B;2. Convertir les formulaires PDF en formulaires adaptatifs {#use-the-conversion-service}
 
 Une fois votre environnement AEM Forms configuré, pour convertir vos formulaires PDF en formulaires adaptatifs, [téléchargez des formulaires PDF](convert-existing-forms-to-adaptive-forms.md) sur votre instance AEM et [démarrez la conversion](convert-existing-forms-to-adaptive-forms.md#run-the-conversion). Avant de télécharger les formulaires, tenez compte des éléments suivants :
 
@@ -62,7 +62,7 @@ Une fois votre environnement AEM Forms configuré, pour convertir vos formulair
 * Apportez les modifications suggérées dans l’article [Bonnes pratiques et remarques](styles-and-pattern-considerations-and-best-practices.md) aux formulaires PDF.
 * Pour éviter les pièges, reportez-vous à l’article [Problèmes connus](known-issues.md).
 
-### 3. Vérifier les formulaires convertis {#review-converted-forms}
+### &#x200B;3. Vérifier les formulaires convertis {#review-converted-forms}
 
 Dans le monde réel, les formulaires peuvent présenter des exigences de capture de données complexes en termes de disposition de champs ou de dénomination, ou encore des suggestions implicites qui peuvent ne pas être capturées avec précision par la logique de détection basée sur l’intelligence artificielle et l’apprentissage automatique. Une fois la conversion automatisée terminée, vous pouvez utiliser l’[éditeur de vérification et de correction](review-correct-ui-edited.md) pour vérifier le formulaire converti et apporter les modifications nécessaires afin d’obtenir le résultat souhaité. Après avoir apporté les modifications requises, renvoyez le formulaire pour conversion.
 

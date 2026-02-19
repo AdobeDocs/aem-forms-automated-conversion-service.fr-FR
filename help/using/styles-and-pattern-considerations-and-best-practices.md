@@ -8,10 +8,10 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: 4b227a2cd0253b8ab471007b41787de60c2a1851
+source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
 workflow-type: tm+mt
-source-wordcount: '1229'
-ht-degree: 100%
+source-wordcount: '1291'
+ht-degree: 95%
 
 ---
 
@@ -46,6 +46,8 @@ Lorsque vous utilisez un formulaire XDP pour la conversion, effectuez les étap
 
 ### Avant de commencer la conversion
 
+* **AEM Forms as a Cloud Service :** des modèles et des thèmes par défaut sont disponibles ; vous pouvez les utiliser ou créer des modèles et des thèmes personnalisés.
+* **LTS AEM 6.5 et AEM 6.5 :** créez des modèles et des thèmes de formulaires adaptatifs (ou installez des ressources de référence comme décrit dans [Configuration du service](configure-service.md#referencepackage)). Vous devez activer [Composants principaux de formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=fr) si vous souhaitez utiliser des modèles et des thèmes basés sur les composants principaux.
 * Créez des modèles de formulaires adaptatifs. Les modèles permettent de spécifier une structure uniforme pour les formulaires de votre entreprise ou service.
 * Indiquez l’en-tête et le pied de page dans les modèles de formulaires adaptatifs. Le service ignore l’en-tête et le pied de page des documents sources et utilise l’en-tête et le pied de page spécifiés dans le modèle de formulaire adaptatif.
 * Créez des thèmes de formulaires adaptatifs. Les thèmes permettent d’uniformiser l’aspect des formulaires au sein de votre entreprise ou service.
