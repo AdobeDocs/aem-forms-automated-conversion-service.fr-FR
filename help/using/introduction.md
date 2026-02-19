@@ -25,7 +25,7 @@ Automated Forms Conversion service (AFCS) permet d’accélérer la numérisatio
 * regrouper les champs récurrents en fragments de formulaire réutilisables ;
 * activer Adobe Analytics pendant la conversion.
 
-![C’est simple. Il vous suffit de nous fournir les formulaires sources. Nous nous occupons du reste. Vous obtiendrez des formulaires adaptatifs de qualité. Vous aurez de plus la possibilité de les personnaliser à votre envie. ](assets/pdf-to-adaptive-form-gitx50.gif)
+![C’est simple. Il vous suffit de nous fournir les formulaires sources. Nous nous occupons du reste. Vous obtiendrez des formulaires adaptatifs de qualité. Vous aurez de plus la possibilité de les personnaliser à votre envie. &#x200B;](assets/pdf-to-adaptive-form-gitx50.gif)
 
 ## Intégration  {#onboarding}
 
