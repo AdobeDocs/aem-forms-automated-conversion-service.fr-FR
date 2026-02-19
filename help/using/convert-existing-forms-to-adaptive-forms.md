@@ -5,9 +5,9 @@ seo-description: Run the Automated Forms Conversion service (AFCS) to convert PD
 contentOwner: khsingh
 role: Admin, Developer
 topic-tags: forms
-feature: Adaptive Forms, Foundation Components, Core Components
+feature: Adaptive Forms
 exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
-source-git-commit: 4393ab4c56174f1dd9ad2979ce18b1d18ee09f6b
+source-git-commit: 7edc61317486149ddac3c574a7339af6ffa40a81
 workflow-type: tm+mt
 source-wordcount: '2061'
 ht-degree: 86%
@@ -16,7 +16,7 @@ ht-degree: 86%
 
 # Convertir des formulaires PDF en formulaires adaptatifs {#convert-print-forms-to-adaptive-forms}
 
-Le service de conversion automatisée de formulaires (AFCS) AEM Forms, optimisé par Adobe Sensei, convertit automatiquement vos formulaires PDF en formulaires adaptatifs réactifs et compatibles avec divers appareils<!--foundation and [core components](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/introduction)-->. Que vous utilisiez des formulaires PDF non interactifs, des formulaires Acro ou des formulaires PDF basés sur XFA, Automated Forms Conversion service (AFCS) peut facilement convertir ces formulaires en formulaires adaptatifs. Pour plus d’informations sur les fonctionnalités, le processus de conversion et les informations d’intégration, consultez la page [Automated Forms Conversion service](introduction.md).
+Le service de conversion automatisée de formulaires (AFCS) AEM Forms, optimisé par Adobe Sensei, convertit automatiquement vos formulaires PDF en formulaires adaptatifs réactifs et compatibles avec divers appareils<!--foundation and [core components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)-->. Que vous utilisiez des formulaires PDF non interactifs, des formulaires Acro ou des formulaires PDF basés sur XFA, Automated Forms Conversion service (AFCS) peut facilement convertir ces formulaires en formulaires adaptatifs. Pour plus d’informations sur les fonctionnalités, le processus de conversion et les informations d’intégration, consultez la page [Automated Forms Conversion service](introduction.md).
 
 ## Prérequis {#pre-requisites}
 
