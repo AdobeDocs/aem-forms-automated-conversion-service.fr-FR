@@ -8,9 +8,9 @@ topic-tags: forms
 role: Admin, Developer, User
 level: Beginner, Intermediate
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
-source-git-commit: 4393ab4c56174f1dd9ad2979ce18b1d18ee09f6b
+source-git-commit: fbfbb35889b788ce82f5e25a957d86d3b6d7edf7
 workflow-type: tm+mt
-source-wordcount: '2633'
+source-wordcount: '2603'
 ht-degree: 84%
 
 ---
@@ -66,8 +66,6 @@ Le service de conversion automatisée des formulaires (AFCS) s’exécute sur un
 
    * Si vous êtes un partenaire Adobe, utilisez le [Programme de formation des partenaires Adobe](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) pour demander le LTS AEM 6.5 ou AEM 6.5.
 
-   * Si vous êtes un partenaire Adobe, utilisez le [programme de formation des partenaires Adobe](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) pour demander AEM 6.5.
-
 * Si vous utilisez AEM Forms as a Cloud Service, consultez les instructions d’intégration d’[AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-forms-cloud-service.html?lang=fr#setup-environment) et [configurez un environnement de développement local](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?lang=fr#setup-environment).
 
 
@@ -77,12 +75,7 @@ Téléchargez et installez le dernier Service Pack AEM. Pour obtenir des instruc
 
 ### (Pour AEM 6.5 et AEM 6.5 LTS uniquement) Télécharger et installer le package complémentaire AEM Forms  {#downloadaemformsaddon}
 
-
-
-### &#x200B;3. (Pour AEM 6.5 uniquement) Télécharger et installer le dernier module complémentaire d’AEM Forms  {#downloadaemformsaddon}
-
-Une instance AEM contient des fonctionnalités de formulaires de base. Le service de conversion nécessite toutes les capacités d’AEM Forms. Téléchargez et installez le package complémentaire AEM Forms pour bénéficier de toutes les capacités d’AEM Forms. Le package est requis pour la configuration et l’exécution du service de conversion. Pour obtenir des instructions détaillées, consultez [Installer et configurer les fonctionnalités de capture de données.](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi)
-https://adminconsole.adobe.com/
+Une instance AEM contient des fonctionnalités de formulaires de base. Le service de conversion nécessite toutes les capacités d’AEM Forms. Téléchargez et installez le package complémentaire AEM Forms pour bénéficier de toutes les capacités d’AEM Forms. Le package est requis pour la configuration et l’exécution du service de conversion. Pour obtenir des instructions détaillées, consultez [Installer et configurer les fonctionnalités de capture de données](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi).
 >[!NOTE]
 > Assurez-vous de procéder aux configurations nécessaires après l’installation du package complémentaire.
 >
@@ -92,7 +85,7 @@ https://adminconsole.adobe.com/
 The connector package provides early access to the [Auto-detect logical sections](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) features and improvements delivered in release AFC-2020.03.1. Do not install the package if you do not require feature and improvements delivered in AFC-2020.03.1.  You can [download the connector package from AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1). -->
 
 
-### 4. Créer des thèmes et des modèles personnalisés {#referencepackage}
+### Créer des thèmes et des modèles personnalisés {#referencepackage}
 
 **AEM Forms as a Cloud Service :** vous pouvez utiliser les modèles prêts à l’emploi ou en créer des personnalisés et y pointer [configuration du service](#configure-the-cloud-service).
 
@@ -148,7 +141,7 @@ Automated Forms Conversion service (AFCS) uses the Day CQ mail service to send e
 
    3. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual host name or IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**.
 
-* For AEM Forms as a Cloud Service, [log a support ticket to enable the email service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=fr#sending-email). -->
+* For AEM Forms as a Cloud Service, [log a support ticket to enable the email service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email). -->
 
 ### Ajouter un utilisateur au groupe forms-users {#adduserstousergroup}
 
@@ -257,7 +250,7 @@ Connectez-vous à votre instance de création pour créer les configurations Ado
 
    Une fois la connexion établie, le message *Token retrieved successfully* (Jeton récupéré) s’affiche.
 
-   ![Une fois la connexion établie, le message Token retrieved successfully (Jeton récupéré) s’affiche. &#x200B;](/help/using/assets/healthy-dialog.png)
+   ![Une fois la connexion établie, le message Token retrieved successfully (Jeton récupéré) s’affiche. ](/help/using/assets/healthy-dialog.png)
 
 1. Cliquez sur **Fermer**.
 
