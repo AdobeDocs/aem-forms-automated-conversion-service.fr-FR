@@ -8,16 +8,16 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 35f59e02-e38e-473a-94c8-123e0a85ac8e
-source-git-commit: 4393ab4c56174f1dd9ad2979ce18b1d18ee09f6b
+source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
-source-wordcount: '830'
-ht-degree: 97%
+source-wordcount: '831'
+ht-degree: 95%
 
 ---
 
 # Problèmes connus et limites {#known-issues-limitations}
 
-Avant de commencer à utiliser Automated Forms Conversion service (AFCS) pour AEM Forms, passez en revue les problèmes connus et limites suivants :
+Avant de commencer à utiliser le service AEM Forms Automated Forms Conversion (AFCS), passez en revue les problèmes connus et limites suivants :
 
 ## Problèmes connus {#known-issues}
 
@@ -83,3 +83,4 @@ Avant de commencer à utiliser Automated Forms Conversion service (AFCS) pour AE
 * Les formulaires PDF colorés sont traités comme des formulaires en niveaux de gris et les champs sont détectés en conséquence.
 * Les propriétés telles que la liaison de données ou le schéma de modèle de données ne sont pas disponibles pour le formulaire adaptatif basé sur des composants principaux.
 * La révision et la correction des formulaires convertis ne sont pas disponibles pour les formulaires basés sur des composants principaux.
+

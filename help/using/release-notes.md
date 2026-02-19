@@ -8,16 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
-source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
+source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 88%
+source-wordcount: '506'
+ht-degree: 86%
 
 ---
 
 # Notes de mise à jour
 
-Le service de conversion automatisée de formulaires est continuellement amélioré. Pour vous tenir au courant des dernières nouveautés, consultez régulièrement cette page. Cette page vous fournit les informations suivantes :
+Le service de conversion automatisée de formulaires est continuellement amélioré. Pour rester au courant des derniers développements, visitez cette page régulièrement. Cette page vous fournit les informations suivantes :
 
 * Accès anticipé
 * Dernières versions
@@ -89,3 +89,4 @@ Le service détecte désormais plus efficacement les listes à puces et numérot
 Le package connecteur 1.1.38, ou version ultérieure, est nécessaire pour utiliser les dernières fonctionnalités et améliorations proposées dans la version AFC-2020.03.1.
 
 Si vous disposez déjà d’un environnement de service de conversion automatisée de formulaires opérationnel (AEM 6.5 ou AEM 6.5 LTS), pour utiliser les dernières fonctionnalités du service de conversion, installez le dernier pack de services, le dernier package complémentaire AEM Forms et le dernier package connecteur dans l’ordre mentionné. Pour AEM Forms as a Cloud Service, les mises à jour sont automatiquement diffusées. Pour obtenir des instructions détaillées, consultez l’article [Configurer le service de conversion automatisée de formulaires](configure-service.md).
+

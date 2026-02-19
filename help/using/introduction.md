@@ -8,16 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
-source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
+source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 90%
+source-wordcount: '739'
+ht-degree: 87%
 
 ---
 
 # Automated Forms Conversion service (AFCS) {#introduction-to-automated-forms-conversion-service}
 
-Automated Forms Conversion service (AFCS) permet d’accélérer la numérisation et la modernisation de l’expérience de capture de données grâce à la conversion automatisée de formulaires PDF en formulaires adaptatifs. Ce service, optimisé par Adobe Sensei, convertit automatiquement vos formulaires PDF en formulaires adaptatifs réactifs, basés sur HTML5 et compatibles avec divers appareils. Tout en tirant parti des investissements existants dans les formulaires PDF et XFA, le service applique également les validations, le style et la mise en page appropriés aux champs de formulaires adaptatifs lors de la conversion. Le service aide à :
+Le service AFCS (Automated Forms Conversion Service) permet d’accélérer la numérisation et la modernisation des expériences de capture de données grâce à la conversion automatisée de PDF forms en formulaires adaptatifs. Ce service, optimisé par Adobe Sensei, convertit automatiquement vos formulaires PDF en formulaires adaptatifs réactifs, basés sur HTML5 et compatibles avec divers appareils. Tout en tirant parti des investissements existants dans les formulaires PDF et XFA, le service applique également les validations, le style et la mise en page appropriés aux champs de formulaires adaptatifs lors de la conversion. Le service aide à :
 
 * réduire les efforts manuels requis pour la conversion de formulaires imprimés en formulaires adaptatifs ;
 * appliquer des modèles et des validations adaptés lors de la conversion ;
@@ -25,7 +25,7 @@ Automated Forms Conversion service (AFCS) permet d’accélérer la numérisatio
 * regrouper les champs récurrents en fragments de formulaire réutilisables ;
 * activer Adobe Analytics pendant la conversion.
 
-![C’est simple. Il vous suffit de nous fournir les formulaires sources. Nous nous occupons du reste. Vous obtiendrez des formulaires adaptatifs de qualité. Vous aurez de plus la possibilité de les personnaliser à votre envie. &#x200B;](assets/pdf-to-adaptive-form-gitx50.gif)
+![C’est simple. Il vous suffit de nous fournir les formulaires sources. Nous nous occupons du reste. Vous obtiendrez des formulaires adaptatifs de qualité. Vous aurez de plus la possibilité de les personnaliser à votre envie. ](assets/pdf-to-adaptive-form-gitx50.gif)
 
 ## Intégration  {#onboarding}
 
@@ -67,3 +67,4 @@ Une fois votre environnement AEM Forms configuré, pour convertir vos formulair
 Dans le monde réel, les formulaires peuvent présenter des exigences de capture de données complexes en termes de disposition de champs ou de dénomination, ou encore des suggestions implicites qui peuvent ne pas être capturées avec précision par la logique de détection basée sur l’intelligence artificielle et l’apprentissage automatique. Une fois la conversion automatisée terminée, vous pouvez utiliser l’[éditeur de vérification et de correction](review-correct-ui-edited.md) pour vérifier le formulaire converti et apporter les modifications nécessaires afin d’obtenir le résultat souhaité. Après avoir apporté les modifications requises, renvoyez le formulaire pour conversion.
 
 Le temps nécessaire à la conversion automatisée dépend de divers facteurs tels que la taille du formulaire d’entrée, la complexité du formulaire, la place dans la file d’attente de traitement du service. L’utilisateur est régulièrement informé de la progression via un indicateur d’état sur le dossier/fichier. Une fois la conversion terminée, une notification est également envoyée par courrier électronique à l’adresse configurée.
+

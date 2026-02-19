@@ -7,16 +7,16 @@ role: Admin, Developer
 topic-tags: forms
 feature: Adaptive Forms
 exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
-source-git-commit: 6ec2a2afbbf0e70c1101e365094881c7a8959a0a
+source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
 source-wordcount: '1906'
-ht-degree: 85%
+ht-degree: 84%
 
 ---
 
 # Convertir des formulaires PDF en formulaires adaptatifs {#convert-print-forms-to-adaptive-forms}
 
-Le service de conversion automatisée de formulaires (AFCS) AEM Forms, optimisé par Adobe Sensei, convertit automatiquement vos formulaires PDF en formulaires adaptatifs réactifs et compatibles avec divers appareils<!--foundation and [core components](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/introduction)-->. Que vous utilisiez des formulaires PDF non interactifs, des formulaires Acro ou des formulaires PDF basés sur XFA, Automated Forms Conversion service (AFCS) peut facilement convertir ces formulaires en formulaires adaptatifs. Pour plus d’informations sur les fonctionnalités, le processus de conversion et les informations d’intégration, consultez la page [Automated Forms Conversion service](introduction.md).
+Le service de conversion automatisée de formulaires (AFCS) AEM Forms, optimisé par Adobe Sensei, convertit automatiquement vos formulaires PDF en formulaires adaptatifs réactifs et compatibles avec divers appareils<!--foundation and [core components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)-->. Que vous utilisiez des formulaires PDF non interactifs, des formulaires Acro ou des formulaires PDF basés sur XFA, Automated Forms Conversion service (AFCS) peut facilement convertir ces formulaires en formulaires adaptatifs. Pour plus d’informations sur les fonctionnalités, le processus de conversion et les informations d’intégration, consultez [ Service de conversion automatisée de formulaires ](introduction.md).
 
 ## Prérequis {#pre-requisites}
 
@@ -173,3 +173,4 @@ Si vous sélectionnez cette option, le service de conversion génère un formula
 ## Vérifier et corriger les formulaires convertis {#review-and-correct-the-converted-forms}
 
 Les formulaires réels ont des exigences de capture de données complexes. Une fois la conversion automatisée terminée, les clientes et clients peuvent vérifier la qualité de conversion du formulaire et apporter les modifications nécessaires. AEM Forms fournit un éditeur de [vérification et de correction](review-correct-ui-edited.md) pour procéder aux changements nécessaires. Il vous permet d’améliorer l’identification automatisée des champs de formulaire et de convertir les champs identifiés d’un type à un autre. Par exemple, il peut vous aider à identifier la mise en page à deux colonnes d’un formulaire et modifier un champ identifié automatiquement comme un bouton radio en un champ à choix multiples.
+

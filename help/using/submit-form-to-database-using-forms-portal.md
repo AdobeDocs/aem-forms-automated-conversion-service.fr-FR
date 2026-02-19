@@ -4,17 +4,17 @@ description: Étendez le métamodèle par défaut pour ajouter un modèle, des v
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
-source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
+source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
-source-wordcount: '1223'
-ht-degree: 99%
+source-wordcount: '1221'
+ht-degree: 95%
 
 ---
 
 
 # Intégrer des formulaires adaptatifs à une base de données à l’aide du portail Formulaires {#submit-forms-to-database-using-forms-portal}
 
-Automated Forms Conversion service (AFCS) vous permet de convertir un formulaire PDF non interactif, un formulaire Acro ou un formulaire PDF basé sur XFA en un formulaire adaptatif. Lors du lancement du processus de conversion, vous avez la possibilité de générer un formulaire adaptatif avec ou sans liaison de données.
+Le service de conversion automatisée de formulaires (AFCS) vous permet de convertir un formulaire PDF non interactif, un formulaire Acro ou un formulaire PDF basé sur XFA en formulaire adaptatif. Lors du lancement du processus de conversion, vous avez la possibilité de générer un formulaire adaptatif avec ou sans liaison de données.
 
 Si vous choisissez de générer un formulaire adaptatif sans liaison de données, vous pouvez incorporer le formulaire adaptatif converti à un modèle de données de formulaire, un schéma XML ou un schéma JSON après la conversion. Toutefois, si vous générez un formulaire adaptatif avec des liaisons de données, le service de conversion associe automatiquement les formulaires adaptatifs à un schéma JSON et crée une liaison de données entre les champs disponibles dans le formulaire adaptatif et le schéma JSON. Vous pouvez ensuite intégrer le formulaire adaptatif à une base de données de votre choix, remplir les données du formulaire et les envoyer à la base de données à l’aide du portail Forms.
 
@@ -299,3 +299,4 @@ Pour créer une page Portail Forms et la configurer afin de pouvoir envoyer des 
 1. Insérez le composant **[!UICONTROL Drafts &amp; Submissions]** (Brouillons et envois) dans la page. Deux onglets **[!UICONTROL Draft Forms]** (Brouillons de formulaires) et **[!UICONTROL Submitted Forms]** (Formulaires envoyés) s’affichent sur la page Portail Forms. L’onglet **[!UICONTROL Draft Forms]** (Brouillons de formulaires) affiche également le formulaire adaptatif converti généré à l’aide des étapes mentionnées dans [Configurer le formulaire adaptatif converti pour l’intégration au portail Forms](#configure-converted-adaptive-form-for-forms-portal-integration).
 
 1. Appuyez sur **[!UICONTROL Preview]** (Aperçu), puis, sur le formulaire adaptatif converti, spécifiez les valeurs des champs du formulaire adaptatif et envoyez-le. Les valeurs que vous spécifiez pour les champs de formulaire adaptatif sont envoyées à la base de données intégrée.
+

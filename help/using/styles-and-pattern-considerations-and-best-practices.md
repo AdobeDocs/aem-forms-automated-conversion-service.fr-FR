@@ -8,16 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
+source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
 source-wordcount: '1291'
-ht-degree: 95%
+ht-degree: 93%
 
 ---
 
 # Bonnes pratiques et modèles complexes connus {#Best-practices-and-considerations2}
 
-Ce document fournit des instructions et des recommandations dont peuvent bénéficier les personnes affectées à l’administration, à la création et au développement de formulaires dans le cadre de l’utilisation de [!DNL Automated Forms Conversion service] (AFCS). Il décrit les bonnes pratiques, de la préparation des formulaires sources à la correction des modèles complexes qui nécessitent un effort supplémentaire pour la conversion automatisée. Ces bonnes pratiques contribuent globalement aux performances globales et au rendement de [!DNL Automated Forms Conversion service] (AFCS).
+Ce document fournit des instructions et des recommandations destinées aux administrateurs, aux auteurs et aux développeurs de formulaires lors de l’utilisation d’[!DNL Automated Forms Conversion service] (AFCS). Il décrit les bonnes pratiques, de la préparation des formulaires sources à la correction des modèles complexes qui nécessitent un effort supplémentaire pour la conversion automatisée. Ces bonnes pratiques contribuent globalement aux performances globales et au rendement de [!DNL Automated Forms Conversion service] (AFCS).
 
 ## Bonnes pratiques
 
@@ -82,7 +82,7 @@ Le service commencerait à identifier et à attribuer à ces modèles des champs
 
 | Modèle | Résolution |
 |--- |--- |
-| **Modèle** <br> Les options de groupe de choix sous d’autres formes que des cases ou des cercles ne sont pas converties en composants de formulaires adaptatifs correspondants. <br><br>**Résolution** <br> Donnez aux options de choix la forme de cases ou de cercles ou utilisez l’éditeur de vérification et de correction pour identifier les formes. | ![Champs de choix &#x200B;](assets/best-practice-choice-group-options.png) |
+| **Modèle** <br> Les options de groupe de choix sous d’autres formes que des cases ou des cercles ne sont pas converties en composants de formulaires adaptatifs correspondants. <br><br>**Résolution** <br> Donnez aux options de choix la forme de cases ou de cercles ou utilisez l’éditeur de vérification et de correction pour identifier les formes. | ![Champs de choix ](assets/best-practice-choice-group-options.png) |
 
 ### Champs de formulaire {#form-fields}
 
@@ -121,3 +121,4 @@ Comment Type: draft
 <li>Choice groups with only box or circle shaped selectors are supported. </li>
 </ul>
 -->
+
