@@ -82,7 +82,7 @@ Le service commencerait à identifier et à attribuer à ces modèles des champs
 
 | Modèle | Résolution |
 |--- |--- |
-| **Motif** les options du groupe Choix <br> avec des formes autres que boîte ou cercle ne sont pas converties en composants de formulaire adaptatif correspondants. <br><br>**Résolution** <br> remplacez les formes d&#39;options de choix par une boîte ou un cercle ou utilisez l&#39;éditeur Vérification et correction pour identifier les formes. | ![Champs de choix ](assets/best-practice-choice-group-options.png) |
+| **Motif** les options du groupe Choix <br> avec des formes autres que boîte ou cercle ne sont pas converties en composants de formulaire adaptatif correspondants. <br><br>**Résolution** <br> remplacez les formes d&#39;options de choix par une boîte ou un cercle ou utilisez l&#39;éditeur Vérification et correction pour identifier les formes. | ![Champs de choix &#x200B;](assets/best-practice-choice-group-options.png) |
 
 ### Champs de formulaire {#form-fields}
 
