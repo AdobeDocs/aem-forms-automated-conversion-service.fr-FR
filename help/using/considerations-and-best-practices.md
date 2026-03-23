@@ -8,9 +8,9 @@ topic-tags: introduction
 discoiquuid: b786e40a-202e-4e17-a2f5-1f77c46538c2
 privatebeta: true
 index: false
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+source-git-commit: ba5457fc64a6525c3dc02a00484030760c373c98
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '550'
 ht-degree: 100%
 
 ---
@@ -52,7 +52,7 @@ Le service commencerait à identifier et à attribuer à ces modèles des champs
    <td><img src="assets/image-in-adaptive-form.png" /></td> 
   </tr>
   <tr>
-   <td><p><strong>Modèle</strong></p> <p>Les tableaux dont les bordures sont en pointillés ou ne sont pas clairement définies ne sont pas convertis.</p> <p><strong>Résolution</strong></p> <p>Utilisez des tableaux dont les bordures sont clairement définies.  </p> </td> 
+   <td><p><strong>Modèle</strong></p> <p>Les tableaux dont les bordures sont en pointillés ou ne sont pas clairement définies ne sont pas convertis.</p> <p><strong>Résolution</strong></p> <p>Utilisez des tableaux dont les bordures sont clairement définies. pris en charge.</p> </td> 
    <td><img src="assets/border-less-tables.png" /></td> 
   </tr>
  </tbody>
