@@ -8,9 +8,9 @@ topic-tags: forms
 role: Admin, Developer, User
 level: Beginner, Intermediate
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
-source-git-commit: ba5457fc64a6525c3dc02a00484030760c373c98
+source-git-commit: 2ec7faabc02ec6f416aafcbe7f7305e9323bd9eb
 workflow-type: tm+mt
-source-wordcount: '2765'
+source-wordcount: '2764'
 ht-degree: 81%
 
 ---
@@ -23,7 +23,7 @@ Cet article décrit comment un administrateur ou une administratrice AEM peut c
 
 * utilisation des systèmes d’exploitation Linux® et Microsoft® Windows® ;
 
-* Configuration des serveurs de messagerie SMTP
+* configuration des serveurs de messagerie SMTP.
 =======
 <!--
 >[!VIDEO](https://video.tv.adobe.com/v/29267/) 
@@ -235,7 +235,7 @@ Connectez-vous à votre instance de création pour créer les configurations Ado
       * **ID client** : copiez et collez **Clé API (ID client)**.
       * **Secret client** : copiez et collez **Secret client**.
       * **Portée** : copiez et collez **Portées**.
-      * **ID d’organisation** : copiez et collez **ID de compte technique**.
+      * **ID d’organisation** : copiez et collez **ID d’organisation**.
 
      ![Créer une configuration Adobe IMS](/help/using/assets/save-ims-configuration.png)
 
