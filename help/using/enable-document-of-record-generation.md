@@ -10,9 +10,15 @@ level: Beginner, Intermediate
 page-status-flag: never-activated
 contentOwner: khsingh
 exl-id: c24313cd-2b9b-4209-9505-a8e14d8dc530
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+TQID: https://experienceleague.adobe.com/ImCKo49r-l9Iq0uOVa16bzA1ga9e-n-Q6Eo4MvB9SB4
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: 967
 ht-degree: 100%
 
 ---
@@ -127,7 +133,7 @@ Si vous utilisez un formulaire Acro ou un formulaire PDF basé sur XFA comme f
 
 * modifier les propriétés du formulaire adaptatif après la conversion pour activer la génération d’un document d’enregistrement à l’aide du modèle par défaut, du formulaire source ou de tout autre modèle de formulaire.
 
-### Activer la génération d’un document d’enregistrement avant la conversion pour générer un document d’enregistrement en utilisant le formulaire source comme modèle {#use-input-form-as-template-to-generate-document-of-record}
+### Activer la génération d’un document d’enregistrement avant la conversion pour générer un document d’enregistrement en utilisant le modèle de formulaire source {#use-input-form-as-template-to-generate-document-of-record}
 
 1. Sélectionnez l’option **[!UICONTROL Tools]** (Outils) > **[!UICONTROL Cloud Services]** (Services cloud) > **[!UICONTROL Automated Forms Conversion Configuration]** (Configuration de la conversion automatisée de formulaires) > Properties of cloud configuration used for conversion (Propriétés de la configuration cloud utilisée pour la conversion) > **[!UICONTROL Advanced]** (Avancé) > **[!UICONTROL Generate Document of Record]** (Générer un document d’enregistrement).
 
@@ -139,13 +145,13 @@ Vous pouvez ouvrir les propriétés du formulaire adaptatif pour afficher le mod
 
    ![Modifier les propriétés du formulaire adaptatif pour générer un document d’enregistrement](assets/generate_dor_af_properties_xdp_acro.png)
 
-   Lors de l’envoi du formulaire adaptatif converti, le document d’enregistrement est automatiquement généré en utilisant le formulaire source comme modèle.
+   Lors de l’envoi du formulaire adaptatif converti, le document d’enregistrement est automatiquement généré en utilisant le modèle de formulaire source.
 
 ### Modifier les propriétés du formulaire adaptatif après la conversion pour activer la génération du document d’enregistrement {#edit-adaptive-form-properties-to-generate-document-of-record}
 
 1. [Exécutez la conversion](/help/using/convert-existing-forms-to-adaptive-forms.md) sur le formulaire PDF non interactif pour générer un formulaire adaptatif.
 
-1. Sélectionnez le formulaire adaptatif dans le dossier **[!UICONTROL output]** (sortie) et appuyez sur **[!UICONTROL Properties]** (Propriétés).
+1. Sélectionnez le formulaire adaptatif dans le dossier **[!UICONTROL output]** (Sortie) et appuyez sur **[!UICONTROL Properties]** (Propriétés).
 
 1. Dans l’onglet **[!UICONTROL Form Model]** (Modèle de formulaire), développez la section **[!UICONTROL Document of Record Template Configuration]** (Configuration du modèle de document d’enregistrement), puis sélectionnez **[!UICONTROL Generate Document of Record]** (Générer un document d’enregistrement) afin d’activer la génération du document d’enregistrement à l’aide du modèle par défaut.
 Vous pouvez également sélectionner l’option **[!UICONTROL Associate form template as the Document of Record template]** (Associer le modèle de formulaire comme modèle de document d’enregistrement) ainsi que le modèle pour activer la génération du document d’enregistrement à l’aide du formulaire source ou de tout autre modèle de formulaire.
