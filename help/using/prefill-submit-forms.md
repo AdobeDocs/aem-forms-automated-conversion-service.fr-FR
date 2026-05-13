@@ -9,10 +9,25 @@ role: Admin, Developer
 level: Beginner, Intermediate
 contentOwner: khsingh
 exl-id: 5deef8f5-5098-47c1-b696-b2db59e92931
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+TQID: https://experienceleague.adobe.com/TmEZJSIKPj6f2X5E7X8JY9AL5EGHSPuLhAzQlPdvGGM
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: '2534'
-ht-degree: 100%
+source-wordcount: 2692
+ht-degree: 99%
 
 ---
 
@@ -123,7 +138,7 @@ L’intégration de données AEM Forms permet de configurer des sources de donn
 
 Ce tutoriel utilise la base de données MySQL comme source pour créer un modèle de données de formulaire. Créez un schéma **loanapplication** dans la base de données et ajoutez-y un tableau **applicant** en fonction des champs disponibles dans le formulaire adaptatif.
 
-![Exemples de données mysql](assets/sample_data_mysql.png)
+![Données d’exemple mysql](assets/sample_data_mysql.png)
 
 Vous pouvez utiliser l’instruction DDL suivante pour créer le tableau **applicant** dans la base de données.
 
@@ -246,7 +261,7 @@ Cas d’utilisation : vous générez un formulaire adaptatif sans liaison de do
 Avant de mettre en pratique le cas d’utilisation, procédez aux étapes suivantes :
 
 * [Configurer la base de données MySQL comme source de données](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/configure-data-sources.html#configurerelationaldatabase)
-* [Créer un modèle de données de formulaire](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/work-with-form-data-model.html)
+* [Création du modèle de données de formulaire](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/work-with-form-data-model.html)
 
 En fonction du cas d’utilisation, créez le modèle de données de formulaire **loanapplication** et liez l’argument de service de lecture à une valeur **[!UICONTROL Literal]**. La valeur littérale du numéro de téléphone doit correspondre à l’un des enregistrements configurés dans le schéma **applicant** de la base de données MySQL. Les services utilisent la valeur comme argument pour extraire les détails de la source de données. Vous pouvez également sélectionner [User Profile Attribute or Request Attribute](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/work-with-form-data-model.html#bindargument) (Attribut de profil utilisateur ou attribut de requête) dans la liste déroulante **[!UICONTROL Binding To]** (Liaison à).
 

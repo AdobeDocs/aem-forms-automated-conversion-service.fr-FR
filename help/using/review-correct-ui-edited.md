@@ -8,10 +8,24 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 64330fa2-aa9d-4ba4-96df-b75deed3e693
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+TQID: https://experienceleague.adobe.com/r--F0l84gNKh6jvpjo7cCV4NS-i3hM7zcK3kl0h3YX8
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: '2563'
-ht-degree: 100%
+source-wordcount: 2599
+ht-degree: 99%
 
 ---
 
@@ -45,12 +59,12 @@ L’éditeur de vérification et de correction dispose d’une interface convivi
 
 ![Vérifier et corriger l’interface utilisateur](assets/reviewcorrectui.png)
 
-**A.** Explorateur de contenu **B.** Explorateur de propriétés **C.** Barre d’outils **D.** Bouton Propriétés **E.** Bouton de filtrage **F.** Bouton Save (Enregistrer) **G.** Formulaire PDF sur lequel ont été incrustés les champs identifiés
+**A.** Explorateur de contenu **B.** Explorateur de propriétés **C.** Barre d’outils **D.** Bouton Propriétés **E.** Bouton Filtre **F.** Bouton Enregistrer **G.** Formulaire PDF recouvert de champs identifiés
 
 Une fois la première conversion effectuée, le service de conversion incruste les champs et composants identifiés dans le document PDF source. Ces champs ou composants sont de type texte, champ, panneau, groupe de choix et tableau :
 
 * Texte : texte brut dans le document PDF source. Par exemple, le texte de la demande de prêt dans l’image ci-dessus.
-* Champ : libellé d’icône ou de texte associé à une zone Valeur ou de saisie. Par exemple, le nom du premier champ dans l’image ci-dessus. Il comporte un libellé de texte et une zone de saisie. Un champ prend en charge les types de données suivants : texte, données numériques, liste déroulante, date, courrier électronique, numéro de téléphone, signature, devise et mot de passe.
+* Champ : libellé d’icône ou de texte associé à une zone Valeur ou de saisie. Par exemple, le nom du premier champ dans l’image ci-dessus. Il comporte un libellé de texte et une zone de saisie. Un champ prend en charge les types de données suivants : texte, données numériques, liste déroulante, date, e-mail, numéro de téléphone, signature, devise et mot de passe.
 * Panneau : collection logique de contenu et de composants. Par exemple, les données personnelles des panneaux Person 1 (Personne 1) et Person 2 (Personne 2) dans l’image ci-dessus.
 * Groupe de choix : texte associé à des options à choix multiples : case à cocher et bouton radio. Par exemple, l’état civil et le client existant dans l’image ci-dessus.\
   En fonction de la légende du groupe de choix et de ses options à choix multiples, le service de conversion convertit automatiquement un groupe de choix en un bouton radio à sélection unique ou en une case à cocher à sélections multiples. Par exemple, si la légende du groupe de choix indique **Sélectionnez l’option appropriée** ou que les options à choix multiples ne vous permettent de sélectionner qu’une seule option, **Oui** ou **Non**, le service de conversion convertit automatiquement le groupe de choix en un bouton radio à sélection unique. De même, si la légende du groupe de choix indique **Sélectionnez toutes les options applicables** ou **Sélectionnez plusieurs options** ou que les options à choix multiples vous permettent de sélectionner plusieurs options, le service de conversion convertit automatiquement le groupe de choix en une case à cocher à sélections multiples.
@@ -147,7 +161,7 @@ La conversion peut ne pas identifier certaines cellules, bordures ou données d�
 
 ### Modifier le type d’un composant {#change-type-a-component}
 
-Le service de conversion peut créer des types de champs incorrects. Par exemple, dans l’image suivante, le champ **Gender** (Sexe) est identifié à tort comme un champ **Text** (Texte). Le contenu du libellé est également incorrect. Le champ devrait être un champ de choix et le libellé devrait être Gender (Sexe). Pour changer le type d’un composant et corriger son libellé :
+Le service de conversion peut créer des types de champs incorrects. Par exemple, dans l’image suivante, le champ **Genre** est identifié à tort comme un champ **Texte**. Le contenu du libellé est également incorrect. Le champ devrait être un champ de choix et le libellé devrait être Genre. Pour changer le type d’un composant et corriger son libellé :
 
 Sélectionnez le champ à convertir, appuyez sur ![](assets/smock_shuffle_18_n.svg), puis sur un type de champ. Le type de champ sélectionné sera alors appliqué au champ concerné. La conversion s’applique uniquement aux types de champs répertoriés dans le tableau suivant : Un composant de panneau peut uniquement être dissocié, et non transformé.
 

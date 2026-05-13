@@ -8,10 +8,26 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: ba5457fc64a6525c3dc02a00484030760c373c98
+TQID: https://experienceleague.adobe.com/EixW6MGzAyHz-JcPYmnKQBLWqnEFOwUepUFOcG8DBUo
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: '1356'
-ht-degree: 72%
+source-wordcount: 1356
+ht-degree: 94%
 
 ---
 
@@ -69,12 +85,12 @@ Le service commencerait à identifier et à attribuer à ces modèles des champs
 
 | Modèle | Exemple |
 |--- |--- |
-| **Modèle** <br>Service ne convertit pas le PDF forms rempli en formulaire adaptatif. <br><br>**Résolution** <br>utiliser des formulaires adaptatifs vides. | ![Formulaire rempli](assets/best-practice-filled-forms.png) |
-| **Motif** <br>Le service peut ne pas reconnaître le texte et les champs dans un formulaire dense. <br><br>**Résolution** <br> augmentez la largeur entre le texte et les champs d’un formulaire dense avant de commencer la conversion. |  |
-| **Modèle** <br>Service ne prend pas en charge les formulaires numérisés. <br><br>**Résolution** <br>n’utilisez pas de formulaires numérisés. | ![Formulaire numérisé](assets/scanned-forms.png) |
-| **Motif** <br>Le service n’extrait pas les images ni le texte dans les images. <br><br>**Résolution** <br> ajoutez manuellement des images ou du texte aux formulaires convertis. | ![Formulaire avec image contenant du texte](assets/best-practice-image-with-text.png) |
-| **Motif** <br>Les tableaux avec des frontières et des bordures pointillées ou non claires ne sont pas convertis. <br><br>**Résolution** <br>utilisez des tableaux avec des limites et des bordures claires et explicites. pris en charge. | ![Formulaire avec tableau non clair](assets/best-practice-table-dotted-non-clear.png) |
-| **Modèle** <br> Les formulaires adaptatifs ne prennent pas en charge le texte vertical en dehors de la case. Par conséquent, le service ne convertit pas le texte vertical en texte Forms adaptatif correspondant. <br><br>**Résolution** <br> utilisez l’éditeur de formulaire adaptatif pour ajouter du texte vertical, si nécessaire. | ![Formulaire avec tableau non clair](assets/vertical-text.png) |
+| **Modèle** <br>Le service ne convertit pas les formulaires PDF remplis en formulaires adaptatifs. <br><br>**Résolution** <br>Utilisez des formulaires adaptatifs vides. | ![Formulaire rempli](assets/best-practice-filled-forms.png) |
+| **Modèle** <br>Le service peut ne pas reconnaître le texte et les champs denses. <br><br>**Résolution** <br> Laissez davantage d’espace entre le texte et les champs denses avant de débuter la conversion. |  |
+| **Modèle** <br>Le service ne prend pas en charge les formulaires numérisés. <br><br>**Résolution** <br>N’utilisez pas de formulaires numérisés. | ![Formulaire numérisé](assets/scanned-forms.png) |
+| **Modèle** <br>Le service n’extrait pas d’images et de texte figurant dans les images. <br><br>**Résolution** <br> Ajoutez manuellement des images ou du texte aux formulaires convertis. | ![Formulaire avec image contenant du texte](assets/best-practice-image-with-text.png) |
+| **Modèle** <br>Les tableaux dont les bordures sont en pointillés ou ne sont pas clairement définies ne sont pas convertis. <br><br>**Résolution** <br>Utilisez des tableaux dont les bordures sont clairement définies. pris en charge. | ![Formulaire avec tableau non clair](assets/best-practice-table-dotted-non-clear.png) |
+| **Modèle** <br> Les formulaires adaptatifs ne prennent pas en charge le texte vertical en dehors de la case. Ainsi, le service ne convertit pas le texte vertical en texte de formulaires adaptatifs correspondant. <br><br>**Résolution** <br> Utilisez l’éditeur de formulaire adaptatif pour ajouter du texte vertical, si nécessaire. | ![Formulaire avec tableau non clair](assets/vertical-text.png) |
 
 
 
@@ -82,16 +98,16 @@ Le service commencerait à identifier et à attribuer à ces modèles des champs
 
 | Modèle | Résolution |
 |--- |--- |
-| **Motif** les options du groupe Choix <br> avec des formes autres que boîte ou cercle ne sont pas converties en composants de formulaire adaptatif correspondants. <br><br>**Résolution** <br> remplacez les formes d&#39;options de choix par une boîte ou un cercle ou utilisez l&#39;éditeur Vérification et correction pour identifier les formes. | ![Champs de choix &#x200B;](assets/best-practice-choice-group-options.png) |
+| **Modèle** <br> Les options de groupe de choix sous d’autres formes que des cases ou des cercles ne sont pas converties en composants de formulaires adaptatifs correspondants. <br><br>**Résolution** <br> Donnez aux options de choix la forme de cases ou de cercles ou utilisez l’éditeur de vérification et de correction pour identifier les formes. | ![Champs de choix &#x200B;](assets/best-practice-choice-group-options.png) |
 
 ### Champs de formulaire {#form-fields}
 
 | Modèle | Résolution |
 |--- |--- |
-| **Motif** <br> Service n’identifie pas les champs sans bordures claires. <br><br>**Résolution** utilisez <br>’éditeur Vérification et correction pour identifier ces champs. | ![champs dont les bordures ne sont pas clairement définies](assets/best-practice-fields-without-clear-borders.png) |
-| **Motif** <br> Service peut ne pas identifier certains champs de formulaire de groupe de choix avec des légendes en bas ou à droite d’un formulaire. <br><br>**Résolution** utilisez <br>’éditeur Vérification et correction pour identifier ces champs. | ![Champs de choix](assets/best-practice-caption-bottom-right.png) |
-| **Motif** <br> Service fusionne ou attribue un type incorrect à certains champs de formulaire qui sont placés très près les uns des autres ou qui n’ont pas de bordures claires. <br><br>**Résolution** utilisez <br>’éditeur Vérification et correction pour identifier ces champs. | ![Champs de choix](assets/best-practice-placed-very-near.png) |
-| **Motif** <br> Service peut ne pas reconnaître les champs contenant des légendes éloignées ou une ligne en pointillé entre la légende et le champ de saisie. <br><br>**Résolution** <br> utilisez des champs de formulaires aux limites claires ou utilisez l’éditeur Révision et correction pour résoudre ces problèmes. | ![Champs éloignés ou ligne pointillée entre le champ et la légende](assets/best-practice-far-away-captions-or-a-dotted-line.png) |
+| **Modèle** <br> Le service n’identifie pas les champs dont les bordures ne sont pas clairement définies. <br><br>**Résolution** <br> Utilisez l’éditeur de vérification et de correction pour identifier ces champs. | ![champs dont les bordures ne sont pas clairement définies](assets/best-practice-fields-without-clear-borders.png) |
+| **Modèle** <br> Le service peut ne pas identifier certains champs de formulaire de groupe de choix avec des légendes en bas ou à droite d’un formulaire. <br><br>**Résolution** <br> Utilisez l’éditeur de vérification et de correction pour identifier ces champs | ![Champs de choix](assets/best-practice-caption-bottom-right.png) |
+| **Modèle** <br> Le service fusionne ou attribue un type incorrect à certains champs de formulaire placés très près les uns des autres ou dont les bordures ne sont pas clairement définies. <br><br>**Résolution** <br> Utilisez l’éditeur de vérification et de correction pour identifier ces champs. | ![Champs de choix](assets/best-practice-placed-very-near.png) |
+| **Modèle** <br> Le service peut ne pas reconnaître les champs dont les légendes sont éloignées ou avec une ligne pointillée entre la légende et le champ d’entrée. <br><br>**Résolution** <br> Utilisez des champs de formulaire avec des bordures clairement définies ou utilisez l’éditeur de vérification et de correction pour corriger ces problèmes. | ![Champs éloignés ou ligne pointillée entre le champ et la légende](assets/best-practice-far-away-captions-or-a-dotted-line.png) |
 
 ### Listes {#lists}
 

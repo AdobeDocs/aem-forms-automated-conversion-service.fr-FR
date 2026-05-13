@@ -8,10 +8,25 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+TQID: https://experienceleague.adobe.com/ehU-0CYTjc3aRDnkecBH7uiaO2QLvpDc9d7oxezCVaU
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: '2598'
-ht-degree: 100%
+source-wordcount: 2689
+ht-degree: 81%
 
 ---
 
@@ -114,9 +129,9 @@ Chaque propriété peut en outre inclure :
 
 ![Propriétés de métamodèle](assets/meta_model_elements.gif)
 
-Sur la base des mots-clés référencés à l’aide de **aem:affKeyword**, le service de conversion effectue une opération de recherche sur les champs du formulaire source. Le service de conversion applique les propriétés du schéma JSON et les propriétés supplémentaires aux champs qui répondent aux critères de recherche.
+En fonction des mots-clés référencés à l’aide de **aem:affKeyword**, le service de conversion effectue une opération de recherche sur les champs du formulaire source. Le service de conversion applique les propriétés du schéma JSON et les propriétés supplémentaires aux champs qui répondent aux critères de recherche.
 
-Dans cet exemple, le service de conversion recherche les mots-clés suivants dans le fichier source : phone, telephone, mobile phone, work phone, home phone, telephone number, telephone no et phone number. Selon les champs dans lesquels figurent ces mots-clés, le service de conversion applique le type, le modèle et aem:afProperties aux champs du formulaire adaptatif après la conversion.
+Dans cet exemple, le service de conversion recherche les mots-clés suivants dans le fichier source : phone, telephone, mobile phone, work phone, home phone, telephone number, telephone no et phone number. En fonction des champs qui incluent ces mots-clés, le service de conversion applique le type, le modèle et aem:afProperties aux champs de formulaire adaptatif après la conversion.
 
 ### Propriétés du schéma JSON pour les champs de formulaires adaptatifs générés {#jsonschemaproperties}
 
@@ -129,11 +144,11 @@ Le métamodèle prend en charge les propriétés communes du schéma JSON suivan
    <th><strong>Description</strong></th> 
   </tr> 
   <tr> 
-   <td><p>title</p></td> 
+   <td><p>titre</p></td> 
    <td> 
     <p>Le texte mentionné dans la propriété title d’un métamodèle sert de mot-clé de recherche pour effectuer des actions sur les champs de formulaires adaptatifs générés (par exemple, la modification du libellé d’un champ de formulaire adaptatif). Pour en savoir plus, consultez la section <strong>Modifier le libellé d’un champ de formulaire</strong> dans <a href="#custommetamodelexamples">Exemples de métamodèles personnalisés</a>.</p> </td> 
   </tr>
-  <td><p>description</p></td> 
+  <td><p>Description</p></td> 
    <td> 
     <p>La propriété description définit le texte d’aide pour le champ de formulaire adaptatif généré. Pour en savoir plus, consultez la section <strong>Ajouter du texte d’aide à un champ de formulaire</strong> dans <a href="#custommetamodelexamples">Exemples de métamodèles personnalisés</a>.</p> </td> 
   </tr>
@@ -141,15 +156,15 @@ Le métamodèle prend en charge les propriétés communes du schéma JSON suivan
    <td> 
     <p>La propriété type définit le type de données pour le champ de formulaire adaptatif généré. Les valeurs possibles pour la propriété type sont les suivantes :</p>
     <ul> 
-     <li>chaîne : génère un champ de formulaire adaptatif de type données texte.</li> 
-     <li>nombre : génère un champ de formulaire adaptatif de type données numériques.</li>
-     <li>entier : génère un champ de formulaire adaptatif de type données numériques avec un sous-type défini sur « integer ».</li>
+     <li>string (chaîne) : génère un champ de formulaire adaptatif de type de données texte.</li> 
+     <li>number (nombre) : génère un champ de formulaire adaptatif de type de données numérique.</li>
+     <li>integer (entier) : génère un champ de formulaire adaptatif de type de données numérique avec un sous-type défini sur « integer ».</li>
      <li>booléen : génère un composant de formulaire adaptatif de basculement.</li>
      </ul><p>Pour en savoir plus sur l’utilisation de la propriété type dans un métamodèle, consultez la section <strong>Modifier le type d’un champ de formulaire</strong> dans <a href="#custommetamodelexamples">Exemples de métamodèles personnalisés</a>.</p></td> 
   </tr>
   <td><p>pattern</p></td> 
    <td> 
-    <p>La propriété pattern restreint la valeur du champ de formulaire adaptatif généré selon une expression régulière. Par exemple, le code suivant dans le métamodèle limite la valeur du champ de formulaire adaptatif généré à dix chiffres : <br>"pattern": "/\\d{10}/"<br>De même, le code suivant dans le métamodèle restreint la valeur d’un champ à un format de date spécifique.<br> "pattern": "date{DD MMMM, YYYY}",</p> </td> 
+    <p>La propriété pattern restreint la valeur du champ de formulaire adaptatif généré selon une expression régulière. Par exemple, le code suivant dans le métamodèle limite la valeur du champ de formulaire adaptatif généré à dix chiffres :<br>« pattern »: « /\\d{10}/« <br>De même, le code suivant dans le métamodèle limite la valeur d’un champ à un format de date spécifique.<br> « pattern » : « date{JJ MMMM, AAAA} »,</p> </td> 
   </tr>
   <td><p>format</p></td> 
    <td> 
@@ -181,7 +196,7 @@ Dans cet exemple, le service de conversion utilise le texte dans **aem:affKeywor
 
 ### Propriétés supplémentaires pour les champs de formulaires adaptatifs générés {#additionalproperties}
 
-Vous pouvez utiliser la propriété **aem:afProperties** dans le métamodèle pour définir les propriétés supplémentaires suivantes pour les champs de formulaires adaptatifs générés à l’aide de Automated Forms Conversion service (AFCS) :
+Vous pouvez utiliser la propriété **aem:afProperties** dans le métamodèle pour définir les propriétés supplémentaires suivantes pour les champs de formulaires adaptatifs générés à l’aide du service de conversion automatisée de formulaires (AFCS) :
 
 <table> 
  <tbody> 
@@ -201,7 +216,7 @@ Vous pouvez utiliser la propriété **aem:afProperties** dans le métamodèle po
   </tr>
   <td><p>jcr:title</p></td> 
    <td> 
-    <p>La propriété jcr:title, conjointement à la propriété de schéma de titre JSON, vous permet de modifier le libellé d’un champ de formulaire adaptatif après la conversion.<br>Pour en savoir plus, consultez la section <strong>Modifier le libellé d’un champ de formulaire</strong> dans <a href="#custommetamodelexamples">Exemples de métamodèles personnalisés.</a><br>Voir <a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/adaptive-form-json-schema-form-model.html" target="_blank">Créer des formulaires adaptatifs à l’aide du schéma JSON</a> pour en savoir plus sur les autres propriétés que vous pouvez appliquer aux champs de formulaires adaptatifs à l’aide du schéma JSON.</p>
+    <p>La propriété jcr:title, conjointement à la propriété de schéma de titre JSON, vous permet de modifier le libellé d’un champ de formulaire adaptatif après la conversion.<br>Pour plus d’informations, voir <strong>Modifier le libellé d’un champ de formulaire</strong> dans <a href="#custommetamodelexamples">Exemples de métamodèle personnalisé.</a><br>Voir <a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/adaptive-form-json-schema-form-model.html" target="_blank">Création de formulaires adaptatifs à l’aide d’un schéma JSON</a> pour plus d’informations sur les autres propriétés que vous pouvez appliquer aux champs de formulaires adaptatifs à l’aide d’un schéma JSON.</p>
     <p></p></td> 
   </tr>
   <td><p>sling:resourceType et guideNodeClass</p></td> 
@@ -215,7 +230,7 @@ Vous pouvez utiliser la propriété **aem:afProperties** dans le métamodèle po
  </tbody> 
 </table>
 
-## Créer un métamodèle personnalisé dans votre langue {#language-specific-meta-model}
+## Créer un métamodèle personnalisé dans votre langue{#language-specific-meta-model}
 
 Vous pouvez créer un métamodèle spécifique à la langue. Ce métamodèle permet de créer des règles de mappage dans la langue de votre choix. Automated Forms Conversion service (AFCS) vous permet de créer des métamodèles dans les langues suivantes :
 
@@ -248,7 +263,7 @@ Lorsqu’aucune langue n’est spécifiée, le service considère que le métamo
    * shortDescription
    * validatePictureClauseMessage
 
-  Par exemple, lorsque la langue du métamodèle est le français (&quot;aem:Language&quot;: &quot;fr&quot;), assurez-vous que toutes les descriptions et tous les messages sont en français.
+  Par exemple, lorsque la langue du métamodèle est le français (« aem:Language »: « fr »), assurez-vous que toutes les descriptions et tous les messages sont en français.
 
 * Assurez-vous que toutes les [propriétés de schéma JSON](#jsonschemaproperties) utilisent uniquement les valeurs prises en charge. Par exemple, la propriété type ne peut couvrir que les valeurs sélectionnées de type Chaîne, Nombre, Entier et Booléen.
 
@@ -296,7 +311,7 @@ Voici quelques exemples courants d’utilisation d’un métamodèle personnalis
 
 **Exemple :** remplacez le libellé du numéro de compte bancaire dans le formulaire par Numéro de compte personnalisé dans le formulaire adaptatif après la conversion.
 
-Dans ce métamodèle personnalisé, le service de conversion utilise la propriété **title** comme mot-clé de recherche. Après avoir récupéré le texte **Numéro de compte bancaire** dans le formulaire, le service de conversion remplace le texte par la chaîne **numéro de compte client** mentionnée avec la propriété **jcr:title** dans la section **aem:afProperties**.
+Dans ce métamodèle personnalisé, le service de conversion utilise la propriété **title** comme mot-clé de recherche. Après avoir récupéré le texte **Numéro de compte bancaire** dans le formulaire, le service de conversion remplace le texte par la chaîne **Numéro de compte client** mentionnée avec la propriété **jcr:title** dans la section **aem:afProperties**.
 
 ```
 {
@@ -352,7 +367,7 @@ Dans ce métamodèle personnalisé, le service de conversion utilise le texte da
 * Australia
 * New Zealand
 
-Les propriétés **sling:resourceType** et **guideNodeClass** mappent un champ de formulaire à un composant de formulaire adaptatif de case à cocher.
+Les propriétés **sling:resourceType** et **guideNodeClass** mappent un champ de formulaire au composant de formulaire adaptatif avec case à cocher.
 
 ```
 {
@@ -436,7 +451,7 @@ Dans ce métamodèle personnalisé, le service de conversion utilise le texte da
 * Australia
 * New Zealand
 
-Les propriétés **sling:resourceType** et **guideNodeClass** mappent un champ de formulaire à un composant de formulaire adaptatif de liste déroulante.
+Les propriétés **sling:resourceType** et **guideNodeClass** mappent un champ de formulaire au composant de formulaire adaptatif déroulant.
 
 ```
 {
@@ -491,7 +506,7 @@ Pour ajouter une option supplémentaire, mettez à jour la propriété **enum** 
 
 **Exemple :** remplacez le champ **Adresse** de type string par un champ multiligne dans le formulaire après la conversion.
 
-Dans ce métamodèle personnalisé, le service de conversion utilise le texte dans **aem:affKeyword** comme mot-clé de recherche. Après avoir récupéré le texte **Adresse** dans le formulaire, le service remplace le champ de texte par un champ multiligne à l’aide de la propriété **multiLine** définie dans la section **aem:afProperties**.
+Dans ce métamodèle personnalisé, le service de conversion utilise le texte dans **aem:affKeyword** comme mot-clé de recherche. Après avoir récupéré le texte **Address** dans le formulaire, le service remplace le champ de texte par un champ multiligne à l’aide de la propriété **multiLine** définie dans la section **aem:afProperties**.
 
 ```
 {
