@@ -3,9 +3,8 @@ cloud: Experience Cloud
 product: experience manager
 sub-product: forms conversion service
 solution: Experience Manager, Experience Manager Forms
-product_v2:
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+product_v2: id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+usetq: true
 type: Documentation
 audience: end-user
 user-guide-title: Service de conversion automatisée pour Adobe Experience Manager Forms
@@ -13,9 +12,9 @@ user-guide-description: Convertissez des formulaires PDF en formulaires HTML d
 breadcrumb-title: Guide de conversion automatisée de Forms
 feature: Adaptive Forms
 role: User
-source-git-commit: 5ab30094bb9f1d4a343088fdd3a523925544fbc8
+source-git-commit: a052df70ec394e0d0c72ab15ac191e0865f50acc
 workflow-type: tm+mt
-source-wordcount: 72
+source-wordcount: 90
 ht-degree: 100%
 
 ---
