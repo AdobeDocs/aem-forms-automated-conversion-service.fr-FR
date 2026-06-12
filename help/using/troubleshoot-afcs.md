@@ -10,21 +10,11 @@ level: Beginner, Intermediate
 contentOwner: khsingh
 exl-id: e8406ed9-37f5-4f26-be97-ad042f9ca57c
 TQID: https://experienceleague.adobe.com/CYDvLiZX-BqErF-cKQX1SieVDMxkoD1kfP4rLIT9ku0
-product_v2:
-  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: d49d6117-dd89-469c-a774-cc96b7eee433
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: ce44533e-8ec8-4e11-a9e9-78b0fe561832
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: ce44533e-8ec8-4e11-a9e9-78b0fe561832id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
 source-wordcount: 691
@@ -44,7 +34,7 @@ Le document fournit des étapes de résolution de base pour les erreurs courante
 |--- |--- |
 | **Message d’erreur** <br> L’en-tête du jeton d’accès n’est pas disponible. <br><br> **Raison** <br> Un administrateur a créé plusieurs configurations IMS ou la configuration IMS n’est pas en mesure d’accéder au service AFCS sur Adobe Cloud. <br><br>**Résolution** <br> s’il existe plusieurs configurations, supprimez toutes les configurations et [créez une configuration](configure-service.md#obtainpubliccertificates). <br> S’il existe une seule configuration, utilisez **Contrôle de l’intégrité** pour [vérifier la connectivité](configure-service.md#createintegrationoption). | ![L’en-tête du jeton d’accès n’est pas disponible](assets/invalid-ims-configurations.png) |
 | **Message d’erreur** <br> Impossible de se connecter au service.  <br><br>**Motif** <br> URL du service incorrecte ou aucune URL du service mentionnée dans les services cloud de Automated Forms Conversion service (AFCS). <br><br>**Résolution** <br> Corrigez l’[URL du service](configure-service.md#configure-the-cloud-service) dans les services cloud de Automated Forms Conversion service (AFCS). | ![Impossible de se connecter au service.](assets/wrong-service-url-configured.png) |
-| **Message d’erreur** <br> Le service n’est pas parvenu à convertir le formulaire.  <br><br>**Raison** <br> Problèmes de connectivité réseau de votre côté, le service est arrêté en raison d’une maintenance planifiée, ou interruption sur Adobe Cloud. <br><br>**Résolution** <br> Résolvez les problèmes de connectivité réseau de votre côté et vérifiez l’état du service sur https://status.adobe.com/fr-fr/ pour voir s’il existe une interruption planifiée ou non planifiée. | ![Impossible de se connecter au service.](assets/conversion-failure.png) |
+| **Message d’erreur** <br> Le service n’est pas parvenu à convertir le formulaire.  <br><br>**Raison** <br> Problèmes de connectivité réseau de votre côté, le service est arrêté en raison d’une maintenance planifiée, ou interruption sur Adobe Cloud. <br><br>**Résolution** <br> Résolvez les problèmes de connectivité réseau de votre côté et vérifiez l’état du service sur https://status.adobe.com/ pour voir s’il existe une interruption planifiée ou non planifiée. | ![Impossible de se connecter au service.](assets/conversion-failure.png) |
 | **Message d’erreur** <br> Le nombre de pages est supérieur à 15.  <br><br>**Raison** <br> Le formulaire source comporte plus de 15 pages.  <br><br>**Résolution** <br> Utilisez Adobe Acrobat pour scinder les formulaires de plus de 15 pages. Réduisez le nombre de pages pour obtenir un formulaire ne dépassant pas 15 pages. | ![Impossible de se connecter au service.](assets/number-of-pages.png) |
 | **Message d’erreur** <br> Le nombre de fichiers est supérieur à 15.  <br><br>**Raison** <br>  Le dossier contient plus de 15 formulaires. <br><br>**Résolution** <br> Réduisez le nombre de formulaires dans un dossier pour en obtenir 15 ou moins. Réduisez le nombre total de pages pour obtenir un dossier comportant moins de 50 pages. Réduisez la taille du dossier pour qu’elle ne dépasse pas 10 Mo. Ne conservez pas les formulaires dans un sous-dossier. Organisez les formulaires sources en un lot de 8 à 15 formulaires. | ![Impossible de se connecter au service.](assets/number-of-pages.png) |
 | **Message d’erreur** <br> Le format du fichier source n’est pas pris en charge.  <br><br>**Raison** <br> Le dossier contenant les formulaires sources contient des fichiers non pris en charge. <br><br>**Résolution** <br> Le service ne prend en charge que les fichiers .xdp et .pdf. Supprimez les fichiers avec toute autre extension du dossier et exécutez la conversion. | ![Impossible de se connecter au service.](assets/unsupported-file-formats.png) |
@@ -72,7 +62,7 @@ Le document fournit des étapes de résolution de base pour les erreurs courante
 <td><img alt="Unable to connect to the service." src="assets/wrong-endpoint-configured.png" /></td>
 </tr>
 <tr>
-<td><strong>Error Message</strong> <br> The service failed to convert the form.  <br><br><strong>Reason</strong> <br> Network connectivity issues at your end, the service is down due to scheduled maintenance, or outage on Adobe Cloud. <br><br><strong>Resolution</strong> <br> Resolve network connectivity issues at your end and check the status of the service on <a href="https://status.adobe.com/fr-fr/">https://status.adobe.com/fr-fr/</a> for a planned or unplanned outage.</td>
+<td><strong>Error Message</strong> <br> The service failed to convert the form.  <br><br><strong>Reason</strong> <br> Network connectivity issues at your end, the service is down due to scheduled maintenance, or outage on Adobe Cloud. <br><br><strong>Resolution</strong> <br> Resolve network connectivity issues at your end and check the status of the service on <a href="https://status.adobe.com/">https://status.adobe.com/</a> for a planned or unplanned outage.</td>
 <td><img alt="The service failed to convert the form." src="assets/service-failure.png" /></td>
 </tr>
 <tr>
