@@ -9,23 +9,14 @@ role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
 TQID: https://experienceleague.adobe.com/yp0Kt5IApys-pqUHzqYJlzY9zhMg7z26v-bB0Fp9fjI
-product_v2:
-  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: d49d6117-dd89-469c-a774-cc96b7eee433
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: cc72dcf1-72e1-48cc-b434-e7c27d62d67cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: 1932
+source-wordcount: 1844
 ht-degree: 94%
 
 ---
@@ -76,7 +67,7 @@ ht-degree: 94%
 1. **Le service prend-il en charge les formulaires XDP liés à des schémas ? Si je dispose d’un formulaire XDP lié à un schéma, dois-je incorporer le schéma dans le formulaire XDP ?**
    <p>Oui, le service prend en charge les formulaires XDP liés à des schémas et nécessite l’intégration du schéma au formulaire XDP source. Lorsque vous convertissez un formulaire XDP lié à un schéma, le service génère un schéma JSON. La structure du schéma JSON est similaire à celle du schéma XSD des formulaires XDP sources.</p> <br>
 
-1. **Le service n’est pas parvenu à convertir les formulaires. Quelle en est la raison et comment résoudre le problème?**
+1. **Le service n’a pas pu convertir les formulaires. Quelle en est la raison et comment résoudre le problème ?**
 Les raisons les plus courantes de l’échec de la conversion sont les suivantes :</p>
    * Des formulaires PDF sécurisés sont fournis pour conversion. N’utilisez pas de formulaires PDF protégés par mot de passe ou sécurisés pour la conversion.
    * La connexion Internet est interrompue. Assurez-vous d’être connecté à Internet pendant la conversion.
@@ -106,8 +97,8 @@ Les raisons les plus courantes de l’échec de la conversion sont les suivantes
 
    Vous pouvez utiliser le métamodèle pour mapper les objets de formulaire au composant de formulaire adaptatif de votre choix et préconfigurer les validations, les règles, les modèles de données, le texte d’aide et les propriétés d’accessibilité des composants. Toutes les propriétés spécifiées sont appliquées lors de la conversion. Vous pouvez utiliser un métamodèle pour appliquer des propriétés communes aux champs. Cela peut vous aider à réduire le nombre de problèmes récurrents dans les formulaires.<br/><br/>
 
-1. **Quelles sont les options disponibles pour les formulaires contenant des données sensibles, telles que des informations d’identification personnelles ?**
-Le service ne prend en charge que les formulaires vierges ou non remplis. Ne téléchargez pas de formulaires remplis ou de formulaires contenant des informations d’identification personnelles. Supprimez également les données préremplies, les informations d’identification personnelles et les informations confidentielles des formulaires sources. <br/>
+1. **Quelles sont les options pour les formulaires contenant des données sensibles telles que des informations d’identification personnelle (PII) ?**
+Le service ne prend en charge que les formulaires vierges ou non remplis. Ne téléchargez pas de formulaires remplis ou comportant des informations d’identification personnelle (PII). Supprimez également les données préremplies, les informations d’identification personnelle (PII), les informations confidentielles et propriétaires dans les formulaires sources. <br/>
 
 1. **Où placer les en-têtes et pieds de page ?**
    <p>Placez l’en-tête et le pied de page dans un modèle de formulaires adaptatifs. Si le formulaire PDF source a un en-tête et un pied de page, le service détecte et remplace l’en-tête et le pied de page détectés par un en-tête et un pied de page disponibles dans le modèle de formulaire adaptatif, pendant la conversion. Si un en-tête ou un pied de page supplémentaire est inclus dans le formulaire adaptatif, vous pouvez utiliser l’éditeur <a href="review-correct-ui-edited.md">de vérification et de correction</a> pour le corriger ou le supprimer.</p> <br />
@@ -115,9 +106,9 @@ Le service ne prend en charge que les formulaires vierges ou non remplis. Ne té
 1. **Combien de temps le service fait-il gagner par rapport au processus manuel de planification, de conception d’actifs (thèmes, modèles), de création et de publication d’un formulaire adaptatif ?**
    <p>La durée dépend de la taille et de la complexité des formulaires d’entrée, ainsi que du nombre de demandes. Le service a l’intention de réduire considérablement le délai de valorisation en convertissant les formulaires PDF en formulaires adaptatifs beaucoup plus rapidement par rapport au processus manuel de conversion des formulaires. </p> <br />
 
-1. **Que faire si une erreur liée aux bibliothèques RSA se produit ? Le message d’erreur est similaire au message mentionné ci-dessous :** <br/>
-   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&lt;init&gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
-L’erreur ci-dessus se produit lorsque Boot Delegation n’est pas configurée pour les bibliothèques RSA/BouncyCastle. Pour résoudre le problème, procédez comme suit :
+1. **Que faire si je rencontre une erreur liée aux bibliothèques RSA ? Le message d’erreur est similaire au message mentionné ci-dessous :** <br/>
+   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
+L’erreur ci-dessus se produit lorsque Boot Delegation n’est pas configurée pour les bibliothèques RSA/BouncyCastle. Pour résoudre ce problème, procédez comme suit :
    <p> </p>
 
    1. Désactivez l’instance AEM. Accédez au dossier `[AEM installation directory]\crx-quickstart\conf\`. Ouvrez le fichier sling.properties pour le modifier. Si vous utilisez `[AEM installation directory]\crx-quickstart\bin\start.bat` pour démarrer une instance AEM, modifiez le fichier sling.properties situé à l’emplacement suivant :`[AEM_root]\crx-quickstart\`.
