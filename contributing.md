@@ -58,4 +58,4 @@ Bien entendu, nous acceptons volontiers toute contribution et examinerons votre 
 
 ## Informations supplémentaires
 
-Consultez le [Guide du contributeur aux documents &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) pour plus d’informations sur l’utilisation de la plateforme de création GitHub.
+Consultez le [Guide du contributeur aux documents &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=fr) pour plus d’informations sur l’utilisation de la plateforme de création GitHub.
