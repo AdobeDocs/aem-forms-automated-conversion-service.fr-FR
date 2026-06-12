@@ -19,8 +19,8 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: 2021
-ht-degree: 84%
+source-wordcount: 1900
+ht-degree: 81%
 
 ---
 
@@ -79,9 +79,9 @@ Après avoir téléchargé les formulaires et configuré le service, procédez c
 
    * **[!UICONTROL Sélectionnez une configuration cloud]**. Lorsque vous sélectionnez une configuration, le modèle et le thème par défaut sont déjà spécifiés. Vous pouvez indiquer un modèle ou un thème différent, si nécessaire.
    * Spécifiez un emplacement pour l’enregistrement des formulaires adaptatifs générés et du schéma correspondant. Vous pouvez utiliser des chemins par défaut ou indiquer des chemins personnalisés.
-   * Utilisez l’option **Generate adaptive forms without data model bindings** (Générer des formulaires adaptatifs sans liaison de modèle de données) pour choisir de générer un formulaire adaptatif avec ou sans liaison de modèle de données.
-Si vous ne sélectionnez pas cette option, le service de conversion associe automatiquement les formulaires adaptatifs à un schéma JSON et crée une liaison de données entre les champs disponibles dans le formulaire adaptatif et le schéma JSON. Le champ **[!UICONTROL Save generated data model schema at]** (Enregistrer le schéma de modèle de données généré sous) affiche l’emplacement par défaut pour l’enregistrement du schéma JSON généré. Vous pouvez également personnaliser l’emplacement pour l’enregistrement du schéma généré.
-Si vous sélectionnez cette option, le service de conversion génère un formulaire adaptatif sans liaison de modèle de données. Après la conversion, vous pouvez associer un formulaire adaptatif à un modèle de données de formulaire, un schéma XML ou un schéma JSON. Pour en savoir plus, consultez la page [Créer un formulaire adaptatif](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/creating-adaptive-form.html).
+   * Utilisez l’option **Générer des formulaires adaptatifs sans liaisons de modèle de données** pour choisir si vous souhaitez générer un formulaire adaptatif avec ou sans liaisons de modèle de données.
+Si vous ne sélectionnez pas cette option, le service de conversion associe automatiquement les formulaires adaptatifs à un schéma JSON et crée une liaison de données entre les champs disponibles dans le formulaire adaptatif et le schéma JSON. Le champ **[!UICONTROL Enregistrer le schéma de modèle de données généré sous]** affiche l’emplacement par défaut pour enregistrer le schéma JSON généré. Vous pouvez également personnaliser l’emplacement pour enregistrer le schéma généré.
+Si vous sélectionnez cette option, le service de conversion génère un formulaire adaptatif sans liaison de modèle de données. Après une conversion réussie, vous pouvez associer un formulaire adaptatif à un modèle de données de formulaire, un schéma XML ou un schéma JSON. Pour plus d’informations, voir [Création d’un formulaire adaptatif](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/creating-adaptive-form.html).
 
    <!--
 

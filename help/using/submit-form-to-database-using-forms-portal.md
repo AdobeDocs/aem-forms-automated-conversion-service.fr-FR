@@ -6,8 +6,8 @@ topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
-source-wordcount: '1221'
-ht-degree: 95%
+source-wordcount: '1250'
+ht-degree: 91%
 
 ---
 
@@ -24,7 +24,7 @@ Le schéma suivant illustre différentes étapes de l’intégration d’un form
 
 Cet article décrit les instructions détaillées pour réussir à exécuter toutes ces étapes d’intégration.
 
-L’exemple présenté dans cet article est une implémentation de référence des services de données et de métadonnées personnalisés pour intégrer une page Portail Forms à une base de données. La base de données utilisée dans l’exemple d’implémentation est MySQL 5.6.24. Cependant, vous pouvez intégrer la page Portail Forms à n’importe quelle base de données de votre choix.
+L’exemple présenté dans cet article est une implémentation de référence des services de données et de métadonnées personnalisés pour intégrer une page Portail Forms à une base de données. La base de données utilisée dans l’exemple d’implémentation est MySQL 5.6.24. Cependant, vous pouvez intégrer la page du portail Forms à n’importe quelle base de données de votre choix.
 
 ## Prérequis {#pre-requisites}
 
@@ -32,7 +32,7 @@ L’exemple présenté dans cet article est une implémentation de référence d
 * Installation du [dernier Service Pack](https://helpx.adobe.com/fr/experience-manager/aem-releases-updates.html) pour votre instance AEM
 * Dernière version du package de module complémentaire AEM Forms
 * Configurer [Automated Forms Conversion service (AFCS)](configure-service.md)
-* Configuration d’une base de données. La base de données utilisée dans l’exemple d’implémentation est MySQL 5.6.24. Cependant, vous pouvez intégrer le formulaire adaptatif converti à n’importe quelle base de données de votre choix.
+* Configuration d’une base de données. La base de données utilisée dans l’exemple d’implémentation est MySQL 5.6.24. Cependant, vous pouvez intégrer le formulaire adaptatif converti à n’importe quelle base de données de votre choix.
 
 ## Configurer la connexion entre l’instance AEM et la base de données {#set-up-connection-aem-instance-database}
 
@@ -197,7 +197,7 @@ Procédez aux étapes de configuration suivantes pour créer une connexion entre
    <table> 
     <tbody> 
     <tr> 
-    <th><strong>Propriétés</strong></th> 
+    <th><strong>Propriété</strong></th> 
     <th><strong>Valeur</strong></th> 
     </tr> 
     <tr> 
@@ -269,7 +269,7 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
 
 1. Téléchargez le package suivant **aem-fp-db-integration-sample-pkg-6.1.2.zip** vers votre système de fichiers.
 
-[Obtenir le fichier](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
+   [Obtenir le fichier](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
 1. Accédez au gestionnaire de modules AEM à l’adresse *http://[host]:[port]/crx/packmgr/*.
 1. Cliquez sur **[!UICONTROL Upload Package]** (Télécharger le package).
