@@ -144,11 +144,11 @@ Le métamodèle prend en charge les propriétés communes du schéma JSON suivan
    <th><strong>Description</strong></th> 
   </tr> 
   <tr> 
-   <td><p>titre</p></td> 
+   <td><p>title</p></td> 
    <td> 
     <p>Le texte mentionné dans la propriété title d’un métamodèle sert de mot-clé de recherche pour effectuer des actions sur les champs de formulaires adaptatifs générés (par exemple, la modification du libellé d’un champ de formulaire adaptatif). Pour en savoir plus, consultez la section <strong>Modifier le libellé d’un champ de formulaire</strong> dans <a href="#custommetamodelexamples">Exemples de métamodèles personnalisés</a>.</p> </td> 
   </tr>
-  <td><p>Description</p></td> 
+  <td><p>description</p></td> 
    <td> 
     <p>La propriété description définit le texte d’aide pour le champ de formulaire adaptatif généré. Pour en savoir plus, consultez la section <strong>Ajouter du texte d’aide à un champ de formulaire</strong> dans <a href="#custommetamodelexamples">Exemples de métamodèles personnalisés</a>.</p> </td> 
   </tr>
