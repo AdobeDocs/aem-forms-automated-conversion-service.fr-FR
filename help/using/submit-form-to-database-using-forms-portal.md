@@ -4,13 +4,16 @@ description: Étendez le métamodèle par défaut pour ajouter un modèle, des v
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
-source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+source-git-commit: e40aeabffdc79dbf5d42a89b8e37c298e016cb90
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 91%
-
 ---
-
 
 # Intégrer des formulaires adaptatifs à une base de données à l’aide du portail Formulaires {#submit-forms-to-database-using-forms-portal}
 
@@ -52,7 +55,7 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
 
 1. Accédez à http://[server]:[port]/system/console/depfinder et recherchez le package com.mysql.jdbc.
 1. Dans la colonne Exported by (Exporté par), vérifiez si le package est exporté par un groupe. Continuez si le package n’est pas exporté par un groupe.
-1. Accédez à http://[server]:[port]/system/console/bundles et cliquez sur **[!UICONTROL Install/Update]** (Installer/Mettre à jour).
+1. Accédez à http://[server]:[port]/system/console/bundles et cliquez sur **[!UICONTROL Installer/Mettre à jour]**.
 1. Cliquez sur **[!UICONTROL Choose File]** (Choisir un fichier) et accédez au chemin permettant de sélectionner le fichier mysql-connector-java-5.1.39-bin.jar. Cochez également les cases **[!UICONTROL Start Bundle]** (Démarrer le groupe) et **[!UICONTROL Refresh Packages]** (Actualiser les packages).
 1. Cliquez sur **[!UICONTROL Install]** (Installer) ou **[!UICONTROL Update]** (Mettre à jour). Une fois cette opération effectuée, redémarrez le serveur.
 1. (Windows uniquement) Désactivez le pare-feu système pour votre système d’exploitation.

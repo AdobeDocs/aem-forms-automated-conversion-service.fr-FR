@@ -8,28 +8,40 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
-TQID: https://experienceleague.adobe.com/ehU-0CYTjc3aRDnkecBH7uiaO2QLvpDc9d7oxezCVaU
+TQID: 'https://experienceleague.adobe.com/ehU-0CYTjc3aRDnkecBH7uiaO2QLvpDc9d7oxezCVaU'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: d49d6117-dd89-469c-a774-cc96b7eee433
+    internal-label: Administration
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
+    internal-label: Administration
+source-git-commit: e40aeabffdc79dbf5d42a89b8e37c298e016cb90
 workflow-type: tm+mt
-source-wordcount: 2689
+source-wordcount: '2689'
 ht-degree: 81%
-
 ---
-
 # Étendre le métamodèle par défaut {#extend-the-default-meta-model}
 
 Automated Forms Conversion service (AFCS) identifie et extrait les objets de formulaire des formulaires sources. Le mappeur sémantique aide le service à décider comment les objets extraits sont représentés dans un formulaire adaptatif. Par exemple, un formulaire source peut représenter une date de plusieurs façons différentes. Le mappeur sémantique permet de mapper toutes les représentations des dates du formulaire source avec les composants de date des formulaires adaptatifs. Le mappeur sémantique permet également au service de préconfigurer et d’appliquer des validations, des règles, des modèles de données, du texte d’aide et des propriétés d’accessibilité aux composants de formulaires adaptatifs pendant la conversion.
@@ -256,12 +268,12 @@ Lorsqu’aucune langue n’est spécifiée, le service considère que le métamo
 * Assurez-vous que le nom de chaque clé est en anglais. Par exemple, emailAddress.
 * Assurez-vous que toutes les références d’entité et les valeurs prédéfinies de toutes les clés id sont constituées uniquement de caractères ASCII. Par exemple, &quot;id&quot;: &quot;ContactPoint&quot; / &quot;$ref&quot;: &quot;#ContactPoint&quot;.
 * Assurez-vous que toutes les valeurs correspondant aux clés suivantes se trouvent dans la langue de métamodèle spécifiée :
-   * aem:affKeyword
-   * title
-   * description
-   * enumNames
-   * shortDescription
-   * validatePictureClauseMessage
+  * aem:affKeyword
+  * title
+  * description
+  * enumNames
+  * shortDescription
+  * validatePictureClauseMessage
 
   Par exemple, lorsque la langue du métamodèle est le français (« aem:Language »: « fr »), assurez-vous que toutes les descriptions et tous les messages sont en français.
 
@@ -277,7 +289,7 @@ Votre entreprise peut avoir des modèles et des validations en plus de ceux rép
 
 Automated Forms Conversion service (AFCS) utilise un métamodèle par défaut enregistré à l’emplacement suivant pour mapper les champs de formulaire source aux champs de formulaire adaptatif pendant la conversion :
 
-http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json
+http://<server>:<port>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json
 
 Cependant, vous pouvez enregistrer un métamodèle personnalisé dans un dossier et modifier les propriétés du service de conversion pour utiliser le métamodèle personnalisé pendant la conversion.
 

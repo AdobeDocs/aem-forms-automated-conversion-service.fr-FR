@@ -8,27 +8,38 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 35f59e02-e38e-473a-94c8-123e0a85ac8e
-TQID: https://experienceleague.adobe.com/XEYLeElx7-hqEHX4g-Zx8IjjfX9BlFeuLYPSRHbBtTA
+TQID: 'https://experienceleague.adobe.com/XEYLeElx7-hqEHX4g-Zx8IjjfX9BlFeuLYPSRHbBtTA'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: d49d6117-dd89-469c-a774-cc96b7eee433
+    internal-label: Administration
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
+    internal-label: Administration
+source-git-commit: e40aeabffdc79dbf5d42a89b8e37c298e016cb90
 workflow-type: tm+mt
-source-wordcount: 879
+source-wordcount: '879'
 ht-degree: 95%
-
 ---
-
 # Problèmes connus et limites {#known-issues-limitations}
 
 Avant de commencer à utiliser le service AEM Forms Automated Forms Conversion (AFCS), passez en revue les problèmes connus et limites suivants :
@@ -39,19 +50,19 @@ Avant de commencer à utiliser le service AEM Forms Automated Forms Conversion (
 * Certains éléments des formulaires, pourtant facilement visibles par l’œil humain, restent [difficiles à identifier pour le service](styles-and-pattern-considerations-and-best-practices.md). Utilisez l’[éditeur de vérification et de correction](review-correct-ui-edited.md) pour identifier et convertir ces éléments.
 * Éditeur de vérification et de correction :
 
-   * Aucune action d’annulation. Le bouton Save (Enregistrer) enregistre définitivement les modifications.
-   * Aucune prise en charge des panneaux répétables pour les formulaires basés sur XFA.
-   * Si vous modifiez une liste dans un tableau à l’aide de l’éditeur de vérification et de correction, la largeur des rangées ne s’ajuste pas automatiquement et le texte risque de déborder sur la rangée suivante du tableau.
-   * La fonctionnalité **[!UICONTROL Auto-detect multi-column layout from input forms]** (Détection automatique d’une mise en page à plusieurs colonnes dans les formulaires d’entrée) ne fonctionne pas avec l’éditeur de vérification et de correction et les fragments de formulaire.
-   * La signature tactile créée avec l’éditeur de vérification et de correction ne se charge pas pour les formulaires adaptatifs publiés.
+  * Aucune action d’annulation. Le bouton Save (Enregistrer) enregistre définitivement les modifications.
+  * Aucune prise en charge des panneaux répétables pour les formulaires basés sur XFA.
+  * Si vous modifiez une liste dans un tableau à l’aide de l’éditeur de vérification et de correction, la largeur des rangées ne s’ajuste pas automatiquement et le texte risque de déborder sur la rangée suivante du tableau.
+  * La fonctionnalité **[!UICONTROL Auto-detect multi-column layout from input forms]** (Détection automatique d’une mise en page à plusieurs colonnes dans les formulaires d’entrée) ne fonctionne pas avec l’éditeur de vérification et de correction et les fragments de formulaire.
+  * La signature tactile créée avec l’éditeur de vérification et de correction ne se charge pas pour les formulaires adaptatifs publiés.
 
 
 * Pour les formulaires basés sur XFA :
-   * L’extraction de fragments d’un formulaire basé sur XFA n’est pas prise en charge.
-   * Les scripts XFA (par exemple, les scripts permettant de générer automatiquement des valeurs pour un composant déroulant) ne sont pas pris en charge.
-   * Le métamodèle ne fonctionne pas pour le groupe de choix.
-   * Les options de groupes de choix qui ne comportent qu’un seul caractère ne sont pas identifiées.
-   * Lorsque le document source est un fichier XFA dynamique (.XDP) et qu’il [définit le comportement des propriétés XFA dans un formulaire adaptatif](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/xfa-api-supported-in-adaptive-form.html#supportedxfaelementsandtheirmappinginadaptiveformsbr), la propriété de présence du document source n’est pas respectée. Par exemple, un champ du document source est marqué comme masqué et un script le rend visible ; le champ reste alors visible dans le formulaire adaptatif de sortie.
+  * L’extraction de fragments d’un formulaire basé sur XFA n’est pas prise en charge.
+  * Les scripts XFA (par exemple, les scripts permettant de générer automatiquement des valeurs pour un composant déroulant) ne sont pas pris en charge.
+  * Le métamodèle ne fonctionne pas pour le groupe de choix.
+  * Les options de groupes de choix qui ne comportent qu’un seul caractère ne sont pas identifiées.
+  * Lorsque le document source est un fichier XFA dynamique (.XDP) et qu’il [définit le comportement des propriétés XFA dans un formulaire adaptatif](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/xfa-api-supported-in-adaptive-form.html#supportedxfaelementsandtheirmappinginadaptiveformsbr), la propriété de présence du document source n’est pas respectée. Par exemple, un champ du document source est marqué comme masqué et un script le rend visible ; le champ reste alors visible dans le formulaire adaptatif de sortie.
 
 * Lorsque vous utilisez l’option **Use input AcroForm as Document of Record (DoR) for generated adaptive forms** (Utiliser l’entrée AcroForm comme document d’enregistrement pour les formulaires adaptatifs générés), tenez compte des points suivants :
 

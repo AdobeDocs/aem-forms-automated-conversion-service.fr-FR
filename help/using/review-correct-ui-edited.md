@@ -8,27 +8,40 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 64330fa2-aa9d-4ba4-96df-b75deed3e693
-TQID: https://experienceleague.adobe.com/r--F0l84gNKh6jvpjo7cCV4NS-i3hM7zcK3kl0h3YX8
+TQID: 'https://experienceleague.adobe.com/r--F0l84gNKh6jvpjo7cCV4NS-i3hM7zcK3kl0h3YX8'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: d49d6117-dd89-469c-a774-cc96b7eee433
+    internal-label: Administration
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
+    internal-label: Administration
+source-git-commit: e40aeabffdc79dbf5d42a89b8e37c298e016cb90
 workflow-type: tm+mt
-source-wordcount: 2599
+source-wordcount: '2599'
 ht-degree: 99%
-
 ---
-
 # Vérifier et corriger les formulaires convertis{#review-and-correct-converted-forms}
 
 Automated Forms Conversion service (AFCS) AEM Forms identifie les champs, le contenu et la disposition du document PDF d’entrée, puis le convertit en un formulaire adaptatif. Le formulaire adaptatif de sortie peut avoir quelques champs manquants ou mal convertis. Vous pouvez utiliser l’éditeur de vérification et de correction pour améliorer les champs identifiés et générer à nouveau le formulaire adaptatif pour vous rapprocher du résultat escompté. Après la première conversion, vous pouvez ouvrir le document PDF d’entrée dans l’éditeur pour :
@@ -50,7 +63,7 @@ L’éditeur de vérification et de correction dispose d’une interface convivi
 * Explorateur de contenu : vous pouvez utiliser l’explorateur de contenu pour déplacer un élément grâce à la fonctionnalité glisser-déposer. Vous pouvez par exemple déplacer un tableau avant une zone de texte. L’ordre de tabulation du formulaire adaptatif de sortie est alors modifié.
 * Explorateur de propriétés : il affiche les propriétés d’un champ sélectionné. Vous pouvez également modifier les propriétés.
 * Barre d’outils : la barre d’outils se trouve en haut de l’éditeur. Elle inclut des outils d’ajout, de modification, de fusion, de dissociation et de suppression des champs.
-* Ouvrir les propriétés : l’option permettant d’ouvrir les propriétés apparaît lorsque vous appuyez sur l’icône ![](assets/properties.png). Vous pouvez cliquer dessus pour ouvrir les propriétés du formulaire et afficher des options supplémentaires.
+* Ouvrir les propriétés : l’option permettant d’ouvrir les propriétés apparaît lorsque vous appuyez sur l’icône ![](assets/properties.png). Vous pouvez cliquer sur Ouvrir les propriétés pour ouvrir les propriétés du formulaire et afficher des options supplémentaires.
 * Bouton de filtrage : le bouton de filtrage ![](assets/toggle_eye.png) se trouve en haut de l’éditeur. Il vous permet de filtrer les champs pour afficher uniquement certains textes, champs, groupes de choix ou panneaux ou bien tous les composants.
 * Bouton Save (Enregistrer) : le bouton **[!UICONTROL Save]** (Enregistrer) se trouve dans le coin supérieur droit de l’éditeur. Vous pouvez également utiliser la flèche en regard du bouton Save (Enregistrer) pour afficher l’option de conversion du formulaire.
 
@@ -65,9 +78,9 @@ Une fois la première conversion effectuée, le service de conversion incruste l
 
 * Texte : texte brut dans le document PDF source. Par exemple, le texte de la demande de prêt dans l’image ci-dessus.
 * Champ : libellé d’icône ou de texte associé à une zone Valeur ou de saisie. Par exemple, le nom du premier champ dans l’image ci-dessus. Il comporte un libellé de texte et une zone de saisie. Un champ prend en charge les types de données suivants : texte, données numériques, liste déroulante, date, e-mail, numéro de téléphone, signature, devise et mot de passe.
-* Panneau : collection logique de contenu et de composants. Par exemple, les données personnelles des panneaux Person 1 (Personne 1) et Person 2 (Personne 2) dans l’image ci-dessus.
-* Groupe de choix : texte associé à des options à choix multiples : case à cocher et bouton radio. Par exemple, l’état civil et le client existant dans l’image ci-dessus.\
-  En fonction de la légende du groupe de choix et de ses options à choix multiples, le service de conversion convertit automatiquement un groupe de choix en un bouton radio à sélection unique ou en une case à cocher à sélections multiples. Par exemple, si la légende du groupe de choix indique **Sélectionnez l’option appropriée** ou que les options à choix multiples ne vous permettent de sélectionner qu’une seule option, **Oui** ou **Non**, le service de conversion convertit automatiquement le groupe de choix en un bouton radio à sélection unique. De même, si la légende du groupe de choix indique **Sélectionnez toutes les options applicables** ou **Sélectionnez plusieurs options** ou que les options à choix multiples vous permettent de sélectionner plusieurs options, le service de conversion convertit automatiquement le groupe de choix en une case à cocher à sélections multiples.
+* Panneau : collection logique de contenu et de composants. Par exemple, les panneaux Détails personnels de Personne 1 et Personne 2 dans l’image ci-dessus.
+* Groupe de choix : texte associé à des options à choix multiples : case à cocher et case d’option. Par exemple, l’état civil et le client existant dans l’image ci-dessus.\
+  En fonction de la légende du groupe de choix et de ses options à choix multiples, le service de conversion convertit automatiquement un groupe de choix en une case d’option à sélection unique ou en une case à cocher à sélections multiples. Par exemple, si la légende du groupe de choix indique **Sélectionnez l’option appropriée** ou que les options à choix multiples ne vous permettent de sélectionner qu’une seule option, **Oui** ou **Non**, le service de conversion convertit automatiquement le groupe de choix en un bouton radio à sélection unique. De même, si la légende du groupe de choix indique **Sélectionnez toutes les options applicables** ou **Sélectionnez plusieurs options** ou que les options à choix multiples vous permettent de sélectionner plusieurs options, le service de conversion convertit automatiquement le groupe de choix en une case à cocher à sélections multiples.
 
 * Tableau : tableau en 2D contenant des informations représentées sous forme de colonnes et de lignes. Vous pouvez ajouter ou supprimer des lignes ou des colonnes dans un tableau.
 
@@ -101,7 +114,7 @@ Pour commencer à vérifier les conversions, sélectionnez le document PDF sour
 
    * Pour dissocier un panneau, sélectionnez-le, puis appuyez sur l’icône de dissociation dans la barre d’outils. Le panneau est dissocié et les champs enfants du panneau dissocié sont ajustés au champ parent. Appuyez sur **[!UICONTROL Save]** (Enregistrer) pour enregistrer les modifications.
 
-1. **Créez des groupes logiques de texte** : confirmez l’exhaustivité et l’exactitude des textes identifiés. Vérifiez également que les textes sont placés de manière logique dans des panneaux ou des groupes corrects. Par exemple, dans une mise en page à plusieurs colonnes, les textes d’un groupe logique sont placés dans un groupe distinct.
+1. **Créez des groupes logiques de texte** : confirmez l’exhaustivité et l’exactitude des textes identifiés. Vérifiez également que les textes sont placés de manière logique dans les panneaux ou groupes appropriés. Par exemple, dans une mise en page à plusieurs colonnes, les textes d’un groupe logique sont placés dans un groupe distinct.
 
    * Pour vérifier l’exhaustivité et l’exactitude du texte, utilisez le bouton de filtrage ![](assets/toggle_eye.png) pour afficher uniquement le texte, cliquez sur chaque texte et validez. Corrigez les éventuelles fautes d’orthographe, de frappe ou de grammaire.
 
@@ -119,7 +132,7 @@ Après avoir apporté les modifications requises, appuyez sur le bouton **[!UICO
 
 Après avoir effectué les vérifications de base, vous pouvez vérifier le formulaire afin de résoudre les problèmes spécifiques à votre entreprise. Ces problèmes peuvent notamment être liés à l’ajout de champs manquants. Vous pouvez consulter la section [Utiliser les outils de l’éditeur de vérification et de correction](review-correct-ui-edited.md#use-the-review-and-correct-editor-tools) pour découvrir tous les outils que propose l’éditeur pour résoudre ce type de problèmes.
 
-Vous pouvez également apprendre à reconnaître les problèmes récurrents et les signaler à Adobe. Utilisez l’éditeur de vérification et de correction jusqu’à obtenir le résultat escompté.
+Vous pouvez également apprendre à reconnaître les problèmes récurrents et les signaler à Adobe. Utilisez l’éditeur de vérification et de correction jusqu’à obtenir l’expérience souhaitée.
 
 ## Utiliser les outils de l’éditeur de vérification et de correction {#use-the-review-and-correct-editor-tools}
 
@@ -140,18 +153,18 @@ Le service de conversion peut ne pas identifier certains composants du formulair
 
 ![](assets/add-component.gif)
 
-Pour ajouter un composant au formulaire, appuyez sur **[!UICONTROL +]**, puis sur **[!UICONTROL Field]** (Champ). Dessinez une zone de texte recouvrant le libellé et la zone de saisie du champ. Par exemple, dans l’image fournie à titre d’exemple ci-dessus, le composant Field (Champ) est utilisé pour ajouter au formulaire le libellé **Date of birth** (Date de naissance) et le champ Valeur situé dessous. Lorsque vous dessinez la zone de texte, le service de conversion identifie le type de champ. Si nécessaire, vous pouvez modifier le type de champ depuis l’explorateur de propriétés. Après avoir créé le composant, ouvrez l’explorateur de propriétés et définissez les propriétés du composant.
+Pour ajouter un composant au formulaire, appuyez sur **[!UICONTROL +]**, puis sur **[!UICONTROL Field]** (Champ). Dessinez une zone recouvrant le libellé et la zone de saisie du champ. Par exemple, dans l’image fournie à titre d’exemple ci-dessus, le composant Field (Champ) est utilisé pour ajouter au formulaire le libellé **Date of birth** (Date de naissance) et le champ Valeur situé dessous. Lorsque vous dessinez la zone, le service de conversion identifie le type de champ. Si nécessaire, vous pouvez modifier le type de champ depuis l’explorateur de propriétés. Après avoir créé le composant, ouvrez l’explorateur de propriétés et définissez les propriétés du composant.
 
 Appuyez sur le bouton **[!UICONTROL Save]** (Enregistrer) pour enregistrer les modifications ou sur **[!UICONTROL Save &amp; Convert]** (Enregistrer et convertir) pour renvoyer les formulaires PDF au service de conversion.
 
 ### Ajouter ou modifier un tableau {#addedittable}
 
-La conversion peut ne pas identifier certaines cellules, bordures ou données d’une cellule de tableau. Par exemple, une ligne d’un tableau n’est pas identifiée. Vous pouvez utiliser l’éditeur de vérification et de correction pour identifier ces éléments. Vous pouvez effectuer les actions suivantes dans un tableau :
+La conversion peut ne pas identifier certaines cellules, bordures ou contenu d’une cellule de tableau. Par exemple, une ligne d’un tableau n’est pas identifiée. Vous pouvez utiliser l’éditeur de vérification et de correction pour identifier ces éléments. Vous pouvez effectuer les actions suivantes pour un tableau :
 
 * Pour sélectionner un tableau, cliquez sur n’importe quelle cellule du tableau.
 * Cliquez deux fois sur une cellule pour en modifier les propriétés (nom, titre, type, etc.). Vous pouvez également cliquer deux fois sur la cellule pour en modifier le contenu, marquer un champ requis et sélectionner d’autres propriétés.
 * Pour ajouter un nouveau tableau ou identifier un tableau non identifié dans le formulaire, utilisez l’outil **[!UICONTROL +]**.
-* Pour redimensionner les cellules ou les lignes d’un tableau, cliquez dans une zone vide du tableau, survolez la bordure de la ligne ou de la colonne et cliquez dessus pour la déplacer lorsque le pointeur du curseur change. Après le redimensionnement, cliquez sur **[!UICONTROL Done]** (Terminé) pour valider les modifications. Pour annuler les modifications, appuyez sur la touche **[!UICONTROL Échap]**.
+* Pour redimensionner les cellules ou les lignes d’un tableau, cliquez dans une zone vide du tableau, survolez la bordure de la ligne ou de la colonne et, lorsque le pointeur du curseur change, sélectionnez la bordure et déplacez-la. Après le redimensionnement, cliquez sur **[!UICONTROL Done]** (Terminé) pour valider les modifications. Pour annuler les modifications, appuyez sur la touche **[!UICONTROL Échap]**.
 
 * Pour ajouter ou supprimer des lignes ou des colonnes, sélectionnez une cellule dans la ligne du tableau, puis sélectionnez l’option **[!UICONTROL Add Row]** (Ajouter une ligne), **[!UICONTROL Add Column]** (Ajouter une colonne), **[!UICONTROL Delete Row]** (Supprimer une ligne) ou **[!UICONTROL Delete Column]** (Supprimer une colonne) dans le menu ![](assets/table_18x18.png).
 
@@ -161,7 +174,7 @@ La conversion peut ne pas identifier certaines cellules, bordures ou données d�
 
 ### Modifier le type d’un composant {#change-type-a-component}
 
-Le service de conversion peut créer des types de champs incorrects. Par exemple, dans l’image suivante, le champ **Genre** est identifié à tort comme un champ **Texte**. Le contenu du libellé est également incorrect. Le champ devrait être un champ de choix et le libellé devrait être Genre. Pour changer le type d’un composant et corriger son libellé :
+Le service de conversion peut créer certains champs d’un type incorrect. Par exemple, dans l’image suivante, le champ **Genre** est identifié à tort comme un champ **Texte**. Le contenu du libellé est également incorrect. Le champ devrait être un champ de choix et le libellé devrait être Genre. Pour changer le type d’un composant et corriger son libellé :
 
 Sélectionnez le champ à convertir, appuyez sur ![](assets/smock_shuffle_18_n.svg), puis sur un type de champ. Le type de champ sélectionné sera alors appliqué au champ concerné. La conversion s’applique uniquement aux types de champs répertoriés dans le tableau suivant : Un composant de panneau peut uniquement être dissocié, et non transformé.
 
@@ -199,11 +212,11 @@ Appuyez sur le bouton **[!UICONTROL Save]** (Enregistrer) pour enregistrer les m
 
 ### Envoyer un formulaire pour conversion {#send-a-form-for-conversion}
 
-Après avoir apporté toutes les modifications requises dans l’éditeur de vérification et de correction, vous pouvez convertir à nouveau le formulaire. Pour convertir le formulaire, appuyez sur **[!UICONTROL Save &amp; Convert]** (Enregistrer et convertir). Le libellé **[!UICONTROL Sent for conversion]** (Envoyé pour conversion) est ajouté au dossier contenant le document source et le formulaire source mis à jour est téléchargé vers le service de conversion exécuté sur Adobe I/O.
+Après avoir apporté toutes les modifications requises dans l’éditeur de vérification et de correction, vous pouvez renvoyer le formulaire pour conversion. Pour convertir le formulaire, appuyez sur **[!UICONTROL Save &amp; Convert]** (Enregistrer et convertir). Le libellé **[!UICONTROL Sent for conversion]** (Envoyé pour conversion) est ajouté au dossier contenant le document source et le formulaire source mis à jour est téléchargé vers le service de conversion exécuté sur Adobe I/O.
 
 Selon la complexité du formulaire, la conversion peut prendre un certain temps. Une fois la conversion terminée, le formulaire adaptatif converti et les ressources associées sont téléchargés sur votre ordinateur. Vous pouvez ensuite vérifier le formulaire dans l’éditeur et l’ouvrir dans l’[éditeur de formulaire adaptatif](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/introduction-forms-authoring.html) pour apporter les dernières modifications nécessaires.
 
-Si vous renvoyez un formulaire pour conversion après l’avoir mis à jour dans l’éditeur de formulaire adaptatif, toutes les modifications apportées au formulaire adaptatif seront perdues. Vous ne pouvez ouvrir un formulaire dans l’éditeur de vérification et de correction qu’après avoir effectué la conversion.
+Si vous renvoyez un formulaire pour conversion après l’avoir mis à jour dans l’éditeur de formulaire adaptatif, toutes les modifications apportées au formulaire adaptatif seront perdues. Vous ne pouvez ouvrir un formulaire dans l’éditeur de vérification et de correction qu’après une conversion réussie.
 
 <!--
 Comment Type: draft
