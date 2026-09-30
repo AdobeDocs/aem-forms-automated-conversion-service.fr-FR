@@ -7,23 +7,33 @@ role: Admin, Developer
 topic-tags: forms
 feature: Adaptive Forms
 exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
-TQID: https://experienceleague.adobe.com/t3Ng0VnihUMkisnaGzTBaw2QIR93l-fSHApCaOvz0r0
+TQID: 'https://experienceleague.adobe.com/t3Ng0VnihUMkisnaGzTBaw2QIR93l-fSHApCaOvz0r0'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
+    internal-label: Beginner
+source-git-commit: e40aeabffdc79dbf5d42a89b8e37c298e016cb90
 workflow-type: tm+mt
-source-wordcount: 1900
-ht-degree: 81%
-
+source-wordcount: '2048'
+ht-degree: 84%
 ---
-
 # Convertir des formulaires PDF en formulaires adaptatifs {#convert-print-forms-to-adaptive-forms}
 
 Le service de conversion automatisée de formulaires (AFCS) AEM Forms, optimisé par Adobe Sensei, convertit automatiquement vos formulaires PDF en formulaires adaptatifs réactifs et compatibles avec divers appareils<!--foundation and [core components](https://experienceleague.adobe.com/fr/docs/experience-manager-core-components/using/adaptive-forms/introduction)-->. Que vous utilisiez des formulaires PDF non interactifs, des formulaires Acro ou des formulaires PDF basés sur XFA, Automated Forms Conversion service (AFCS) peut facilement convertir ces formulaires en formulaires adaptatifs. Pour plus d’informations sur les fonctionnalités, le processus de conversion et les informations d’intégration, consultez [&#x200B; Service de conversion automatisée de formulaires &#x200B;](introduction.md).
@@ -33,8 +43,8 @@ Le service de conversion automatisée de formulaires (AFCS) AEM Forms, optimis
 * [**Configuration du service de conversion**](configure-service.md)
 
 * **Modèles et thèmes pour les formulaires convertis :**
-   * **AEM Forms as a Cloud Service :** les modèles et thèmes par défaut sont disponibles ; vous pouvez les utiliser pour la conversion ou en préparer des personnalisés.
-   * **LTS AEM 6.5 et AEM 6.5 :** préparez les [modèles](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/template-editor.html) et [thèmes](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/themes.html) à appliquer aux formulaires convertis. Vous devez [activer les composants principaux de formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=fr) si vous souhaitez utiliser des modèles et des thèmes basés sur les composants principaux (voir [Configuration du service](configure-service.md#referencepackage)). L’utilisation d’un modèle permet d’appliquer une valorisation de marque cohérente. AFCS n’extrait pas les en-têtes et les pieds de page des PDF sources : spécifiez-les dans le modèle de formulaire adaptatif. L’utilisation d’un thème applique un style cohérent aux formulaires. Lorsque vous créez un dossier pour les modèles, sélectionnez l’option **[!UICONTROL Parcourir les configurations]** pour tout le monde.
+  * **AEM Forms as a Cloud Service :** les modèles et thèmes par défaut sont disponibles ; vous pouvez les utiliser pour la conversion ou en préparer des personnalisés.
+  * **LTS AEM 6.5 et AEM 6.5 :** préparez les [modèles](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/template-editor.html) et [thèmes](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/themes.html) à appliquer aux formulaires convertis. Vous devez [activer les composants principaux de formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=fr) si vous souhaitez utiliser des modèles et des thèmes basés sur les composants principaux (voir [Configuration du service](configure-service.md#referencepackage)). L’utilisation d’un modèle permet d’appliquer une valorisation de marque cohérente. AFCS n’extrait pas les en-têtes et les pieds de page des PDF sources : spécifiez-les dans le modèle de formulaire adaptatif. L’utilisation d’un thème applique un style cohérent aux formulaires. Lorsque vous créez un dossier pour les modèles, sélectionnez l’option **[!UICONTROL Parcourir les configurations]** pour tout le monde.
 
 * **(facultatif)** [**Convertir vos formulaires PDF sources en formulaire Adobe Sign**](frequently-asked-questions.md)
 
@@ -79,9 +89,9 @@ Après avoir téléchargé les formulaires et configuré le service, procédez c
 
    * **[!UICONTROL Sélectionnez une configuration cloud]**. Lorsque vous sélectionnez une configuration, le modèle et le thème par défaut sont déjà spécifiés. Vous pouvez indiquer un modèle ou un thème différent, si nécessaire.
    * Spécifiez un emplacement pour l’enregistrement des formulaires adaptatifs générés et du schéma correspondant. Vous pouvez utiliser des chemins par défaut ou indiquer des chemins personnalisés.
-   * Utilisez l’option **Générer des formulaires adaptatifs sans liaisons de modèle de données** pour choisir si vous souhaitez générer un formulaire adaptatif avec ou sans liaisons de modèle de données.
-Si vous ne sélectionnez pas cette option, le service de conversion associe automatiquement les formulaires adaptatifs à un schéma JSON et crée une liaison de données entre les champs disponibles dans le formulaire adaptatif et le schéma JSON. Le champ **[!UICONTROL Enregistrer le schéma de modèle de données généré sous]** affiche l’emplacement par défaut pour enregistrer le schéma JSON généré. Vous pouvez également personnaliser l’emplacement pour enregistrer le schéma généré.
-Si vous sélectionnez cette option, le service de conversion génère un formulaire adaptatif sans liaison de modèle de données. Après une conversion réussie, vous pouvez associer un formulaire adaptatif à un modèle de données de formulaire, un schéma XML ou un schéma JSON. Pour plus d’informations, voir [Création d’un formulaire adaptatif](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/creating-adaptive-form.html).
+   * Utilisez l’option **Generate adaptive forms without data model bindings** (Générer des formulaires adaptatifs sans liaison de modèle de données) pour choisir de générer un formulaire adaptatif avec ou sans liaison de modèle de données.
+     Si vous ne sélectionnez pas cette option, le service de conversion associe automatiquement les formulaires adaptatifs à un schéma JSON et crée une liaison de données entre les champs disponibles dans le formulaire adaptatif et le schéma JSON. Le champ **[!UICONTROL Save generated data model schema at]** (Enregistrer le schéma de modèle de données généré sous) affiche l’emplacement par défaut pour l’enregistrement du schéma JSON généré. Vous pouvez également personnaliser l’emplacement pour l’enregistrement du schéma généré.
+     Si vous sélectionnez cette option, le service de conversion génère un formulaire adaptatif sans liaison de modèle de données. Après la conversion, vous pouvez associer un formulaire adaptatif à un modèle de données de formulaire, un schéma XML ou un schéma JSON. Pour en savoir plus, consultez la page [Créer un formulaire adaptatif](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/creating-adaptive-form.html).
 
    <!--
 
